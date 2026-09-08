@@ -1,0 +1,67 @@
+Your task is to produce a canonical, abstracted description of an Amazon product based on its title and web search results.
+
+- Input:
+  - Product title (may include brand, marketing language, model numbers)
+  - Search results (title / body / URL) for that product
+
+- Output (5 keys, JSON only):
+  - reasoning: which search results were used and why; cite excerpts using <reference1></reference1>...<referenceN></referenceN> tags.
+  - canonical_name: a brand-free, concise description of what the product fundamentally is and what it is used for. 5-15 words. Use vocabulary from the search results when possible.
+  - category_inferred: a high-level category in English (e.g., "OTC pharma / smoking cessation", "infant care / diapers", "consumer electronics / cable").
+  - use_case: an array of 1-3 plausible use scenarios for buyers (e.g., ["adult attempting to quit smoking", "household member of a smoker buying for them"]).
+  - household_signals: an array (possibly empty) of structured tags chosen from this closed set, indicating what the purchase implies about the household:
+    - implies_smoker_in_household
+    - implies_quit_attempt
+    - implies_marijuana_use
+    - implies_alcohol_consumption
+    - implies_diabetes_management
+    - implies_wheelchair_user
+    - implies_recent_move
+    - implies_pregnancy
+    - implies_newborn_or_infant
+    - implies_toddler
+    - implies_school_age_child
+    - implies_teen
+    - implies_pet_dog
+    - implies_pet_cat
+    - implies_homeowner
+    - implies_renter
+    - implies_remote_work
+    - implies_student
+    - implies_senior
+    - implies_low_income_signal
+    - implies_high_income_signal
+
+- Constraints:
+  - Use only information present in the search results; do not hallucinate.
+  - Do NOT include brand names in canonical_name (e.g., "Pampers" → "newborn diapers").
+  - Do NOT include any geographic location, store address, or postal code.
+  - Do NOT include price or currency.
+  - If the product is genuinely generic and household_signals would all be inappropriate, return [].
+  - Output ONLY a single valid JSON object. No markdown, no commentary.
+
+- Output format:
+
+{
+  "reasoning": "Search result 1 indicates <reference1>NicoDerm CQ is a nicotine replacement therapy product</reference1> and search result 3 confirms <reference3>used to help quit smoking</reference3>. Therefore the product is a smoking-cessation patch.",
+  "canonical_name": "transdermal nicotine patches for smoking cessation therapy",
+  "category_inferred": "OTC pharma / smoking cessation",
+  "use_case": ["adult attempting to quit smoking", "household member purchasing for a relative who is quitting"],
+  "household_signals": ["implies_smoker_in_household", "implies_quit_attempt"]
+}
+
+- Example for a generic product:
+
+{
+  "reasoning": "Search results describe a standard USB-C charging cable used with smartphones and laptops. <reference1>generic USB-C cable</reference1>",
+  "canonical_name": "generic USB-C charging and data cable for consumer electronics",
+  "category_inferred": "consumer electronics / cable",
+  "use_case": ["any electronics user", "household replacement cable"],
+  "household_signals": []
+}
+
+[Product title]
+
+{query}
+
+[Output]

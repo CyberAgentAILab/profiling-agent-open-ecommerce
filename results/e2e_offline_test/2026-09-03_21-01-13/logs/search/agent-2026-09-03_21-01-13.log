@@ -1,0 +1,53 @@
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 12:01:13.274 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 12:01:13.275 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 12:01:13.275 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'backend': ['google', 'bing'], 'begin': None, 'csv_path': './results/e2e_sample/prepare_titles/titles_sample10.csv', 'ddgs_region': 'us-en', 'end': None, 'filter_is_diagnostic': True, 'filter_need_search': True, 'log_dir': './results/e2e_offline_test/2026-09-03_21-01-13/logs/search', 'num_debug': None, 'num_search': 10, 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/search', 'query_suffix': ' Amazon product', 'search_cache_dir': '/tmp/e2e_sample_9mi6tm53/search_cache', 'search_engine': 'serper', 'serp_url': 'https://www.searchapi.io/api/v1/search', 'serper_url': 'https://google.serper.dev/search', 'timeout': 60, 'use_validation_data': True, 'validation_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/scan', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_21-01-13'}
+2026-09-03 12:01:13.275 | INFO     | search.__main__:main:16 - 🛒 reading scan output from ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/scan
+2026-09-03 12:01:13.276 | INFO     | search.dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 10 scan records from ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/scan/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.276 | INFO     | search.dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 10 → 9 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 12:01:13.276 | INFO     | search.model:__init__:46 - 🟣 SERPER_API_TOKEN is not set. Falling back to the DDGS (DuckDuckGo) scraper
+2026-09-03 12:01:13.277 | INFO     | search.model:__init__:57 - 🔖 query_suffix enabled: ' Amazon product'
+2026-09-03 12:01:13.279 | INFO     | search.model:__init__:66 - ✅ Search cache initialized: /tmp/e2e_sample_9mi6tm53/search_cache
+2026-09-03 12:01:13.280 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.280 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary Amazon product
+2026-09-03 12:01:13.281 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.281 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.281 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.281 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Baby Registry Welcome Box Amazon product
+2026-09-03 12:01:13.283 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.283 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.283 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.283 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Uboxes Medium Moving Boxes 18"x14"x12" (Pack of 15) Amazon product
+2026-09-03 12:01:13.284 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.284 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.284 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.285 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress Amazon product
+2026-09-03 12:01:13.286 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.286 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.286 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.286 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces) Amazon product
+2026-09-03 12:01:13.287 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.287 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.288 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.288 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas Amazon product
+2026-09-03 12:01:13.289 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.289 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.289 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.289 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag Amazon product
+2026-09-03 12:01:13.291 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.291 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.291 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.291 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan Amazon product
+2026-09-03 12:01:13.292 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.292 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.292 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.293 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800) Amazon product
+2026-09-03 12:01:13.294 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.294 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_21-01-13, job_id: None
+2026-09-03 12:01:13.294 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 12:01:13.294 | INFO     | search.model:run_search:296 - 💾 search results: 9 records -> ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.294 | INFO     | search.model:run_search:297 - 🔍 0 search API calls in total

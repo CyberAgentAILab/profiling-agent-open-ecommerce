@@ -1,0 +1,64 @@
+# Demographic-attribute evaluation: compares the per-product demographic signals
+# in the tag DB (user.user_attribute_demographic) against the self-reported
+# survey answers, aggregated per user over their purchase history.
+
+# The demographic DB is the merged tag_cluster output. Set demographic_db_path to
+# pin a specific file; otherwise the latest output-*.json in demographic_db_dir
+# is used.
+demographic_db_dir: ./results/open_ecommerce/tag/v4
+demographic_db_path: null
+
+out_dir: ./results/open_ecommerce/judge_demographic_attribute
+log_dir: ./logs/open_ecommerce/judge_demographic_attribute
+
+# Same per-user purchase history as judge_user_attribute.
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+min_unique_buyers: 3
+survey_csv: ./data/public/open-ecommerce/survey.csv
+
+log_first_n: 3
+
+# ── cohort unification ───────────────────────────────────────────────────────
+# How to handle users whose point-prediction (age/gender/income/education) is
+# unknown/no-signal. Filling them unifies the evaluated cohort across the DB and
+# baseline methods (the only remaining drop is the method-independent survey
+# filter), at the cost of injecting noise on abstained users.
+#   drop     : exclude unknown predictions (cohorts may differ across methods)
+#   random   : uniform random pick from the attribute's DB-granularity values
+#   prior    : sample from the empirical distribution of observed predictions
+#   majority : the single most frequent observed value
+# relocation is unaffected (it has no unknown state). gender is filled over
+# {female, male, other}; its with_other/without_other evaluation is unchanged.
+unknown_fill: random
+unknown_fill_seed: 3407
+
+# ── evaluation modes ─────────────────────────────────────────────────────────
+# enable_db:       score the tag DB's per-product demographic signals (no LLM).
+# enable_baseline: score an LLM that predicts demographics from raw purchase
+#                  titles only (no DB), at the same granularity as the DB.
+# Set either flag alone, or both to run them back-to-back in one invocation.
+enable_db: True
+enable_baseline: False
+
+# ── DB-free baseline (LLM) settings ──────────────────────────────────────────
+# Prompt that asks the model to predict age/gender/income/education/relocation
+# directly from the purchase-title list, constrained to DB-granularity values.
+baseline_prompt_path: ./configs/prompt/open-ecommerce/judge_demographic_baseline.txt
+# Top-N unique titles per user shown to the model (matches judge_user_attribute's
+# AUC-based baseline budget for a fair comparison).
+baseline_max_titles_per_user: 500
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response; max_model_len caps prompt + response (vLLM).
+max_new_tokens: 16384
+max_model_len: 32768
+# json_max_tokens caps the per-user JSON generation (the output is small).
+json_max_tokens: 1024
+use_vllm: True
+batch_size: 1000
+tensor_parallel_size: 1
+enable_cache: True
+enable_thinking: False
+

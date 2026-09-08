@@ -1,0 +1,34 @@
+Your task is to assign a representative tag to a cluster of buyer personas extracted from Amazon purchase profiling.
+
+The tag is a short English phrase that summarizes what makes the personas in this cluster similar. The tag will be used to label a user segment for downstream analysis and targeting research.
+
+- Input:
+  - A list of buyer-persona strings that were grouped together by an embedding-based clustering step.
+
+- Output (2 keys, JSON only):
+  - reasoning: how you analyzed the personas and identified the dominant theme.
+  - tag: a concise English phrase that encompasses the given representative user attributes (see tag-writing rules).
+
+- Tag-writing rules:
+  - Write a single tag name that encompasses the given representative user attributes.
+  - Keep it concise: at most 20 words.
+  - Use vocabulary that is shared by or semantically inclusive of the majority of personas.
+  - Do NOT include brand names.
+  - Do NOT include geographic locations.
+
+- Output format:
+  - Output ONLY a single valid JSON object. No markdown, no commentary.
+  - Use double quotes; no trailing commas; null is JSON null (not the string "null").
+
+- Example:
+
+{
+  "reasoning": "Most personas describe parents of infants purchasing recurring infant care items, so the tag captures that shared theme.",
+  "tag": "infant care parents"
+}
+
+[Input personas]
+
+{query}
+
+[Output]

@@ -1,0 +1,64 @@
+2026-09-03 11:45:00.260 | INFO     | base_agent.config:activate_logging:144 - timestamp: 2026-09-03_20-45-00
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:45:00.264 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:45:00.265 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:45:00.265 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'attribute_branches': [{'name': 'demographic', 'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/clustering/demographic', 'target_patterns': ['user_attribute_demographic'], 'cache_embedding_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/demographic', 'n_clusters': 2}, {'name': 'psycho_behavioral', 'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/clustering/psycho_behavioral', 'target_patterns': ['user_attribute_psycho_behavioral'], 'cache_embedding_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/psycho_behavioral', 'n_clusters': 3}, {'name': 'life_event', 'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/clustering/life_event', 'target_patterns': ['user_attribute_life_event'], 'cache_embedding_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/life_event', 'n_clusters': 2}], 'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/clustering', 'log_dir': './results/e2e_sample/2026-09-03_20-40-08/logs/clustering', 'model_name': './models/Qwen3-Embedding-0.6B', 'torch_dtype': 'bfloat16', 'embedding_backend': 'qwen3_embedding', 'qwen3_max_length': 8192, 'enable_cache': True, 'batch_size': 100, 'query_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/user', 'algorithm': 'kmeans', 'n_clusters': 3, 'seed': 3407, 'dimension_reduction': 'none', 'minibatch_kmeans_batch_size': 1024, 'minibatch_kmeans_max_iter': 300, 'minibatch_kmeans_n_init': 10, 'minibatch_kmeans_max_no_improvement': 10, 'minibatch_kmeans_reassignment_ratio': 0.01, 'pca_n_components': 8, 'pca_random_state': 0, 'umap_n_components': 8, 'umap_min_dist': 0.1, 'umap_n_neighbors': 5, 'umap_metric': 'cosine', 'min_cluster_ratio': 0.01, 'min_samples': 2, 'metric': 'euclidean', 'cluster_selection_method': 'eom', 'hdbscan_n_jobs': -1, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-45-00'}
+2026-09-03 11:45:00.267 | INFO     | cluster_attribute.dataset:load_profiles:77 - 📚 loaded 10 profiles from results/e2e_sample/2026-09-03_20-40-08/outputs/user/output-2026-09-03_20-43-02.json (1/1)
+2026-09-03 11:45:00.267 | INFO     | cluster_attribute.dataset:load_profiles:79 - 📊 Total: 10 profiles from 1 file(s)
+2026-09-03 11:45:00.267 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_demographic']
+2026-09-03 11:45:00.268 | WARNING  | cluster_attribute.dataset:build_attribute_df:129 - No attributes were extracted — check target_patterns and input format
+2026-09-03 11:45:00.268 | WARNING  | __main__:_run_branch:13 - ⚠️ no attributes for target_patterns=['user_attribute_demographic']; skipping this branch
+2026-09-03 11:45:00.268 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_psycho_behavioral']
+2026-09-03 11:45:00.269 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  3 attributes were extracted
+2026-09-03 11:45:00.270 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  3 unique accounts were extracted
+2026-09-03 11:45:00.270 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  3 unique attributes were extracted
+2026-09-03 11:45:00.276 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query  ... pseudo_confidence
+0                          Baby Registry Welcome Box  ...              0.85
+1  Nespresso Vertuo Coffee and Espresso Machine b...  ...              0.85
+2  Instant Pot Accu Slim Sous Vide, Precision Coo...  ...              0.75
+
+[3 rows x 4 columns]
+2026-09-03 11:45:00.277 | INFO     | base_agent.model:__init__:122 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3-Embedding-0.6B
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 9026.21it/s]
+2026-09-03 11:45:01.927 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from models/Qwen3-Embedding-0.6B
+2026-09-03 11:45:01.931 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/psycho_behavioral/Qwen3-Embedding-0.6B
+2026-09-03 11:45:01.931 | INFO     | cluster_attribute.model:_compute_embeddings:161 - 📦 Batch inference started: 3 items at 100 per batch (1 batches)
+2026-09-03 11:45:02.503 | DEBUG    | cluster_attribute.model:_compute_embeddings:175 - ✅ Batch 1/1: processed 3 items
+2026-09-03 11:45:02.503 | INFO     | cluster_attribute.model:_compute_embeddings:178 - ⏱️ Embedding calculation completed in 0.57 seconds
+2026-09-03 11:45:02.503 | INFO     | cluster_attribute.model:_reduce_dimensions:252 - ⏭️ Skipping dimension reduction (dimension_reduction=none)
+2026-09-03 11:45:02.512 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/psycho_behavioral/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_20-45-00.csv
+2026-09-03 11:45:02.514 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 3
+2026-09-03 11:45:02.514 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply kmeans
+2026-09-03 11:45:02.578 | INFO     | cluster_attribute.model:_fit_clusters:352 - ✅ KMeans completed: inertia=0.00
+2026-09-03 11:45:02.613 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_life_event']
+2026-09-03 11:45:02.614 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  1 attributes were extracted
+2026-09-03 11:45:02.614 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  1 unique accounts were extracted
+2026-09-03 11:45:02.614 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  1 unique attributes were extracted
+2026-09-03 11:45:02.619 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query  ... pseudo_confidence
+0  NUTRO NATURAL CHOICE Small Breed Senior Dry Do...  ...              0.65
+
+[1 rows x 4 columns]
+2026-09-03 11:45:02.619 | INFO     | base_agent.model:__init__:122 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3-Embedding-0.6B
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 7840.81it/s]
+2026-09-03 11:45:03.376 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from models/Qwen3-Embedding-0.6B
+2026-09-03 11:45:03.378 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/life_event/Qwen3-Embedding-0.6B
+2026-09-03 11:45:03.378 | INFO     | cluster_attribute.model:_compute_embeddings:161 - 📦 Batch inference started: 1 items at 100 per batch (1 batches)
+2026-09-03 11:45:03.458 | DEBUG    | cluster_attribute.model:_compute_embeddings:175 - ✅ Batch 1/1: processed 1 items
+2026-09-03 11:45:03.458 | INFO     | cluster_attribute.model:_compute_embeddings:178 - ⏱️ Embedding calculation completed in 0.08 seconds
+2026-09-03 11:45:03.458 | INFO     | cluster_attribute.model:_reduce_dimensions:252 - ⏭️ Skipping dimension reduction (dimension_reduction=none)
+2026-09-03 11:45:03.462 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: results/e2e_sample/2026-09-03_20-40-08/outputs/embedding_cache/life_event/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_20-45-00.csv
+2026-09-03 11:45:03.462 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 1
+2026-09-03 11:45:03.463 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply kmeans
+2026-09-03 11:45:03.463 | WARNING  | cluster_attribute.model:_fit_clusters:312 - ⚠️ only 1 attribute(s) to cluster; assigning a single cluster (id 0)
+2026-09-03 11:45:03.495 | WARNING  | __main__:main:75 - ⚠️ 1/3 branches had no attributes to cluster: ['demographic']
+2026-09-03 11:45:03.498 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/clustering/output-2026-09-03_20-45-00.json
+2026-09-03 11:45:03.498 | INFO     | __main__:main:86 - 💾 clustering results: 10 profiles -> ./results/e2e_sample/2026-09-03_20-40-08/outputs/clustering/output-2026-09-03_20-45-00.json

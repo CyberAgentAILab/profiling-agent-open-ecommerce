@@ -1,0 +1,40 @@
+attribute_branches:
+- name: demographic
+  tag_db_dir: ./results/open_ecommerce/sample/outputs/tag/v4
+  tag_suffix: demographic
+- name: psycho_behavioral
+  tag_db_dir: ./results/open_ecommerce/sample/outputs/tag/v4
+  tag_suffix: psycho_behavioral
+- name: life_event
+  tag_db_dir: ./results/open_ecommerce/sample/outputs/tag/v4
+  tag_suffix: life_event
+out_dir: ./results/open_ecommerce/sample/outputs/judge_user_attribute
+log_dir: ./results/open_ecommerce/sample/logs/judge_user_attribute
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+min_unique_buyers: 3
+survey_csv: ./data/public/open-ecommerce/survey.csv
+prompt_path: ./configs/prompt/open-ecommerce/judge_user_attribute.txt
+db_prompt_path: ./configs/prompt/open-ecommerce/judge_user_attribute_db.txt
+enable_db: true
+enable_baseline: false
+enable_signals: false
+baseline_max_titles_per_user: 500
+log_first_n: 3
+debug_num_user: null
+model_name: ./models/Qwen3.5-4B
+torch_dtype: bfloat16
+max_new_tokens: 16384
+json_max_tokens: 2048
+max_model_len: 32768
+use_vllm: true
+batch_size: 1000
+tensor_parallel_size: 1
+trust_remote_code: true
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: true
+enable_prefix_caching: true
+enable_cache: true
+enable_thinking: false
+begin: null
+end: null

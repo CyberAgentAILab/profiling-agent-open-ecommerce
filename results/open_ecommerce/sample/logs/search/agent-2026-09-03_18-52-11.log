@@ -1,0 +1,32 @@
+2026-09-03 09:52:11.820 | INFO     | base_agent.config:load_config:146 - ⛏️ Transformers version: 5.12.1
+2026-09-03 09:52:11.820 | INFO     | base_agent.config:load_config:147 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 09:52:11.820 | INFO     | base_agent.config:load_config:148 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 09:52:11.821 | INFO     | base_agent.config:load_config:149 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 09:52:11.821 | INFO     | base_agent.config:load_config:150 - ⛏️ CUDA available: True
+2026-09-03 09:52:11.821 | INFO     | base_agent.config:load_config:151 - ⛏️ MPS available: False
+2026-09-03 09:52:11.821 | INFO     | base_agent.config:load_config:152 - ⛏️ Device: cuda
+2026-09-03 09:52:11.822 | INFO     | base_agent.config:load_config:153 - ⚙️ config: {'out_dir': './results/open_ecommerce/search', 'log_dir': './logs/open_ecommerce/search', 'csv_path': './data/public/open-ecommerce/titles_ge3_buyers.csv', 'use_validation_data': True, 'validation_path': './results/open_ecommerce/scan', 'filter_need_search': False, 'filter_is_diagnostic': True, 'num_search': 10, 'timeout': 60, 'num_debug': None, 'query_suffix': ' Amazon product', 'search_engine': 'serper', 'ddgs_region': 'us-en', 'backend': ['google', 'bing'], 'serp_url': 'https://www.searchapi.io/api/v1/search', 'serper_url': 'https://google.serper.dev/search', 'begin': None, 'end': None, 'search_cache_dir': './search_cache/open-ecommerce', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_18-52-11'}
+2026-09-03 09:52:11.822 | INFO     | __main__:main:16 - 🛒 reading scan output from ./results/open_ecommerce/scan
+2026-09-03 09:52:11.825 | INFO     | search.dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 100 scan records from results/open_ecommerce/scan/output-2026-09-03_18-50-14-0-100.json
+2026-09-03 09:52:11.825 | INFO     | search.dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 100 → 5 (filter_need_search=False, filter_is_diagnostic=True)
+2026-09-03 09:52:11.825 | INFO     | search.model:__init__:46 - 🟣 SERPER_API_TOKEN is not set. Falling back to the DDGS (DuckDuckGo) scraper
+2026-09-03 09:52:11.825 | INFO     | search.model:__init__:57 - 🔖 query_suffix enabled: ' Amazon product'
+2026-09-03 09:52:11.909 | INFO     | search.model:__init__:66 - ✅ Search cache initialized: ./search_cache/open-ecommerce
+2026-09-03 09:52:11.910 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.912 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.912 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_18-52-11, job_id: None
+2026-09-03 09:52:11.912 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 09:52:11.913 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.913 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_18-52-11, job_id: None
+2026-09-03 09:52:11.913 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 09:52:11.914 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.914 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_18-52-11, job_id: None
+2026-09-03 09:52:11.915 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 09:52:11.916 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.916 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_18-52-11, job_id: None
+2026-09-03 09:52:11.916 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 09:52:11.917 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.917 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_18-52-11, job_id: None
+2026-09-03 09:52:11.918 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 09:52:11.918 | INFO     | search.model:run_search:296 - 💾 search results: 5 records -> ./results/open_ecommerce/search/output-2026-09-03_18-52-11.json
+2026-09-03 09:52:11.918 | INFO     | search.model:run_search:297 - 🔍 0 search API calls in total

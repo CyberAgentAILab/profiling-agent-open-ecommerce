@@ -1,0 +1,34 @@
+2026-09-03 11:40:03.168 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:40:03.168 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:40:03.168 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:40:03.168 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:40:03.169 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:40:03.169 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:40:03.169 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:40:03.169 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'batch_size': 10, 'begin': None, 'debug_num_sample': 10, 'do_sample': True, 'enable_cache': True, 'enable_thinking': False, 'end': None, 'enforce_eager': True, 'gpu_memory_utilization': 0.9, 'is_reverse': False, 'json_schema_scan': ['need_search', 'is_diagnostic', 'diagnostic_for', 'reason'], 'log_dir': './results/e2e_offline_test/2026-09-03_20-40-03/logs/scan', 'max_model_len': 8192, 'max_new_tokens': 512, 'model_name': './models/Qwen3.5-4B', 'out_dir': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan', 'prompt_path': './configs/prompt/open-ecommerce/scan_diagnostic.txt', 'query_path': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/prepare_titles/titles_sample10.csv', 'seed': 3407, 'temperature': 0.0, 'tensor_parallel_size': 1, 'top_p': 0.9, 'torch_dtype': 'bfloat16', 'trust_remote_code': True, 'use_validation_data': False, 'use_vllm': True, 'validation_path': '', 'yes_tokens': ['yes'], 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-40-03'}
+2026-09-03 11:40:03.170 | INFO     | scan.__main__:main:17 - 📝 prompt_path: ./configs/prompt/open-ecommerce/scan_diagnostic.txt
+2026-09-03 11:40:03.172 | INFO     | scan.dataset:load_titles_for_ecommerce:40 - 🛒 ecommerce: loaded 10 titles from ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/prepare_titles/titles_sample10.csv
+2026-09-03 11:40:03.172 | INFO     | scan.model:__init__:57 - ⚡ initialized ScanSubAgent
+2026-09-03 11:40:03.173 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.174 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.174 | INFO     | scan.model:need_search:93 - llm_output
+{"need_search": true, "is_diagnostic": true, "diagnostic_for": ["life-change-became-pregnant", "gender"], "reason": "The pack-code suffix makes the exact kit ambiguous, and ovulation/pregnancy test strips are a strong signal of family planning."}
+2026-09-03 11:40:03.174 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.175 | INFO     | scan.model:need_search:93 - llm_output
+{"need_search": true, "is_diagnostic": true, "diagnostic_for": ["life-change-had-child", "has-child", "child-age-infant-0-2"], "reason": "The box contents are not described in the title and a baby registry box strongly signals an expecting or new-parent household."}
+2026-09-03 11:40:03.175 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.175 | INFO     | scan.model:need_search:93 - llm_output
+{"need_search": true, "is_diagnostic": true, "diagnostic_for": ["life-change-moved"], "reason": "The exact box specification needs confirmation, and bulk moving boxes are bought almost exclusively around a residential move."}
+2026-09-03 11:40:03.175 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.176 | INFO     | scan.model:need_search:93 - llm_output
+{"need_search": true, "is_diagnostic": true, "diagnostic_for": ["life-change-became-pregnant", "gender"], "reason": "The dress style needs confirmation, and maternity apparel is a strong pregnancy signal specific to female buyers."}
+2026-09-03 11:40:03.176 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.176 | INFO     | scan.model:need_search:93 - llm_output
+{"need_search": true, "is_diagnostic": true, "diagnostic_for": ["gender"], "reason": "The kit contents need confirmation, and a men's beard trimmer kit signals a male user in the household."}
+2026-09-03 11:40:03.176 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.176 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.177 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.177 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.177 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.179 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.179 | INFO     | scan.model:scan_need_search:146 - 💾 scan results: 10 records -> ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan/output-2026-09-03_20-40-03.json

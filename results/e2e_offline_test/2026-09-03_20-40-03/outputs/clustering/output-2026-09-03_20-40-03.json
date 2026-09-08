@@ -1,0 +1,2153 @@
+[
+  {
+    "resolved_query": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+    "raw_query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "gender"
+      ],
+      "reason": "The pack-code suffix makes the exact kit ambiguous, and ovulation/pregnancy test strips are a strong signal of family planning.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Easy@Home Ovulation & Pregnancy Test Strips Kit - Amazon.com\n   Combo kit with 50 LH ovulation test strips and 20 HCG pregnancy test strips, powered by the Premom ovulation predictor app.\n   URL: https://www.amazon.com/Easy-Home-Ovulation-Test-Strips/dp/B0787KXHKQ\n\n",
+          "title": "Easy@Home Ovulation & Pregnancy Test Strips Kit - Amazon.com",
+          "body": "Combo kit with 50 LH ovulation test strips and 20 HCG pregnancy test strips, powered by the Premom ovulation predictor app.",
+          "url": "https://www.amazon.com/Easy-Home-Ovulation-Test-Strips/dp/B0787KXHKQ"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a combo kit of LH ovulation and HCG pregnancy urine test strips used with a fertility-tracking app.",
+        "canonical_name": "combination pack of ovulation and pregnancy urine test strips",
+        "category_inferred": "family planning / medical test",
+        "use_case": [
+          "ovulation tracking",
+          "early pregnancy detection"
+        ],
+        "household_signals": [
+          "household actively trying to conceive"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+        "canonical_name": "combination pack of ovulation and pregnancy urine test strips"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Ovulation and pregnancy test kits concentrate among buyers of typical childbearing age.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Urine-based ovulation and pregnancy tests are used by female buyers.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "App-connected test strips are chosen for reliable health tracking.",
+            "attribute": [
+              "health-wellness"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A combined ovulation and pregnancy test kit is a strong, specific signal of actively trying to conceive or being newly pregnant.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "An ovulation and pregnancy test kit carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user or household recently started trying to conceive a child"
+            ],
+            "confidence": {
+              "user or household recently started trying to conceive a child": 0.7
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {
+        "user or household recently started trying to conceive a child": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.7
+        }
+      }
+    }
+  },
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child",
+        "child-age-infant-0-2"
+      ],
+      "reason": "The box contents are not described in the title and a baby registry box strongly signals an expecting or new-parent household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Amazon Baby Registry Welcome Box\n   A free welcome box for Amazon Baby Registry parents, filled with samples and products for baby and parents-to-be, such as diapers, wipes and bottles.\n   URL: https://www.amazon.com/baby-reg/welcomebox\n\n",
+          "title": "Amazon Baby Registry Welcome Box",
+          "body": "A free welcome box for Amazon Baby Registry parents, filled with samples and products for baby and parents-to-be, such as diapers, wipes and bottles.",
+          "url": "https://www.amazon.com/baby-reg/welcomebox"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results identify this as the free Amazon Baby Registry welcome box containing baby product samples for expecting parents.",
+        "canonical_name": "welcome gift box of assorted baby product samples for new parents",
+        "category_inferred": "baby / registry gift box",
+        "use_case": [
+          "preparing for a newborn"
+        ],
+        "household_signals": [
+          "expecting or new-parent household"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Baby Registry Welcome Box",
+        "canonical_name": "welcome gift box of assorted baby product samples for new parents"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Baby registry sign-ups concentrate among buyers of typical new-parent age.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A baby registry welcome box carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A baby registry welcome box carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A baby registry welcome box carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A baby registry welcome box carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A baby registry welcome box carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A baby registry welcome box carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Creating a baby registry reflects a household organizing itself around a coming child.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A baby registry welcome box carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A baby registry welcome box carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "A baby registry welcome box carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A baby registry welcome box is obtained almost exclusively by households expecting or having just had a baby.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A baby registry welcome box carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is expecting or recently welcomed a newborn"
+            ],
+            "confidence": {
+              "user is expecting or recently welcomed a newborn": 0.8
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {
+        "user is expecting or recently welcomed a newborn": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.8
+        }
+      }
+    }
+  },
+  {
+    "resolved_query": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+    "raw_query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-moved"
+      ],
+      "reason": "The exact box specification needs confirmation, and bulk moving boxes are bought almost exclusively around a residential move.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15) - Amazon.com\n   15 medium corrugated moving boxes for packing and shipping household goods during a move.\n   URL: https://www.amazon.com/Uboxes-Medium-Moving-Boxes-15/dp/B001AC8YW2\n\n",
+          "title": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15) - Amazon.com",
+          "body": "15 medium corrugated moving boxes for packing and shipping household goods during a move.",
+          "url": "https://www.amazon.com/Uboxes-Medium-Moving-Boxes-15/dp/B001AC8YW2"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a 15-pack of medium corrugated cardboard boxes marketed for residential moving.",
+        "canonical_name": "pack of 15 medium corrugated cardboard moving boxes",
+        "category_inferred": "moving / packing supplies",
+        "use_case": [
+          "packing household goods for a move"
+        ],
+        "household_signals": [
+          "household in the middle of a residential move"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+        "canonical_name": "pack of 15 medium corrugated cardboard moving boxes"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A 15-pack of moving boxes is bought almost exclusively around an imminent or ongoing residential move.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A bulk pack of moving boxes carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is in the middle of moving to a new home"
+            ],
+            "confidence": {
+              "user is in the middle of moving to a new home": 0.8
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {
+        "user is in the middle of moving to a new home": {
+          "cluster_id": 1,
+          "pseudo_confidence": 0.8
+        }
+      }
+    }
+  },
+  {
+    "resolved_query": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+    "raw_query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "gender"
+      ],
+      "reason": "The dress style needs confirmation, and maternity apparel is a strong pregnancy signal specific to female buyers.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. levaca Women's Maternity Empire Waist Midi Dress - Amazon.com\n   Casual maternity swing dress with empire waist, designed for comfort through all stages of pregnancy.\n   URL: https://www.amazon.com/levaca-Maternity-Sleeve-Empire-Pockets/dp/B07PGQ6XVvariant\n\n",
+          "title": "levaca Women's Maternity Empire Waist Midi Dress - Amazon.com",
+          "body": "Casual maternity swing dress with empire waist, designed for comfort through all stages of pregnancy.",
+          "url": "https://www.amazon.com/levaca-Maternity-Sleeve-Empire-Pockets/dp/B07PGQ6XVvariant"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a women's casual maternity midi dress with an empire waist designed for pregnancy.",
+        "canonical_name": "women's empire-waist maternity midi dress",
+        "category_inferred": "maternity apparel",
+        "use_case": [
+          "everyday wear during pregnancy"
+        ],
+        "household_signals": [
+          "pregnant household member"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+        "canonical_name": "women's empire-waist maternity midi dress"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Maternity apparel buyers concentrate in typical childbearing age bins.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A maternity dress is worn by female buyers.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A maternity dress carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A maternity dress carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A maternity dress carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A maternity dress carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A maternity dress carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is a woman of childbearing age"
+            ],
+            "confidence": {
+              "user is a woman of childbearing age": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "A maternity dress carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A maternity dress carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A maternity dress carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "A maternity dress carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A maternity dress carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Maternity clothing is a strong, specific signal of a current pregnancy.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A maternity dress carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A maternity dress carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A maternity dress carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A maternity dress carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A maternity dress carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A maternity dress carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is currently pregnant"
+            ],
+            "confidence": {
+              "user is currently pregnant": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {
+        "user is a woman of childbearing age": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.9
+        }
+      },
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {
+        "user is currently pregnant": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.9
+        }
+      }
+    }
+  },
+  {
+    "resolved_query": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+    "raw_query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The kit contents need confirmation, and a men's beard trimmer kit signals a male user in the household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Remington HKVAC2000A Vacuum Haircut Kit - Amazon.com\n   18-piece vacuum haircut kit for men: hair clippers and beard trimmer that capture trimmed hair while cutting.\n   URL: https://www.amazon.com/Remington-HKVAC2000A-Vacuum-Haircut-Clippers/dp/B00750E9BQ\n\n",
+          "title": "Remington HKVAC2000A Vacuum Haircut Kit - Amazon.com",
+          "body": "18-piece vacuum haircut kit for men: hair clippers and beard trimmer that capture trimmed hair while cutting.",
+          "url": "https://www.amazon.com/Remington-HKVAC2000A-Vacuum-Haircut-Clippers/dp/B00750E9BQ"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm an 18-piece vacuum haircut and beard trimming kit for men that collects clippings while cutting.",
+        "canonical_name": "vacuum-assisted home haircut and beard trimming kit for men",
+        "category_inferred": "men's grooming appliance",
+        "use_case": [
+          "home haircuts",
+          "beard trimming"
+        ],
+        "household_signals": [
+          "adult male in household"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+        "canonical_name": "vacuum-assisted home haircut and beard trimming kit for men"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "A men's grooming kit carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A vacuum haircut and beard trimming kit for men indicates a male user.",
+            "attribute": "male"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A men's grooming kit carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A men's grooming kit carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A men's grooming kit carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A men's grooming kit carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A men's grooming kit carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is an adult man who maintains a beard"
+            ],
+            "confidence": {
+              "user is an adult man who maintains a beard": 0.8
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "A men's grooming kit carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A men's grooming kit carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A men's grooming kit carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Home haircut kits are chosen to save on recurring barber costs.",
+            "attribute": [
+              "price-economy",
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user cuts their own hair at home instead of visiting a barber"
+            ],
+            "confidence": {
+              "user cuts their own hair at home instead of visiting a barber": 0.8
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A men's grooming kit carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A men's grooming kit carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A men's grooming kit carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A men's grooming kit carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A men's grooming kit carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A men's grooming kit carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A men's grooming kit carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A men's grooming kit carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {
+        "user is an adult man who maintains a beard": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.8
+        }
+      },
+      "user_attribute_psycho_behavioral": {
+        "user cuts their own hair at home instead of visiting a barber": {
+          "cluster_id": 2,
+          "pseudo_confidence": 0.8
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+    "raw_query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "age-bin"
+      ],
+      "reason": "The multi-pack contents need confirmation, and reading glasses for presbyopia skew strongly toward buyers aged 45 and above.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. JOSCHOO Reading Glasses Women Men Colorful Trendy Readers - Amazon.com\n   Multi-pack fashion reading glasses with strong spring hinges for presbyopia correction.\n   URL: https://www.amazon.com/JOSCHOO-Reading-Glasses-Colorful-Readers/dp/B07R6X9JVL\n\n",
+          "title": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers - Amazon.com",
+          "body": "Multi-pack fashion reading glasses with strong spring hinges for presbyopia correction.",
+          "url": "https://www.amazon.com/JOSCHOO-Reading-Glasses-Colorful-Readers/dp/B07R6X9JVL"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a multi-pack of fashion reading glasses with spring hinges for presbyopia.",
+        "canonical_name": "multi-pack of fashion reading glasses with spring hinges",
+        "category_inferred": "vision correction eyewear",
+        "use_case": [
+          "reading with age-related presbyopia"
+        ],
+        "household_signals": [
+          "middle-aged or older household member"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+        "canonical_name": "multi-pack of fashion reading glasses with spring hinges"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Reading glasses for presbyopia skew strongly toward buyers aged 45 and above.",
+            "attribute": [
+              "45-54",
+              "55-64"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Reading glasses carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Reading glasses carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Reading glasses carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Reading glasses carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Reading glasses carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Reading glasses carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user is middle-aged or older with age-related presbyopia"
+            ],
+            "confidence": {
+              "user is middle-aged or older with age-related presbyopia": 0.7
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Reading glasses carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Reading glasses carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Reading glasses carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Reading glasses carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Reading glasses carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Reading glasses carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Reading glasses carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Reading glasses carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Reading glasses carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Reading glasses carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Reading glasses carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Reading glasses carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {
+        "user is middle-aged or older with age-related presbyopia": {
+          "cluster_id": 1,
+          "pseudo_confidence": 0.7
+        }
+      },
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+    "raw_query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The product line and bag size need confirmation; dog food signals pet ownership but none of the closed-set diagnostic categories.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food - Amazon.com\n   Chicken & brown rice recipe dry kibble formulated for senior dogs of small breeds, 5 lb bag.\n   URL: https://www.amazon.com/NUTRO-NATURAL-CHOICE-Senior-Chicken/dp/B0002ZAGXO\n\n",
+          "title": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food - Amazon.com",
+          "body": "Chicken & brown rice recipe dry kibble formulated for senior dogs of small breeds, 5 lb bag.",
+          "url": "https://www.amazon.com/NUTRO-NATURAL-CHOICE-Senior-Chicken/dp/B0002ZAGXO"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a chicken and brown rice dry kibble formulated for senior small-breed dogs.",
+        "canonical_name": "dry dog food for senior small-breed dogs with chicken and brown rice",
+        "category_inferred": "pet food",
+        "use_case": [
+          "daily feeding of a senior small-breed dog"
+        ],
+        "household_signals": [
+          "household owns a senior small-breed dog"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+        "canonical_name": "dry dog food for senior small-breed dogs with chicken and brown rice"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Senior small-breed dog food carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Senior small-breed dog food carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Senior small-breed dog food carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Senior small-breed dog food carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Senior small-breed dog food carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Senior small-breed dog food carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Senior small-breed dog food carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Caring for a senior pet is consistent with a home- and family-centered lifestyle.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Senior small-breed dog food carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Dog food is a routine replenishment purchase.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Senior small-breed dog food carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user owns a senior small-breed dog"
+            ],
+            "confidence": {
+              "user owns a senior small-breed dog": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Senior small-breed dog food carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {
+        "user owns a senior small-breed dog": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.9
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+    "raw_query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "income-bin"
+      ],
+      "reason": "The machine model needs confirmation, and a premium capsule espresso machine skews toward middle-to-upper income households.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan - Amazon.com\n   Single-serve capsule coffee and espresso maker using Vertuo capsules with centrifugal extraction.\n   URL: https://www.amazon.com/Nespresso-Vertuo-Coffee-Espresso-Machine/dp/B07BZLBW2B\n\n",
+          "title": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan - Amazon.com",
+          "body": "Single-serve capsule coffee and espresso maker using Vertuo capsules with centrifugal extraction.",
+          "url": "https://www.amazon.com/Nespresso-Vertuo-Coffee-Espresso-Machine/dp/B07BZLBW2B"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm a premium single-serve capsule coffee and espresso machine using centrifugal extraction.",
+        "canonical_name": "single-serve capsule coffee and espresso machine",
+        "category_inferred": "kitchen appliance / coffee maker",
+        "use_case": [
+          "brewing capsule coffee and espresso at home"
+        ],
+        "household_signals": [
+          "household invests in premium home coffee"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+        "canonical_name": "single-serve capsule coffee and espresso machine"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "A capsule espresso machine carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A capsule espresso machine carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A premium capsule espresso machine plus recurring capsule costs skews toward middle-to-upper income households.",
+            "attribute": [
+              "75-99k",
+              "100-149k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "A capsule espresso machine carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A capsule espresso machine carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A capsule espresso machine carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A capsule espresso machine carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "A premium capsule espresso machine reflects a preference for upscale home comforts.",
+            "attribute": [
+              "luxury-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A capsule espresso machine carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A capsule espresso machine carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Capsule machines are chosen for premium coffee quality with one-touch convenience.",
+            "attribute": [
+              "quality-premium",
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user enjoys barista-style coffee at home"
+            ],
+            "confidence": {
+              "user enjoys barista-style coffee at home": 0.7
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A capsule espresso machine carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {
+        "user enjoys barista-style coffee at home": {
+          "cluster_id": 1,
+          "pseudo_confidence": 0.7
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+    "raw_query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The cooker specification needs confirmation; sous vide gear signals a cooking hobby but none of the closed-set diagnostic categories.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Instant Pot Accu Slim Sous Vide Precision Cooker - Amazon.com\n   Immersion circulator with digital touchscreen for precise low-temperature sous vide cooking at home.\n   URL: https://www.amazon.com/Instant-Pot-Accu-Slim-Circulator/dp/B0794RGterm\n\n",
+          "title": "Instant Pot Accu Slim Sous Vide Precision Cooker - Amazon.com",
+          "body": "Immersion circulator with digital touchscreen for precise low-temperature sous vide cooking at home.",
+          "url": "https://www.amazon.com/Instant-Pot-Accu-Slim-Circulator/dp/B0794RGterm"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results confirm an immersion-circulator precision cooker for sous vide cooking with a digital touchscreen.",
+        "canonical_name": "sous vide precision cooker immersion circulator",
+        "category_inferred": "kitchen appliance / sous vide",
+        "use_case": [
+          "low-temperature precision cooking at home"
+        ],
+        "household_signals": [
+          "household cooks elaborate meals at home"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 0.0,
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+        "canonical_name": "sous vide precision cooker immersion circulator"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "A sous vide precision cooker carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A sous vide precision cooker carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A sous vide precision cooker carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A sous vide precision cooker carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A sous vide precision cooker carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A sous vide precision cooker carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A sous vide precision cooker carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Sous vide equipment indicates an enthusiast home cook pursuing restaurant-style technique.",
+            "attribute": [
+              "gourmet-foodie"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A sous vide precision cooker carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A sous vide precision cooker carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Precision cookers are chosen for repeatable, high-quality cooking results.",
+            "attribute": [
+              "quality-premium",
+              "performance"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Free-form attributes beyond the Layer 1 categories.",
+            "attribute": [
+              "user practices precision low-temperature cooking as a hobby"
+            ],
+            "confidence": {
+              "user practices precision low-temperature cooking as a hobby": 0.75
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A sous vide precision cooker carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {
+        "user practices precision low-temperature cooking as a hobby": {
+          "cluster_id": 1,
+          "pseudo_confidence": 0.75
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+    "raw_query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title fully describes a generic USB-C charging cable, which carries no specific user-attribute signal.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 5.310759879648686e-05,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "A generic USB-C charging cable carries no specific evidence for age-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "A generic USB-C charging cable carries no specific evidence for gender.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A generic USB-C charging cable carries no specific evidence for income-bin.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "A generic USB-C charging cable carries no specific evidence for education.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "A generic USB-C charging cable carries no specific evidence for occupation-class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "A generic USB-C charging cable carries no specific evidence for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "A generic USB-C charging cable carries no specific evidence for location-type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "A generic USB-C charging cable carries no specific evidence for lifestyle.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "A generic USB-C charging cable carries no specific evidence for personality.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A generic USB-C charging cable carries no specific evidence for purchase-occasion.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "A generic USB-C charging cable carries no specific evidence for benefit-sought.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-school-enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-empty-nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-job-change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A generic USB-C charging cable carries no specific evidence for recent-bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 already captures everything inferable from this purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 1,
+      "output_tokens": 1,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_demographic": {},
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  }
+]

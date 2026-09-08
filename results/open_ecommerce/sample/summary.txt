@@ -1,0 +1,29 @@
+Recorded example run of the full-data pipeline on a 100-title slice
+(equivalent to: NUM_SAMPLES=100 NUM_USERS=10 bash scripts/open_ecommerce/local/run_db.sh).
+Assembled from two invocations on the same outputs; the logs of each stage are under logs/.
+
+$ NUM_SAMPLES=100 bash scripts/open_ecommerce/local/run_db.sh   (stages 1-4)
+started_at:  2026-09-03T18:49:52+0900
+gpu:         NVIDIA A100-SXM4-80GB
+llm:         ./models/Qwen3.5-4B
+
+prepare_titles ... completed
+scan ... completed            (100 titles; need_search=0, is_diagnostic=5)
+search ... completed          (5 records; nothing searched because no title needed a search)
+predict_transaction ... completed (0 records)
+
+$ STAGES="predict_user cluster_attribute tag_cluster judge_user_attribute" NUM_USERS=10 bash scripts/open_ecommerce/local/run_db.sh   (stages 5-8)
+started_at:  2026-09-04T13:59:33+0900
+gpu:         NVIDIA A100-SXM4-80GB
+llm:         ./models/Qwen3.5-4B
+
+predict_user ... completed    (130 records = 100 scan-only titles + 30 frequent product combinations
+                               resolved from results/open_ecommerce/frequent_pattern_mining/frequent_patterns.json;
+                               success_predict 114/130)
+cluster_attribute ... completed
+tag_cluster ... completed     (130 records, the 30 combinations included)
+judge_user_attribute ... completed (first 10 evaluable users)
+
+finished_at: 2026-09-04T14:07:00+0900
+
+OK

@@ -1,0 +1,48 @@
+2026-09-03 11:40:03.270 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:40:03.270 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:40:03.270 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:40:03.271 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:40:03.271 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:40:03.271 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:40:03.271 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:40:03.271 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'allowed_titles_csv': None, 'batch_size': 10, 'begin': None, 'debug_num_sample': 10, 'enable_cache': True, 'enable_prefix_caching': False, 'enable_thinking': False, 'end': None, 'enforce_eager': True, 'frequent_patterns_path': None, 'gpu_memory_utilization': 0.9, 'is_reverse': False, 'json_schema_child': ['category', 'reason', 'attribute'], 'json_schema_parent': 'consumer_attributes', 'log_dir': './results/e2e_offline_test/2026-09-03_20-40-03/logs/predict_user', 'max_model_len': 16384, 'max_new_tokens': 8192, 'model_name': './models/Qwen3.5-4B', 'out_dir': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/user', 'prompt_user_attribute_path': './configs/prompt/open-ecommerce/combined_kotler.txt', 'query_path': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/transaction', 'scan_output_path': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan', 'seed': 3407, 'tensor_parallel_size': 1, 'torch_dtype': 'bfloat16', 'trust_remote_code': True, 'use_validation_data': True, 'use_vllm': True, 'validation_path': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/transaction', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-40-03'}
+2026-09-03 11:40:03.272 | INFO     | predict_user.__main__:main:17 - 📝 prompt_path: ./configs/prompt/open-ecommerce/combined_kotler.txt
+2026-09-03 11:40:03.273 | INFO     | predict_user.dataset:load_recovered_transaction:205 - 📚 loaded 9 samples from ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/transaction/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.273 | INFO     | predict_user.dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:40:03.274 | INFO     | predict_user.dataset:_load_scan_only_records:143 - 🛒 scanned 10 records from ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.274 | INFO     | predict_user.dataset:load_recovered_transaction:217 - 🛒 appended 1 scan-only records (no search/transaction context) from ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/scan
+2026-09-03 11:40:03.274 | INFO     | predict_user.dataset:load_recovered_transaction:236 - 📊 Total: 9 samples, 0 failures
+2026-09-03 11:40:03.274 | INFO     | predict_user.dataset:load_recovered_transaction:239 - 📦 returning 10 transactions (predict_transaction=9, scan_only=1, pattern=0)
+2026-09-03 11:40:03.276 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/user/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.276 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.277 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.277 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.277 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.277 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.277 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.278 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.278 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.278 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.278 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.278 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.279 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.279 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.279 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.279 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.280 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.281 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.281 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.281 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.281 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.282 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.282 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.282 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.282 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.282 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.286 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/user/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.286 | INFO     | predict_user.model:predict_user_attributes:185 - 💾 user-attribute predictions: 10 records -> ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/user/output-2026-09-03_20-40-03.json

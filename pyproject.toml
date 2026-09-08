@@ -1,0 +1,134 @@
+[project]
+name = "profiling-agent-open-ecommerce"
+version = "0.1.0"
+description = "LLM-based user profiling pipeline on the Open E-Commerce (Amazon purchases) dataset"
+readme = "README.md"
+requires-python = ">=3.10"
+# Versions of the ML stack (torch / transformers / vllm and friends) are pinned to
+# the exact versions of the environment the paper's results were produced with.
+dependencies = [
+    "accelerate>=1.8.1",
+    "ddgs==9.4.3",
+    "diskcache>=5.6.3",
+    "japanize-matplotlib>=1.1.3",
+    "loguru>=0.7.3",
+    "matplotlib>=3.10.8",
+    "mlxtend>=0.23.4",
+    "numpy>=2.2.6",
+    "pandas>=1.5.0",
+    "pre-commit>=4.3.0",
+    "python-dotenv>=1.1.1",
+    "pyyaml>=6.0",
+    "requests>=2.32.0",
+    "sacrebleu[ja]>=2.5.1",
+    "scikit-learn>=1.7.1",
+    "scipy>=1.11",
+    "sentence-transformers>=5.1.0",
+    "setuptools>=79.0.1",
+    "nvidia-cuda-nvcc>=13.0",
+    "nvidia-cuda-cccl>=13.0",
+    "cuda-toolkit[all]>=13.0",
+    "torch==2.11.0",
+    "torchaudio==2.11.0",
+    "torchvision==0.26.0",
+    "tqdm>=4.67.1",
+    "transformers==5.12.1",
+    # zoneinfo.ZoneInfo("Asia/Tokyo") (base_agent.config.activate_logging) needs the IANA
+    # tz database. uv-managed CPython does not bundle it and pandas>=3 no longer pulls
+    # tzdata in on Linux, so hosts without /usr/share/zoneinfo (slim images) would fail
+    # with ZoneInfoNotFoundError.
+    "tzdata>=2025.1",
+    "types-pyyaml>=6.0.12.20250822",
+    "types-requests>=2.32.4.20250913",
+    "umap-learn>=0.5.11",
+    "vllm==0.23.0",
+]
+
+[tool.ruff]
+# Ruff only supports pyproject.toml, not setup.cfg.
+# Implicit configurations as default: https://docs.astral.sh/ruff/configuration/
+lint.select = [
+    "W",   # pycodestyle warnings
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "S",   # flake8-bandit
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "I",   # isort
+    "C90", # mccabe complexity
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+]
+# Allow automatic fixes for all fixable issues
+lint.fixable = ["ALL"]
+line-length = 120
+
+[tool.mypy]
+# ref: https://mypy.readthedocs.io/en/stable/config_file.html
+exclude = ["setup.py"]
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+ignore_missing_imports = true
+# message format
+show_column_numbers = true
+show_error_code_links = true
+pretty = true
+
+no_implicit_reexport = true
+explicit_package_bases = true
+namespace_packages = true
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src"
+
+[[tool.mypy.overrides]]
+module = ["yaml.*", "requests.*"]
+ignore_missing_imports = true
+
+[tool.uv]
+# Always use a uv-managed CPython (see .python-version). Some distribution
+# Pythons (e.g. conda) ship SQLite built with DQS=0, which breaks the diskcache
+# search cache ("no such column: \"size\"").
+python-preference = "only-managed"
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }
+torchvision = { index = "pytorch-cu130" }
+torchaudio = { index = "pytorch-cu130" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# NOTE: task module packages (scan, search, predict_*, ...) are appended here
+# by their respective follow-up PRs as they land.
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/base_agent",
+    "src/common",
+    "src/prepare_titles",
+    "src/frequent_pattern_mining",
+    "src/scan",
+    "src/search",
+    "src/predict_transaction",
+    "src/predict_user",
+    "src/cluster_attribute",
+    "src/tag_cluster",
+    "src/judge_user_attribute",
+    "src/judge_demographic_attribute",
+    "src/investigate_confidence_feasibility",
+    ]
+
+[tool.hatch.build]
+packages = ["src"]

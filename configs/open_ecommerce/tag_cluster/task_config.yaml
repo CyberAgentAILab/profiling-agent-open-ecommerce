@@ -1,0 +1,59 @@
+# cluster_attribute now writes a single merged file (all categories combined),
+# so tag_cluster runs once over that file — no per-category branches.
+# query_dir points to the cluster_attribute output directory; __main__.py
+# resolves it to the latest output-*.json file automatically.
+out_dir: ./results/open_ecommerce/tag/v4
+log_dir: ./logs/open_ecommerce/tag/v4
+query_dir: ./results/open_ecommerce/clustering/v4
+
+# cluster_attribute clusters each category independently, so cluster_id is only
+# unique within a pattern (e.g. demographic#0 ≠ psycho_behavioral#0). Tag each
+# pattern separately to avoid id collisions across categories.
+#   shared      : all patterns share one cluster_id space
+#   per_pattern : each pattern has its own cluster_id space (open_ecommerce)
+cluster_id_namespace: per_pattern
+
+# Cluster-context sampling: how representative attributes are picked for each
+# cluster's tagging prompt.
+#   kmedoids : k-medoids representatives. cache_embed_dir points to a directory;
+#              every *.csv under it (recursively) is loaded and concatenated, so
+#              all attribute categories' reduced embeddings are available in one
+#              index. cluster_attribute writes one CSV per category+model under
+#              ./cache/embedding/<category>/<model_slug>/. Falls back to head if
+#              no CSV loads.
+#   head     : first 100 attributes (no embeddings needed)
+# cache_embed_model selects which embedding model's cache to read (matched by the
+# <model_slug> directory name); leave empty to read every model's CSVs.
+sampling_method: kmedoids
+cache_embed_dir: ./cache/embedding
+cache_embed_model: ./models/Qwen3-Embedding-0.6B
+# cache_embed_model: ./models/plamo-embedding-1b
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 8192
+max_model_len: 16384
+enable_cache: True
+enable_thinking: False
+
+path_prompt_template: ./configs/prompt/open-ecommerce/tag_cluster.txt
+
+json_schema_tag:
+  - reasoning
+  - tag
+
+use_vllm: True
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+
+batch_size: 100
+debug_num_sample: 100000
+
+begin:
+end:

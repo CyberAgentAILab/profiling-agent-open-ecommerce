@@ -1,0 +1,29 @@
+{
+  "command": "uv run python -m unittest tests.e2e.test_pipeline_e2e -v",
+  "started_at": "2026-09-03T20:40:03+09:00",
+  "finished_at": "2026-09-03T20:40:03+09:00",
+  "python": "3.12.14",
+  "platform": "Linux-6.8.0-137-generic-x86_64-with-glibc2.39",
+  "tests": {
+    "test_clustering_assigns_every_free_attribute_to_a_cluster": "ok",
+    "test_clusters_follow_attribute_themes": "ok",
+    "test_expected_user_attributes_per_product": "ok",
+    "test_gated_out_product_is_recovered_via_scan_only_merge": "ok",
+    "test_no_signal_product_has_no_tags": "ok",
+    "test_no_signal_product_yields_all_unknown": "ok",
+    "test_prepare_titles_extracts_all_sample_titles": "ok",
+    "test_scan_covers_all_titles_with_expected_flags": "ok",
+    "test_search_serves_gated_titles_from_cache": "ok",
+    "test_tags_cover_every_cluster_and_match_the_canned_responses": "ok",
+    "test_transaction_recovers_canonical_names": "ok",
+    "test_user_output_covers_all_10_products_with_valid_groups": "ok"
+  },
+  "counts": {
+    "ok": 12,
+    "FAIL": 0,
+    "ERROR": 0,
+    "skipped": 0
+  },
+  "passed": true,
+  "pipeline_error": null
+}

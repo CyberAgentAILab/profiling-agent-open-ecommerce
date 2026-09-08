@@ -1,0 +1,17 @@
+$ bash scripts/open_ecommerce/local/e2e_sample/run.sh
+started_at:  2026-09-03T20:40:08+0900
+run_dir:     ./results/e2e_sample/2026-09-03_20-40-08
+gpu:         NVIDIA A100-SXM4-80GB
+llm:         ./models/Qwen3.5-4B
+
+prepare_titles ... completed (16s)
+scan ... completed (60s)
+search ... completed (17s)
+predict_transaction ... completed (66s)
+predict_user ... completed (110s)
+cluster_attribute ... completed (28s)
+tag_cluster ... completed (61s)
+
+finished_at: 2026-09-03T20:46:06+0900
+
+OK

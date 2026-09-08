@@ -1,0 +1,61 @@
+2026-09-04 05:06:42.540 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-04 05:06:42.540 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-04 05:06:42.541 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-04 05:06:42.541 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-04 05:06:42.541 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-04 05:06:42.541 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-04 05:06:42.541 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-04 05:06:42.542 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'attribute_branches': [{'name': 'demographic', 'tag_db_dir': './results/open_ecommerce/tag/v4', 'tag_suffix': 'demographic'}, {'name': 'psycho_behavioral', 'tag_db_dir': './results/open_ecommerce/tag/v4', 'tag_suffix': 'psycho_behavioral'}, {'name': 'life_event', 'tag_db_dir': './results/open_ecommerce/tag/v4', 'tag_suffix': 'life_event'}], 'out_dir': './results/open_ecommerce/judge_user_attribute', 'log_dir': './logs/open_ecommerce/judge_user_attribute', 'purchases_csv': './data/public/open-ecommerce/amazon-purchases.csv', 'min_unique_buyers': 3, 'survey_csv': './data/public/open-ecommerce/survey.csv', 'prompt_path': './configs/prompt/open-ecommerce/judge_user_attribute.txt', 'db_prompt_path': './configs/prompt/open-ecommerce/judge_user_attribute_db.txt', 'enable_db': True, 'enable_baseline': False, 'enable_signals': False, 'baseline_max_titles_per_user': 500, 'log_first_n': 3, 'debug_num_user': 10, 'model_name': './models/Qwen3.5-4B', 'torch_dtype': 'bfloat16', 'max_new_tokens': 16384, 'json_max_tokens': 2048, 'max_model_len': 32768, 'use_vllm': True, 'batch_size': 1000, 'tensor_parallel_size': 1, 'trust_remote_code': True, 'seed': 3407, 'gpu_memory_utilization': 0.9, 'enforce_eager': True, 'enable_prefix_caching': True, 'enable_cache': True, 'enable_thinking': False, 'begin': None, 'end': None, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-04_14-06-42'}
+2026-09-04 05:06:42.542 | INFO     | __main__:main:174 - 🧭 modes: enable_db=True enable_baseline=False
+2026-09-04 05:06:45.751 | INFO     | judge_user_attribute.dataset:load_purchases:172 - 🛒 loaded purchases: 1760977 rows, 5023 users
+2026-09-04 05:06:48.933 | INFO     | judge_user_attribute.dataset:filter_purchases_by_min_buyers:181 - 🔍 filter min_unique_buyers=3: 824,722 titles → 97,260 titles kept, 1,760,977 rows → 828,218 rows
+2026-09-04 05:06:48.992 | INFO     | judge_user_attribute.dataset:load_survey:309 - 📋 loaded survey: 5027 respondents
+2026-09-04 05:06:48.994 | INFO     | base_agent.model:load_model_and_tokenizer:174 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3.5-4B
+2026-09-04 05:07:30.475 | INFO     | base_agent.model:load_model_and_tokenizer:200 - ✅ load ./models/Qwen3.5-4B
+2026-09-04 05:07:30.475 | INFO     | base_agent.model:load_model_and_tokenizer:201 - ✅ activate vllm ? True
+2026-09-04 05:07:30.484 | INFO     | judge_user_attribute.dataset:load_tag_db:46 - 📚 loaded tag DB: 130 records, 1 titles with tags, 1 unique tags
+2026-09-04 05:07:30.553 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[1/3] titles=57 titles_with_tags=0 distinct_tags_seen=0/1
+2026-09-04 05:07:30.553 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:30.553 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'expecting or new parents': 0}
+2026-09-04 05:07:30.554 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[2/3] titles=444 titles_with_tags=0 distinct_tags_seen=0/1
+2026-09-04 05:07:30.554 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:30.555 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'expecting or new parents': 0}
+2026-09-04 05:07:30.555 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[3/3] titles=22 titles_with_tags=0 distinct_tags_seen=0/1
+2026-09-04 05:07:30.555 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:30.555 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'expecting or new parents': 0}
+2026-09-04 05:07:31.228 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:263 - 🧮 aggregated tags for 4990 users over 1 DB tags (zero-count tags included)
+2026-09-04 05:07:31.228 | INFO     | __main__:_run_db:103 - 🌿 loaded branch=demographic (tag universe size=1)
+2026-09-04 05:07:31.236 | INFO     | judge_user_attribute.dataset:load_tag_db:46 - 📚 loaded tag DB: 130 records, 0 titles with tags, 0 unique tags
+2026-09-04 05:07:31.303 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[1/3] titles=57 titles_with_tags=0 distinct_tags_seen=0/0
+2026-09-04 05:07:31.304 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:31.304 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 0 DB tags, incl. zeros): {}
+2026-09-04 05:07:31.304 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[2/3] titles=444 titles_with_tags=0 distinct_tags_seen=0/0
+2026-09-04 05:07:31.304 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:31.305 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 0 DB tags, incl. zeros): {}
+2026-09-04 05:07:31.305 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[3/3] titles=22 titles_with_tags=0 distinct_tags_seen=0/0
+2026-09-04 05:07:31.305 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:31.305 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 0 DB tags, incl. zeros): {}
+2026-09-04 05:07:31.944 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:263 - 🧮 aggregated tags for 4990 users over 0 DB tags (zero-count tags included)
+2026-09-04 05:07:31.944 | INFO     | __main__:_run_db:103 - 🌿 loaded branch=psycho_behavioral (tag universe size=0)
+2026-09-04 05:07:31.951 | INFO     | judge_user_attribute.dataset:load_tag_db:46 - 📚 loaded tag DB: 130 records, 1 titles with tags, 1 unique tags
+2026-09-04 05:07:32.018 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[1/3] titles=57 titles_with_tags=0 distinct_tags_seen=0/1
+2026-09-04 05:07:32.018 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:32.019 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'recent pet owners': 0}
+2026-09-04 05:07:32.020 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[2/3] titles=444 titles_with_tags=1 distinct_tags_seen=1/1
+2026-09-04 05:07:32.020 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): [['recent pet owners']]
+2026-09-04 05:07:32.020 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'recent pet owners': 1}
+2026-09-04 05:07:32.020 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:254 - 🔖 user[3/3] titles=22 titles_with_tags=0 distinct_tags_seen=0/1
+2026-09-04 05:07:32.020 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): []
+2026-09-04 05:07:32.021 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 1 DB tags, incl. zeros): {'recent pet owners': 0}
+2026-09-04 05:07:32.665 | INFO     | judge_user_attribute.dataset:aggregate_tags_per_user:263 - 🧮 aggregated tags for 4990 users over 1 DB tags (zero-count tags included)
+2026-09-04 05:07:32.666 | INFO     | __main__:_run_db:103 - 🌿 loaded branch=life_event (tag universe size=1)
+2026-09-04 05:07:32.973 | INFO     | judge_user_attribute.model:filter_users_with_any_yes_ground_truth:330 - 🧹 [db] all-no GT filter: valid_user=3781 invalid_user=1209 (of which 0 absent from the survey) / total_input=4990
+2026-09-04 05:07:32.973 | INFO     | __main__:_run_db:111 - 🐛 [db] debug_num_user=10: limiting to 10 users
+2026-09-04 05:07:32.973 | INFO     | __main__:_run_db:128 - 🔌 enable_signals=False (mode=tags_only)
+2026-09-04 05:07:32.974 | INFO     | __main__:_run_db:133 - 🧱 [db] built 10 multi-branch prompt contexts (3 branches)
+2026-09-04 05:07:32.974 | INFO     | __main__:_run_mode:46 - 🚀 [db] running judgement on 10 users (batch_size=1000)
+2026-09-04 05:07:46.542 | INFO     | judge_user_attribute.model:attach_ground_truth:631 - 📎 attached ground_truth + correctness for 10/10 users (rest are 'unknown')
+2026-09-04 05:07:46.615 | INFO     | judge_user_attribute.model:_log_auc_summary:711 - 📊 AUC per category (10 users): cigarettes=n/a | marijuana=n/a | alcohol=0.5000 | diabetes=0.3750 | wheelchair=n/a | had_child=n/a | became_pregnant=1.0000 | moved=0.2500 | lost_job=0.4286 | divorce=0.4286
+2026-09-04 05:07:46.615 | INFO     | judge_user_attribute.model:_log_auc_summary:712 - 📊 macro_auc: 0.4970
+2026-09-04 05:07:46.618 | INFO     | judge_user_attribute.model:save_results:801 - 💾 [db] saved 10 predictions + metrics to ./results/open_ecommerce/judge_user_attribute/output-2026-09-04_14-06-42-db.json
+2026-09-04 05:07:46.618 | INFO     | __main__:_run_mode:64 - 💾 [db] results saved -> ./results/open_ecommerce/judge_user_attribute/output-2026-09-04_14-06-42-db.json

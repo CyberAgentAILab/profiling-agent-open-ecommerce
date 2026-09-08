@@ -1,0 +1,58 @@
+out_dir: ./results/open_ecommerce/user/v4
+log_dir: ./logs/open_ecommerce/user/v4
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 8192
+max_model_len: 16384
+enable_cache: True
+enable_thinking: False
+
+use_validation_data: True
+validation_path: ./results/open_ecommerce/transaction
+
+# Also load scan output and append items
+# that were dropped by search (need_search=False or is_diagnostic=False) so
+# every product gets a user-attribute prediction. Set to "" to disable.
+scan_output_path: ./results/open_ecommerce/scan
+
+# Frequent product-combination patterns (output of the frequent_pattern_mining
+# stage). canonical_name is resolved by looking up each product_name against the
+# singleton transactions loaded above. Patterns with any unresolved product_name
+# are skipped. Set to "" to disable.
+frequent_patterns_path: ./results/open_ecommerce/frequent_pattern_mining/frequent_patterns.json
+
+# Optional: filter transaction/scan records to titles in this prepare_titles CSV.
+# Records whose resolved_query is not in the `Title` column are dropped before
+# frequent-pattern resolution, so patterns referencing filtered-out products are
+# automatically skipped (existing name_to_canonical logic). Set to "" to disable.
+# allowed_titles_csv: ./data/public/open-ecommerce/titles_ge3_buyers.csv
+allowed_titles_csv: 
+
+query_path: ./results/open_ecommerce/transaction
+is_reverse: False
+
+# Single English prompt covering demographic + psycho_behavioral + life_event.
+prompt_user_attribute_path: ./configs/prompt/open-ecommerce/combined_kotler.txt
+debug_num_sample: 1000000
+
+json_schema_parent: consumer_attributes
+json_schema_child:
+  - category
+  - reason
+  - attribute
+
+use_vllm: True
+batch_size: 1000
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+enable_prefix_caching: False
+
+begin:
+end:

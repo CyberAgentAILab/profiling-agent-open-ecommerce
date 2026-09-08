@@ -1,0 +1,33 @@
+batch_size: 10
+begin: null
+debug_num_sample: 10
+do_sample: true
+enable_cache: true
+enable_thinking: false
+end: null
+enforce_eager: true
+gpu_memory_utilization: 0.9
+is_reverse: false
+json_schema_scan:
+- need_search
+- is_diagnostic
+- diagnostic_for
+- reason
+log_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/logs/scan
+max_model_len: 8192
+max_new_tokens: 512
+model_name: ./models/Qwen3.5-4B
+out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/scan
+prompt_path: ./configs/prompt/open-ecommerce/scan_diagnostic.txt
+query_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/prepare_titles/titles_sample10.csv
+seed: 3407
+temperature: 0.0
+tensor_parallel_size: 1
+top_p: 0.9
+torch_dtype: bfloat16
+trust_remote_code: true
+use_validation_data: false
+use_vllm: true
+validation_path: ''
+yes_tokens:
+- 'yes'

@@ -1,0 +1,185 @@
+[
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child"
+      ],
+      "reason": "The title is a generic marketing phrase without specific product details, requiring a search to identify the exact item, but the context of a registry strongly signals the household has a new child.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.4717,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. How to get your free Amazon baby registry welcome box ...\n   AmazonOpens a new window is one of the retailers that offer a welcome box as a baby registry perk, and Amazon says the box is worth $35, thanks to all of the freebies like diapers and wipes in it. It's a pretty sweet deal to get baby products for free.\n   URL: https://www.babycenter.com/baby-products/baby-registry/how-to-get-your-free-amazon-baby-registry-welcome-box_40009690\n\n",
+          "title": "How to get your free Amazon baby registry welcome box ...",
+          "body": "AmazonOpens a new window is one of the retailers that offer a welcome box as a baby registry perk, and Amazon says the box is worth $35, thanks to all of the freebies like diapers and wipes in it. It's a pretty sweet deal to get baby products for free.",
+          "url": "https://www.babycenter.com/baby-products/baby-registry/how-to-get-your-free-amazon-baby-registry-welcome-box_40009690"
+        },
+        {
+          "retrieval_context": "### Search result 2. Amazon Baby Registry Welcome Box – WebBabyShower\n   Let’s compare Amazon ’s welcome box to the Target baby registry welcome box . Both are similar in the types of items you receive, but Target’s welcome box comes with $100 worth of products . There is also no membership required to receive Target’s box , unlike Amazon ...\n   URL: https://webbabyshower.com/guides/amazon-baby-registry-welcome-box/\n\n",
+          "title": "Amazon Baby Registry Welcome Box – WebBabyShower",
+          "body": "Let’s compare Amazon ’s welcome box to the Target baby registry welcome box . Both are similar in the types of items you receive, but Target’s welcome box comes with $100 worth of products . There is also no membership required to receive Target’s box , unlike Amazon ...",
+          "url": "https://webbabyshower.com/guides/amazon-baby-registry-welcome-box/"
+        },
+        {
+          "retrieval_context": "### Search result 3. Amazon.com: Amazon Baby Registry Welcome Box\n   Welcome Baby Care Package All w/Newborn Essentials Bundle for Expecting Moms Baby Shower, After Labor Unisex.\n   URL: https://www.amazon.com/clp/B00N1NBOV2\n\n",
+          "title": "Amazon.com: Amazon Baby Registry Welcome Box",
+          "body": "Welcome Baby Care Package All w/Newborn Essentials Bundle for Expecting Moms Baby Shower, After Labor Unisex.",
+          "url": "https://www.amazon.com/clp/B00N1NBOV2"
+        },
+        {
+          "retrieval_context": "### Search result 4. Baby Registry Welcome Box - Amazon Customer Service\n   The Welcome Box is available to customers with active Amazon Prime accounts, who create a Baby Registry , add 10 unique items from their Baby Registry Checklist and have over $10 of purchases from their registry (by themselves or others).\n   URL: https://www.amazon.com/gp/help/customer/display.html?nodeId=T1TqJNUkJOJNkgs12j\n\n",
+          "title": "Baby Registry Welcome Box - Amazon Customer Service",
+          "body": "The Welcome Box is available to customers with active Amazon Prime accounts, who create a Baby Registry , add 10 unique items from their Baby Registry Checklist and have over $10 of purchases from their registry (by themselves or others).",
+          "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=T1TqJNUkJOJNkgs12j"
+        },
+        {
+          "retrieval_context": "### Search result 5. What’s Inside the Amazon Baby Registry Welcome Box?\n   Jan 16, 2025 · The Amazon Baby Registry Welcome Box is super easy to claim and comes with a carefully curated selection of goodies from beloved baby brands like Dr. Brown’s, CeraVe Baby and MAM. It also includes several coupons and a parenting guide that first-time moms and dads are sure to find helpful.\n   URL: https://www.whattoexpect.com/baby-products/registry/amazon-baby-registry-welcome-box-review\n\n",
+          "title": "What’s Inside the Amazon Baby Registry Welcome Box?",
+          "body": "Jan 16, 2025 · The Amazon Baby Registry Welcome Box is super easy to claim and comes with a carefully curated selection of goodies from beloved baby brands like Dr. Brown’s, CeraVe Baby and MAM. It also includes several coupons and a parenting guide that first-time moms and dads are sure to find helpful.",
+          "url": "https://www.whattoexpect.com/baby-products/registry/amazon-baby-registry-welcome-box-review"
+        },
+        {
+          "retrieval_context": "### Search result 6. Amazon Baby Registry Welcome Box 2026: How to Get It Free\n   Learn how to get the Amazon Baby Registry Welcome Box , qualify for free baby samples, and make the most of your baby registry benefits.\n   URL: https://www.fatkiddeals.com/blog/amazon-baby-registry-welcome-box-2026\n\n",
+          "title": "Amazon Baby Registry Welcome Box 2026: How to Get It Free",
+          "body": "Learn how to get the Amazon Baby Registry Welcome Box , qualify for free baby samples, and make the most of your baby registry benefits.",
+          "url": "https://www.fatkiddeals.com/blog/amazon-baby-registry-welcome-box-2026"
+        },
+        {
+          "retrieval_context": "### Search result 7. Amazon Baby Registry Welcome Box + 15% Discount\n   Apr 9, 2026 · Get the Amazon Baby Registry Welcome Box and use the 15% completion discount. Step-by-step guide, perks, and money-saving tips.\n   URL: https://fabulesslyfrugal.com/deals/amazon-baby-registry-welcome-box/\n\n",
+          "title": "Amazon Baby Registry Welcome Box + 15% Discount",
+          "body": "Apr 9, 2026 · Get the Amazon Baby Registry Welcome Box and use the 15% completion discount. Step-by-step guide, perks, and money-saving tips.",
+          "url": "https://fabulesslyfrugal.com/deals/amazon-baby-registry-welcome-box/"
+        },
+        {
+          "retrieval_context": "### Search result 8. Baby Registry Welcome Box : Amazon .ca: Baby\n   I received the Amazon Baby Registry Welcome Box and really enjoyed opening it. It included a nice variety of baby samples and useful products , which gave me the opportunity to try different brands before purchasing full-size items.\n   URL: https://www.amazon.ca/Amazon-Family-Baby-Registry-Welcome/dp/B00N1NBOV2\n\n",
+          "title": "Baby Registry Welcome Box : Amazon .ca: Baby",
+          "body": "I received the Amazon Baby Registry Welcome Box and really enjoyed opening it. It included a nice variety of baby samples and useful products , which gave me the opportunity to try different brands before purchasing full-size items.",
+          "url": "https://www.amazon.ca/Amazon-Family-Baby-Registry-Welcome/dp/B00N1NBOV2"
+        },
+        {
+          "retrieval_context": "### Search result 9. 2026 Amazon Baby Registry Box | TikTok\n   Amazon Baby Registry Welcome Box contents, unboxing Amazon baby products , benefits of Amazon baby registry , family friendly pregnancy tips, 4th pregnancy essentials, new baby products to try, March 2026 baby registry .\n   URL: https://www.tiktok.com/discover/2026-amazon-baby-registry-box\n\n",
+          "title": "2026 Amazon Baby Registry Box | TikTok",
+          "body": "Amazon Baby Registry Welcome Box contents, unboxing Amazon baby products , benefits of Amazon baby registry , family friendly pregnancy tips, 4th pregnancy essentials, new baby products to try, March 2026 baby registry .",
+          "url": "https://www.tiktok.com/discover/2026-amazon-baby-registry-box"
+        },
+        {
+          "retrieval_context": "### Search result 10. Daily Freebie: Amazon Welcome Box for Expecting Parents\n   What’s the Amazon Baby Registry Welcome Box ? The Amazon Baby Registry Welcome Box is a free gift available to Prime members who create a baby registry on Amazon . Inside, you’ll find a curated mix of sample- and full-sized items.\n   URL: https://www.retailmenot.com/blog/daily-freebie-amazon-welcome-box.html\n\n",
+          "title": "Daily Freebie: Amazon Welcome Box for Expecting Parents",
+          "body": "What’s the Amazon Baby Registry Welcome Box ? The Amazon Baby Registry Welcome Box is a free gift available to Prime members who create a baby registry on Amazon . Inside, you’ll find a curated mix of sample- and full-sized items.",
+          "url": "https://www.retailmenot.com/blog/daily-freebie-amazon-welcome-box.html"
+        }
+      ],
+      "search_duration": 0.0
+    }
+  },
+  {
+    "resolved_query": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+    "raw_query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title contains marketing fluff and lacks specific brand or model details, making it ambiguous without external context. Reading glasses are generic accessories with no strong signal regarding specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.4717,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Amazon .com: JOSCHOO Reading Glasses with Strong Spring ...\n   JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas .JOLISU 5 Pack Reading Glasses for Women , Spring Hinges Lightweight Readers Glasses ,Blue Light Reading Glasses Anti Eyestrain.\n   URL: https://www.amazon.com/Reading-Glasses-Colorful-Trendy-Readers/dp/B07JHJ9PQ3\n\n",
+          "title": "Amazon .com: JOSCHOO Reading Glasses with Strong Spring ...",
+          "body": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas .JOLISU 5 Pack Reading Glasses for Women , Spring Hinges Lightweight Readers Glasses ,Blue Light Reading Glasses Anti Eyestrain.",
+          "url": "https://www.amazon.com/Reading-Glasses-Colorful-Trendy-Readers/dp/B07JHJ9PQ3"
+        },
+        {
+          "retrieval_context": "### Search result 2. Reading Glasses for Sale - eBay\n   Capture great deals on stylish Reading Glasses from Foster Grant, Ray-Ban & more. Shop our wide variety of products at the lowest online prices.\n   URL: https://www.ebay.com/b/Reading-Glasses/67670/bn_2311122\n\n",
+          "title": "Reading Glasses for Sale - eBay",
+          "body": "Capture great deals on stylish Reading Glasses from Foster Grant, Ray-Ban & more. Shop our wide variety of products at the lowest online prices.",
+          "url": "https://www.ebay.com/b/Reading-Glasses/67670/bn_2311122"
+        },
+        {
+          "retrieval_context": "### Search result 3. JOSCHOO Product Guide: 15 Best Things to Buy from JOSCHOO ...\n   JOSCHOO 5 Pack Reading Glasses Men Women Spring Hinges Comfortable Glasses for Reading (5 Mix, 1.25). JOSCHOO 6-Pack Women and men Colored Frame Reading Glasses try them risk-free today. We are confident that our product will meet or exceed your expectations.\n   URL: https://www.cherrypicksreviews.com/brand/joschoo\n\n",
+          "title": "JOSCHOO Product Guide: 15 Best Things to Buy from JOSCHOO ...",
+          "body": "JOSCHOO 5 Pack Reading Glasses Men Women Spring Hinges Comfortable Glasses for Reading (5 Mix, 1.25). JOSCHOO 6-Pack Women and men Colored Frame Reading Glasses try them risk-free today. We are confident that our product will meet or exceed your expectations.",
+          "url": "https://www.cherrypicksreviews.com/brand/joschoo"
+        },
+        {
+          "retrieval_context": "### Search result 4. woman with strong glasses - Buy woman with strong glasses with ...\n   Zilead Reading Glasses Women Men Metal Round Presbyopic Reading Eyeglasses Unisex Read Optical Spectacle Diopters 0 to+4.0 Gafas .The product is of good quality. Affordable Price, arrived on time. Not expected that color lens, otherwise all conforming.\n   URL: https://www.aliexpress.com/w/wholesale-woman-with-strong-glasses.html\n\n",
+          "title": "woman with strong glasses - Buy woman with strong glasses with ...",
+          "body": "Zilead Reading Glasses Women Men Metal Round Presbyopic Reading Eyeglasses Unisex Read Optical Spectacle Diopters 0 to+4.0 Gafas .The product is of good quality. Affordable Price, arrived on time. Not expected that color lens, otherwise all conforming.",
+          "url": "https://www.aliexpress.com/w/wholesale-woman-with-strong-glasses.html"
+        },
+        {
+          "retrieval_context": "### Search result 5. Shop all Reading Glasses in Reading Glasses - Walmart.com\n   Buy products such as Mens Spring Hinge Plastic Reading Glasses Blk 1.25 Oliver in Classic Black at Walmart and save.\n   URL: https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402_1070325\n\n",
+          "title": "Shop all Reading Glasses in Reading Glasses - Walmart.com",
+          "body": "Buy products such as Mens Spring Hinge Plastic Reading Glasses Blk 1.25 Oliver in Classic Black at Walmart and save.",
+          "url": "https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402_1070325"
+        },
+        {
+          "retrieval_context": "### Search result 6. Lenskart.com® - Buy Eyeglasses , Sunglasses & Contact Lens\n   Trending at Lenskart. eyeglasses . sunglasses . contact lens. gold max membership. lenskart@home. zero power computer glasses .\n   URL: https://www.lenskart.com/\n\n",
+          "title": "Lenskart.com® - Buy Eyeglasses , Sunglasses & Contact Lens",
+          "body": "Trending at Lenskart. eyeglasses . sunglasses . contact lens. gold max membership. lenskart@home. zero power computer glasses .",
+          "url": "https://www.lenskart.com/"
+        },
+        {
+          "retrieval_context": "### Search result 7. Stylish Protection with UV-Blocking mens reader sunglasses for...\n   Unisex Sunglasses 2025 Sun Reading Glasses Fashion Retro Sunglasses Men Womens Round Shape Frame With Reading UV400 Grey Lenses.High Quality Spring Hinges Blue Light Blocking Lightweight Sunglasses Readers Trendy Reading Glasses for Women Men .\n   URL: https://www.alibaba.com/showroom/mens-reader-sunglasses.html\n\n",
+          "title": "Stylish Protection with UV-Blocking mens reader sunglasses for...",
+          "body": "Unisex Sunglasses 2025 Sun Reading Glasses Fashion Retro Sunglasses Men Womens Round Shape Frame With Reading UV400 Grey Lenses.High Quality Spring Hinges Blue Light Blocking Lightweight Sunglasses Readers Trendy Reading Glasses for Women Men .",
+          "url": "https://www.alibaba.com/showroom/mens-reader-sunglasses.html"
+        },
+        {
+          "retrieval_context": "### Search result 8. Health and beauty | Round reading glasses , Lens width, 20mm\n   JOSCHOO Reading Glasses 5 Pack Color Small Round Women HD Spring Hinge Reader - Walmart.com.\n   URL: https://ru.pinterest.com/pin/kokobin-4pack-mini-small-round-reading-glasses-comfortable-readers-for-women-and-men-multicoloured-275-multiplier_x--654218283398216902/\n\n",
+          "title": "Health and beauty | Round reading glasses , Lens width, 20mm",
+          "body": "JOSCHOO Reading Glasses 5 Pack Color Small Round Women HD Spring Hinge Reader - Walmart.com.",
+          "url": "https://ru.pinterest.com/pin/kokobin-4pack-mini-small-round-reading-glasses-comfortable-readers-for-women-and-men-multicoloured-275-multiplier_x--654218283398216902/"
+        },
+        {
+          "retrieval_context": "### Search result 9. 5 Pack Reading Glasses Men Women Spring Hinge ... | luxe faves\n   This Rectangular frames reading glasses Stylish and elegant ，Lightweight frame design and Excellent nose pads do not produce uncomfortable squeeze,very suitable for office learning, casual reading , etc.. color include: black, tortoise, blue, gray,tortoise/black...\n   URL: https://luxefaves.com/?product=5-pack-reading-glasses-men-women-spring-hinge-comfortable-glasses-for-reading\n\n",
+          "title": "5 Pack Reading Glasses Men Women Spring Hinge ... | luxe faves",
+          "body": "This Rectangular frames reading glasses Stylish and elegant ，Lightweight frame design and Excellent nose pads do not produce uncomfortable squeeze,very suitable for office learning, casual reading , etc.. color include: black, tortoise, blue, gray,tortoise/black...",
+          "url": "https://luxefaves.com/?product=5-pack-reading-glasses-men-women-spring-hinge-comfortable-glasses-for-reading"
+        },
+        {
+          "retrieval_context": "### Search result 10. Bargain Mart | Stylish JOSCHOO Eyewear - Trendy and Affordable\n   JOSCHOO Computer Reading Glasses for Women and Men 6p. Check Price. JOSCHOO Reading Glasses 5-Pack Quality Readers Spring Hinge .\n   URL: https://bargainmart.com/joschoo\n\n",
+          "title": "Bargain Mart | Stylish JOSCHOO Eyewear - Trendy and Affordable",
+          "body": "JOSCHOO Computer Reading Glasses for Women and Men 6p. Check Price. JOSCHOO Reading Glasses 5-Pack Quality Readers Spring Hinge .",
+          "url": "https://bargainmart.com/joschoo"
+        }
+      ],
+      "search_duration": 0.0
+    }
+  }
+]

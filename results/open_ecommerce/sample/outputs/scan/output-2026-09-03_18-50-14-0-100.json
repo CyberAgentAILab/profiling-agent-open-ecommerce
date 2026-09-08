@@ -1,0 +1,2313 @@
+[
+  {
+    "resolved_query": "Amazon.com eGift Card",
+    "raw_query_mapping": [
+      "Amazon.com eGift Card"
+    ],
+    "freq_mapping": [
+      5551
+    ],
+    "query_mapping": [
+      "Amazon.com eGift Card"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic gift card, which is purchased by all demographics for various purposes and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card Balance Reload",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card Balance Reload"
+    ],
+    "freq_mapping": [
+      11373
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card Balance Reload"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card reload service, which is purchased by all demographics and provides no specific signal about the user's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Reload",
+    "raw_query_mapping": [
+      "Amazon Reload"
+    ],
+    "freq_mapping": [
+      6304
+    ],
+    "query_mapping": [
+      "Amazon Reload"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "Amazon Reload is a generic service for adding funds to an Amazon account, purchased by all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal",
+    "raw_query_mapping": [
+      "Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal"
+    ],
+    "freq_mapping": [
+      484
+    ],
+    "query_mapping": [
+      "Echo Dot (3rd Gen, 2018 release) - Smart speaker with Alexa - Charcoal"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart speaker, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack",
+    "raw_query_mapping": [
+      "Amazon Basics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "freq_mapping": [
+      571
+    ],
+    "query_mapping": [
+      "Amazon Basics 36 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic household item (AAA batteries) that is purchased by all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick 4K streaming device with Alexa Voice Remote (includes TV controls) | Dolby Vision",
+    "raw_query_mapping": [
+      "Fire TV Stick 4K streaming device with Alexa Voice Remote (includes TV controls) | Dolby Vision"
+    ],
+    "freq_mapping": [
+      461
+    ],
+    "query_mapping": [
+      "Fire TV Stick 4K streaming device with Alexa Voice Remote (includes TV controls) | Dolby Vision"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular streaming device with no ambiguity, but it is a generic consumer electronic purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 48 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack",
+    "raw_query_mapping": [
+      "Amazon Basics 48 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "freq_mapping": [
+      573
+    ],
+    "query_mapping": [
+      "Amazon Basics 48 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic household item (AA batteries) that is purchased by all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Smart Plug, works with Alexa – A Certified for Humans Device",
+    "raw_query_mapping": [
+      "Amazon Smart Plug, works with Alexa – A Certified for Humans Device"
+    ],
+    "freq_mapping": [
+      349
+    ],
+    "query_mapping": [
+      "Amazon Smart Plug, works with Alexa – A Certified for Humans Device"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart home device that is purchased across all demographics without signaling specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick streaming device with Alexa built in, includes Alexa Voice Remote, HD, latest release",
+    "raw_query_mapping": [
+      "Fire TV Stick streaming device with Alexa built in, includes Alexa Voice Remote, HD, latest release"
+    ],
+    "freq_mapping": [
+      313
+    ],
+    "query_mapping": [
+      "Fire TV Stick streaming device with Alexa built in, includes Alexa Voice Remote, HD, latest release"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic streaming media player, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon eGift Card - Birthday Cupcakes",
+    "raw_query_mapping": [
+      "Amazon eGift Card - Birthday Cupcakes"
+    ],
+    "freq_mapping": [
+      475
+    ],
+    "query_mapping": [
+      "Amazon eGift Card - Birthday Cupcakes"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic gift card with a specific design, requiring no search. Gift cards are purchased by all demographics for various occasions and do not signal specific user attributes like substance use or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card in a Mini Envelope",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card in a Mini Envelope"
+    ],
+    "freq_mapping": [
+      329
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card in a Mini Envelope"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card, which is a universal item purchased by all demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone",
+    "raw_query_mapping": [
+      "Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone"
+    ],
+    "freq_mapping": [
+      289
+    ],
+    "query_mapping": [
+      "Apple AirPods (2nd Generation) Wireless Earbuds with Lightning Charging Case Included. Over 24 Hours of Battery Life, Effortless Setup. Bluetooth Headphones for iPhone"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular consumer electronic accessory that is purchased across all demographics without signaling specific life events, health conditions, or substance use.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Apple Lightning to 3.5 mm Headphone Jack Adapter",
+    "raw_query_mapping": [
+      "Apple Lightning to 3.5 mm Headphone Jack Adapter"
+    ],
+    "freq_mapping": [
+      258
+    ],
+    "query_mapping": [
+      "Apple Lightning to 3.5 mm Headphone Jack Adapter"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic audio adapter for Apple devices, which is a common accessory purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick with Alexa Voice Remote, streaming media player - Previous Generation",
+    "raw_query_mapping": [
+      "Fire TV Stick with Alexa Voice Remote, streaming media player - Previous Generation"
+    ],
+    "freq_mapping": [
+      244
+    ],
+    "query_mapping": [
+      "Fire TV Stick with Alexa Voice Remote, streaming media player - Previous Generation"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic streaming media player, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      234
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child"
+      ],
+      "reason": "A baby registry welcome box is explicitly tied to the event of having a new child, providing a strong signal of a recent life change and the presence of an infant in the household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card in a Holiday Gift Box (Various Designs)",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card in a Holiday Gift Box (Various Designs)"
+    ],
+    "freq_mapping": [
+      415
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card in a Holiday Gift Box (Various Designs)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card, which is a universal item purchased by all demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "essence | Lash Princess False Lash Effect Mascara | Gluten & Cruelty Free",
+    "raw_query_mapping": [
+      "essence | Lash Princess False Lash Effect Mascara | Gluten & Cruelty Free"
+    ],
+    "freq_mapping": [
+      275
+    ],
+    "query_mapping": [
+      "essence | Lash Princess False Lash Effect Mascara | Gluten & Cruelty Free"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific mascara product, so no search is needed. However, mascara is a generic beauty item purchased across all demographics and does not signal a specific user attribute.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 20 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack",
+    "raw_query_mapping": [
+      "Amazon Basics 20 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "freq_mapping": [
+      268
+    ],
+    "query_mapping": [
+      "Amazon Basics 20 Pack AA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic household item (AA batteries) that is purchased by all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "$10 -PlayStation Store Gift Card [Digital Code]",
+    "raw_query_mapping": [
+      "$10 -PlayStation Store Gift Card [Digital Code]"
+    ],
+    "freq_mapping": [
+      634
+    ],
+    "query_mapping": [
+      "$10 -PlayStation Store Gift Card [Digital Code]"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic digital gift card for a gaming platform, which is purchased by a wide demographic and does not signal specific user attributes like substance use or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Print at Home Gift Card",
+    "raw_query_mapping": [
+      "Amazon.com Print at Home Gift Card"
+    ],
+    "freq_mapping": [
+      325
+    ],
+    "query_mapping": [
+      "Amazon.com Print at Home Gift Card"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card for printing at home, which is a universal product purchased by all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60Hz) - 6 Feet, Black",
+    "raw_query_mapping": [
+      "Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60Hz) - 6 Feet, Black"
+    ],
+    "freq_mapping": [
+      178
+    ],
+    "query_mapping": [
+      "Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/60Hz) - 6 Feet, Black"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic HDMI cable with specific technical specs, requiring no external search. As a common electronic accessory used across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 8 Units Pack 9 Volt Performance All-Purpose Alkaline Batteries, 5-Year Shelf Life, Easy to Open Value Package",
+    "raw_query_mapping": [
+      "Amazon Basics 8 Units Pack 9 Volt Performance All-Purpose Alkaline Batteries, 5-Year Shelf Life, Easy to Open Value Package"
+    ],
+    "freq_mapping": [
+      195
+    ],
+    "query_mapping": [
+      "Amazon Basics 8 Units Pack 9 Volt Performance All-Purpose Alkaline Batteries, 5-Year Shelf Life, Easy to Open Value Package"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic pack of alkaline batteries, which are common household items purchased by all demographics and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Apple EarPods Headphones with Lightning Connector. Microphone with Built-in Remote to Control Music, Phone Calls, and Volume. Wired Earbuds for iPhone",
+    "raw_query_mapping": [
+      "Apple EarPods Headphones with Lightning Connector. Microphone with Built-in Remote to Control Music, Phone Calls, and Volume. Wired Earbuds for iPhone"
+    ],
+    "freq_mapping": [
+      237
+    ],
+    "query_mapping": [
+      "Apple EarPods Headphones with Lightning Connector. Microphone with Built-in Remote to Control Music, Phone Calls, and Volume. Wired Earbuds for iPhone"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic accessory for Apple devices, which is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Mighty Patch Original from Hero Cosmetics - Hydrocolloid Acne Pimple Patch for Covering Zits and Blemishes, Spot Stickers for Face and Skin, Vegan-friendly and Not Tested on Animals (36 Count)",
+    "raw_query_mapping": [
+      "Mighty Patch Original from Hero Cosmetics - Hydrocolloid Acne Pimple Patch for Covering Zits and Blemishes, Spot Stickers for Face and Skin, Vegan-friendly and Not Tested on Animals (36 Count)"
+    ],
+    "freq_mapping": [
+      281
+    ],
+    "query_mapping": [
+      "Mighty Patch Original from Hero Cosmetics - Hydrocolloid Acne Pimple Patch for Covering Zits and Blemishes, Spot Stickers for Face and Skin, Vegan-friendly and Not Tested on Animals (36 Count)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as acne patches, requiring no search. However, acne is a common condition across all demographics and does not provide a strong, specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 20 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack",
+    "raw_query_mapping": [
+      "Amazon Basics 20 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "freq_mapping": [
+      206
+    ],
+    "query_mapping": [
+      "Amazon Basics 20 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household item (AAA batteries) that is purchased by all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Ailun Glass Screen Protector Compatible for iPhone 11/XR,6.1 Inch 3 Pack Tempered Glass",
+    "raw_query_mapping": [
+      "Ailun Glass Screen Protector Compatible for iPhone 11/XR,6.1 Inch 3 Pack Tempered Glass"
+    ],
+    "freq_mapping": [
+      217
+    ],
+    "query_mapping": [
+      "Ailun Glass Screen Protector Compatible for iPhone 11/XR,6.1 Inch 3 Pack Tempered Glass"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic screen protector for specific iPhone models, requiring no search. As a common accessory purchased by a wide demographic, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card in Various Gift Boxes",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card in Various Gift Boxes"
+    ],
+    "freq_mapping": [
+      227
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card in Various Gift Boxes"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card, which is a universal item purchased by all demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (3rd Gen) - Smart speaker with Alexa - Heather Gray",
+    "raw_query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Heather Gray"
+    ],
+    "freq_mapping": [
+      158
+    ],
+    "query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Heather Gray"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart speaker, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal",
+    "raw_query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal"
+    ],
+    "freq_mapping": [
+      156
+    ],
+    "query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Charcoal"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart speaker, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SanDisk 64GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-064G-GN6MA",
+    "raw_query_mapping": [
+      "SanDisk 64GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-064G-GN6MA"
+    ],
+    "freq_mapping": [
+      146
+    ],
+    "query_mapping": [
+      "SanDisk 64GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-064G-GN6MA"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic memory card with specific capacity and speed, which is a common accessory purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Scotch Heavy Duty Packaging Tape, 1.88\" x 22.2 yd, Designed for Packing, Shipping and Mailing, Strong Seal on All Box Types, 1.5\" Core, Clear, 6 Rolls with Dispenser (142-6)",
+    "raw_query_mapping": [
+      "Scotch Heavy Duty Packaging Tape, 1.88\" x 22.2 yd, Designed for Packing, Shipping and Mailing, Strong Seal on All Box Types, 1.5\" Core, Clear, 6 Rolls with Dispenser (142-6)"
+    ],
+    "freq_mapping": [
+      230
+    ],
+    "query_mapping": [
+      "Scotch Heavy Duty Packaging Tape, 1.88\" x 22.2 yd, Designed for Packing, Shipping and Mailing, Strong Seal on All Box Types, 1.5\" Core, Clear, 6 Rolls with Dispenser (142-6)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic household item (packaging tape) used for shipping and moving, which is purchased by a wide range of demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Super Smash Bros. Ultimate - Nintendo Switch",
+    "raw_query_mapping": [
+      "Super Smash Bros. Ultimate - Nintendo Switch"
+    ],
+    "freq_mapping": [
+      141
+    ],
+    "query_mapping": [
+      "Super Smash Bros. Ultimate - Nintendo Switch"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific video game for a known console, requiring no search. Video games are purchased across all demographics and do not provide a strong, specific signal about the buyer's personal attributes or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Music Unlimited",
+    "raw_query_mapping": [
+      "Amazon Music Unlimited"
+    ],
+    "freq_mapping": [
+      139
+    ],
+    "query_mapping": [
+      "Amazon Music Unlimited"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a music streaming subscription service, which is a generic entertainment product purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Affresh Washing Machine Cleaner, Cleans Front Load and Top Load Washers, Including HE, 6 Tablets",
+    "raw_query_mapping": [
+      "Affresh Washing Machine Cleaner, Cleans Front Load and Top Load Washers, Including HE, 6 Tablets"
+    ],
+    "freq_mapping": [
+      222
+    ],
+    "query_mapping": [
+      "Affresh Washing Machine Cleaner, Cleans Front Load and Top Load Washers, Including HE, 6 Tablets"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household cleaning product for washing machines, which is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 4 Pack CR2032 3 Volt Lithium Coin Cell Battery",
+    "raw_query_mapping": [
+      "Amazon Basics 4 Pack CR2032 3 Volt Lithium Coin Cell Battery"
+    ],
+    "freq_mapping": [
+      147
+    ],
+    "query_mapping": [
+      "Amazon Basics 4 Pack CR2032 3 Volt Lithium Coin Cell Battery"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household battery pack, which is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Dickies Men's Dri-tech Moisture Control Crew Socks Multipack",
+    "raw_query_mapping": [
+      "Dickies Men's Dri-tech Moisture Control Crew Socks Multipack"
+    ],
+    "freq_mapping": [
+      190
+    ],
+    "query_mapping": [
+      "Dickies Men's Dri-tech Moisture Control Crew Socks Multipack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic men's sock product, requiring no search for identification. As a common household item purchased across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SanDisk 128GB microSDXC-Card, Licensed for Nintendo-Switch - SDSQXAO-128G-GNCZN",
+    "raw_query_mapping": [
+      "SanDisk 128GB microSDXC-Card, Licensed for Nintendo-Switch - SDSQXAO-128G-GNCZN"
+    ],
+    "freq_mapping": [
+      136
+    ],
+    "query_mapping": [
+      "SanDisk 128GB microSDXC-Card, Licensed for Nintendo-Switch - SDSQXAO-128G-GNCZN"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific storage card for a gaming console, requiring no search. However, gaming accessories are purchased by a wide demographic and do not signal specific user attributes like substance use, life changes, or child age.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card in a Reveal (Various Designs)",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card in a Reveal (Various Designs)"
+    ],
+    "freq_mapping": [
+      174
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card in a Reveal (Various Designs)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic gift card, which is purchased by all demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)",
+    "raw_query_mapping": [
+      "amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)"
+    ],
+    "freq_mapping": [
+      146
+    ],
+    "query_mapping": [
+      "amFilm Tempered Glass Screen Protector for Nintendo Switch 2017 (2-Pack)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a screen protector for a specific gaming console, requiring no search. However, gaming accessories are purchased by a wide demographic and do not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "$20 Nintendo eShop Gift Card [Digital Code]",
+    "raw_query_mapping": [
+      "$20 Nintendo eShop Gift Card [Digital Code]"
+    ],
+    "freq_mapping": [
+      257
+    ],
+    "query_mapping": [
+      "$20 Nintendo eShop Gift Card [Digital Code]"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a digital gift card for a specific gaming platform, requiring no search. However, gift cards are generic financial instruments purchased by a wide range of demographics and do not signal specific user attributes like substance use or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane",
+    "raw_query_mapping": [
+      "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane"
+    ],
+    "freq_mapping": [
+      182
+    ],
+    "query_mapping": [
+      "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly markets the product for women and describes a facial grooming tool, providing a strong signal for the buyer's gender.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Google Play gift code - give the gift of games, apps and more (Email Delivery - US Only)",
+    "raw_query_mapping": [
+      "Google Play gift code - give the gift of games, apps and more (Email Delivery - US Only)"
+    ],
+    "freq_mapping": [
+      878
+    ],
+    "query_mapping": [
+      "Google Play gift code - give the gift of games, apps and more (Email Delivery - US Only)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a digital gift card for the Google Play store, requiring no search for identification. As a generic digital currency usable by anyone for various apps and games, it provides no specific signal about the buyer's demographics or life circumstances.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Falcon Dust, Off Compressed Gas (152a) Disposable Cleaning Duster, 1, Count, 3.5 oz Can (DPSJB),Black",
+    "raw_query_mapping": [
+      "Falcon Dust, Off Compressed Gas (152a) Disposable Cleaning Duster, 1, Count, 3.5 oz Can (DPSJB),Black"
+    ],
+    "freq_mapping": [
+      144
+    ],
+    "query_mapping": [
+      "Falcon Dust, Off Compressed Gas (152a) Disposable Cleaning Duster, 1, Count, 3.5 oz Can (DPSJB),Black"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic cleaning product (compressed air duster) used for dusting electronics or surfaces, which is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (3rd Gen) - Smart speaker with Alexa - Sandstone",
+    "raw_query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Sandstone"
+    ],
+    "freq_mapping": [
+      140
+    ],
+    "query_mapping": [
+      "Echo Dot (3rd Gen) - Smart speaker with Alexa - Sandstone"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart speaker, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick 4K, brilliant 4K streaming quality, TV and smart home controls, free and live TV",
+    "raw_query_mapping": [
+      "Fire TV Stick 4K, brilliant 4K streaming quality, TV and smart home controls, free and live TV"
+    ],
+    "freq_mapping": [
+      141
+    ],
+    "query_mapping": [
+      "Fire TV Stick 4K, brilliant 4K streaming quality, TV and smart home controls, free and live TV"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular streaming device, so no search is needed. As a generic consumer electronics item purchased across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Strawberries, 1 lb",
+    "raw_query_mapping": [
+      "Strawberries, 1 lb"
+    ],
+    "freq_mapping": [
+      316
+    ],
+    "query_mapping": [
+      "Strawberries, 1 lb"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic grocery item (strawberries) that is purchased by a wide range of demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Blink Mini – Compact indoor plug-in smart security camera, 1080p HD video, night vision, motion detection, two-way audio, easy set up, Works with Alexa – 1 camera (White)",
+    "raw_query_mapping": [
+      "Blink Mini – Compact indoor plug-in smart security camera, 1080p HD video, night vision, motion detection, two-way audio, easy set up, Works with Alexa – 1 camera (White)"
+    ],
+    "freq_mapping": [
+      147
+    ],
+    "query_mapping": [
+      "Blink Mini – Compact indoor plug-in smart security camera, 1080p HD video, night vision, motion detection, two-way audio, easy set up, Works with Alexa – 1 camera (White)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart home security camera, which is purchased by a wide range of demographics without signaling specific life events or substance use.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Greater Goods Gray Food Scale - Digital Display Shows Weight in Grams, Ounces, Milliliters, and Pounds | Perfect for Meal Prep, Cooking, and Baking | A Kitchen Necessity Designed in St. Louis",
+    "raw_query_mapping": [
+      "Greater Goods Gray Food Scale - Digital Display Shows Weight in Grams, Ounces, Milliliters, and Pounds | Perfect for Meal Prep, Cooking, and Baking | A Kitchen Necessity Designed in St. Louis"
+    ],
+    "freq_mapping": [
+      130
+    ],
+    "query_mapping": [
+      "Greater Goods Gray Food Scale - Digital Display Shows Weight in Grams, Ounces, Milliliters, and Pounds | Perfect for Meal Prep, Cooking, and Baking | A Kitchen Necessity Designed in St. Louis"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a digital kitchen food scale, requiring no search for identification. As a generic kitchen appliance used by a wide range of demographics for cooking and baking, it does not provide a specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "$20 PlayStation Store Gift Card [Digital Code]",
+    "raw_query_mapping": [
+      "$20 PlayStation Store Gift Card [Digital Code]"
+    ],
+    "freq_mapping": [
+      412
+    ],
+    "query_mapping": [
+      "$20 PlayStation Store Gift Card [Digital Code]"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a digital gift card for a gaming platform, requiring no search. However, gift cards are generic items purchased by a wide range of demographics and do not signal specific user attributes like substance use or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "LiCB CR2032 3V Lithium Battery(10-Pack)",
+    "raw_query_mapping": [
+      "LiCB CR2032 3V Lithium Battery(10-Pack)"
+    ],
+    "freq_mapping": [
+      125
+    ],
+    "query_mapping": [
+      "LiCB CR2032 3V Lithium Battery(10-Pack)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a standard lithium coin battery, which is a generic household item used across all demographics and provides no specific signal about the buyer.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SAMSUNG (MB-ME128GA/AM) 128GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter",
+    "raw_query_mapping": [
+      "SAMSUNG (MB-ME128GA/AM) 128GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter"
+    ],
+    "freq_mapping": [
+      134
+    ],
+    "query_mapping": [
+      "SAMSUNG (MB-ME128GA/AM) 128GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic memory card with specific capacity and speed, which is a common accessory purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Gildan Men's Crew T-Shirts, Multipack, Style G1100",
+    "raw_query_mapping": [
+      "Gildan Men's Crew T-Shirts, Multipack, Style G1100"
+    ],
+    "freq_mapping": [
+      149
+    ],
+    "query_mapping": [
+      "Gildan Men's Crew T-Shirts, Multipack, Style G1100"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic men's t-shirt multipack, requiring no search for identification. As a basic clothing item purchased across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Affresh W10282479 Dishwasher Cleaner, 1 Pack",
+    "raw_query_mapping": [
+      "Affresh W10282479 Dishwasher Cleaner, 1 Pack"
+    ],
+    "freq_mapping": [
+      154
+    ],
+    "query_mapping": [
+      "Affresh W10282479 Dishwasher Cleaner, 1 Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic dishwasher cleaner, which is a common household maintenance item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "$25 PlayStation Store Gift Card [Digital Code]",
+    "raw_query_mapping": [
+      "$25 PlayStation Store Gift Card [Digital Code]"
+    ],
+    "freq_mapping": [
+      274
+    ],
+    "query_mapping": [
+      "$25 PlayStation Store Gift Card [Digital Code]"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a digital gift card for a gaming platform, requiring no search. However, gift cards are generic items purchased by a wide range of demographics and do not signal specific user attributes like substance use or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Instant Pot Duo 7-in-1 Electric Pressure Cooker, Slow Cooker, Rice Cooker, Steamer, Sauté, Yogurt Maker, Warmer & Sterilizer, Includes App With Over 800 Recipes, Stainless Steel, 6 Quart",
+    "raw_query_mapping": [
+      "Instant Pot Duo 7-in-1 Electric Pressure Cooker, Slow Cooker, Rice Cooker, Steamer, Sauté, Yogurt Maker, Warmer & Sterilizer, Includes App With Over 800 Recipes, Stainless Steel, 6 Quart"
+    ],
+    "freq_mapping": [
+      121
+    ],
+    "query_mapping": [
+      "Instant Pot Duo 7-in-1 Electric Pressure Cooker, Slow Cooker, Rice Cooker, Steamer, Sauté, Yogurt Maker, Warmer & Sterilizer, Includes App With Over 800 Recipes, Stainless Steel, 6 Quart"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular multi-function kitchen appliance, so no search is needed. However, pressure cookers are generic household items purchased by a wide demographic and do not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
+    "raw_query_mapping": [
+      "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA"
+    ],
+    "freq_mapping": [
+      123
+    ],
+    "query_mapping": [
+      "SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic memory card with specific capacity and speed, which is a common accessory purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Kindle Paperwhite – (previous generation - 2018 release) Waterproof with 2x the Storage – Ad-Supported",
+    "raw_query_mapping": [
+      "Kindle Paperwhite – (previous generation - 2018 release) Waterproof with 2x the Storage – Ad-Supported"
+    ],
+    "freq_mapping": [
+      125
+    ],
+    "query_mapping": [
+      "Kindle Paperwhite – (previous generation - 2018 release) Waterproof with 2x the Storage – Ad-Supported"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a specific e-reader model, requiring no search. However, e-readers are generic consumer electronics purchased across all demographics and do not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Apple AirPods Pro",
+    "raw_query_mapping": [
+      "Apple AirPods Pro"
+    ],
+    "freq_mapping": [
+      124
+    ],
+    "query_mapping": [
+      "Apple AirPods Pro"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The product title is fully self-describing and clearly identifies a popular consumer electronic accessory. As a generic tech item purchased across all demographics, it provides no specific signal about the buyer's life stage, health, or substance use.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon.com Gift Card in a Greeting Card (Various Designs)",
+    "raw_query_mapping": [
+      "Amazon.com Gift Card in a Greeting Card (Various Designs)"
+    ],
+    "freq_mapping": [
+      207
+    ],
+    "query_mapping": [
+      "Amazon.com Gift Card in a Greeting Card (Various Designs)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic gift card, which is a universal item purchased by all demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Roku Express HD Streaming Media Player with High Speed HDMI Cable and Simple Remote",
+    "raw_query_mapping": [
+      "Roku Express HD Streaming Media Player with High Speed HDMI Cable and Simple Remote"
+    ],
+    "freq_mapping": [
+      129
+    ],
+    "query_mapping": [
+      "Roku Express HD Streaming Media Player with High Speed HDMI Cable and Simple Remote"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic streaming media player, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Energizer 2032 Batteries, Lithium CR2032 Watch Battery, 6 Count",
+    "raw_query_mapping": [
+      "Energizer 2032 Batteries, Lithium CR2032 Watch Battery, 6 Count"
+    ],
+    "freq_mapping": [
+      119
+    ],
+    "query_mapping": [
+      "Energizer 2032 Batteries, Lithium CR2032 Watch Battery, 6 Count"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household item (lithium watch batteries) that is purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "CeraVe Moisturizing Cream | Body and Face Moisturizer for Dry Skin | Body Cream with Hyaluronic Acid and Ceramides | Normal | Fragrance Free | 19 Oz | Packages May Vary",
+    "raw_query_mapping": [
+      "CeraVe Moisturizing Cream | Body and Face Moisturizer for Dry Skin | Body Cream with Hyaluronic Acid and Ceramides | Normal | Fragrance Free | 19 Oz | Packages May Vary"
+    ],
+    "freq_mapping": [
+      167
+    ],
+    "query_mapping": [
+      "CeraVe Moisturizing Cream | Body and Face Moisturizer for Dry Skin | Body Cream with Hyaluronic Acid and Ceramides | Normal | Fragrance Free | 19 Oz | Packages May Vary"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic moisturizing cream for dry skin, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Panasonic ErgoFit Wired Earbuds, In-Ear Headphones with Dynamic Crystal-Clear Sound and Ergonomic Custom-Fit Earpieces (S/M/L), 3.5mm Jack for Phones and Laptops, No Mic - RP-HJE120-K (Black)",
+    "raw_query_mapping": [
+      "Panasonic ErgoFit Wired Earbuds, In-Ear Headphones with Dynamic Crystal-Clear Sound and Ergonomic Custom-Fit Earpieces (S/M/L), 3.5mm Jack for Phones and Laptops, No Mic - RP-HJE120-K (Black)"
+    ],
+    "freq_mapping": [
+      180
+    ],
+    "query_mapping": [
+      "Panasonic ErgoFit Wired Earbuds, In-Ear Headphones with Dynamic Crystal-Clear Sound and Ergonomic Custom-Fit Earpieces (S/M/L), 3.5mm Jack for Phones and Laptops, No Mic - RP-HJE120-K (Black)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as generic wired earbuds, requiring no search. As a common electronic accessory purchased across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Anker 4-Port USB 3.0 Hub, Ultra-Slim Data USB Hub with 2 ft Extended Cable [Charging Not Supported], for MacBook, Mac Pro, Mac mini, iMac, Surface Pro, XPS, PC, Flash Drive, Mobile HDD",
+    "raw_query_mapping": [
+      "Anker 4-Port USB 3.0 Hub, Ultra-Slim Data USB Hub with 2 ft Extended Cable [Charging Not Supported], for MacBook, Mac Pro, Mac mini, iMac, Surface Pro, XPS, PC, Flash Drive, Mobile HDD"
+    ],
+    "freq_mapping": [
+      112
+    ],
+    "query_mapping": [
+      "Anker 4-Port USB 3.0 Hub, Ultra-Slim Data USB Hub with 2 ft Extended Cable [Charging Not Supported], for MacBook, Mac Pro, Mac mini, iMac, Surface Pro, XPS, PC, Flash Drive, Mobile HDD"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic USB hub compatible with various devices, requiring no external search. As a common computer accessory, it is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (4th Gen, 2020 release) | Smart speaker with Alexa | Charcoal",
+    "raw_query_mapping": [
+      "Echo Dot (4th Gen, 2020 release) | Smart speaker with Alexa | Charcoal"
+    ],
+    "freq_mapping": [
+      134
+    ],
+    "query_mapping": [
+      "Echo Dot (4th Gen, 2020 release) | Smart speaker with Alexa | Charcoal"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular smart speaker, so no search is needed. However, smart speakers are generic consumer electronics purchased across all demographics and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "$10 Nintendo eShop Gift Card [Digital Code]",
+    "raw_query_mapping": [
+      "$10 Nintendo eShop Gift Card [Digital Code]"
+    ],
+    "freq_mapping": [
+      257
+    ],
+    "query_mapping": [
+      "$10 Nintendo eShop Gift Card [Digital Code]"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a digital gift card for a gaming platform, requiring no search. While it indicates an interest in gaming, it does not strongly signal specific demographic attributes like age, income, or life changes as it is a generic gift item purchased by a wide range of users.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basic Care Ibuprofen Tablets, Fever Reducer and Pain Relief from Body Aches, Headache, Arthritis Pain and More, 500 Count",
+    "raw_query_mapping": [
+      "Amazon Basic Care Ibuprofen Tablets, Fever Reducer and Pain Relief from Body Aches, Headache, Arthritis Pain and More, 500 Count"
+    ],
+    "freq_mapping": [
+      187
+    ],
+    "query_mapping": [
+      "Amazon Basic Care Ibuprofen Tablets, Fever Reducer and Pain Relief from Body Aches, Headache, Arthritis Pain and More, 500 Count"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic over-the-counter pain reliever, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SABRE Pepper Spray, Quick Release Keychain for Easy Carry and Fast Access, Finger Grip for More Accurate and Faster Aim, Maximum Police Strength OC Spray, 25 Bursts, Secure and Easy to Use Safety",
+    "raw_query_mapping": [
+      "SABRE Pepper Spray, Quick Release Keychain for Easy Carry and Fast Access, Finger Grip for More Accurate and Faster Aim, Maximum Police Strength OC Spray, 25 Bursts, Secure and Easy to Use Safety"
+    ],
+    "freq_mapping": [
+      120
+    ],
+    "query_mapping": [
+      "SABRE Pepper Spray, Quick Release Keychain for Easy Carry and Fast Access, Finger Grip for More Accurate and Faster Aim, Maximum Police Strength OC Spray, 25 Bursts, Secure and Easy to Use Safety"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a self-defense pepper spray, requiring no search. However, ownership of self-defense items is common across all demographics and does not strongly signal a specific user attribute like substance use, life changes, or household composition.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+    "raw_query_mapping": [
+      "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks"
+    ],
+    "freq_mapping": [
+      170
+    ],
+    "query_mapping": [
+      "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly specifies 'Women's' underwear, providing a clear signal for the gender attribute, though it is a generic household item otherwise.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "amFilm Glass Screen Protector for iPhone 8, 7, 6S, 6 (4.7 Inch)(2 Pack) Tempered Glass Screen Protector",
+    "raw_query_mapping": [
+      "amFilm Glass Screen Protector for iPhone 8, 7, 6S, 6 (4.7 Inch)(2 Pack) Tempered Glass Screen Protector"
+    ],
+    "freq_mapping": [
+      141
+    ],
+    "query_mapping": [
+      "amFilm Glass Screen Protector for iPhone 8, 7, 6S, 6 (4.7 Inch)(2 Pack) Tempered Glass Screen Protector"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic phone accessory compatible with multiple iPhone models, which is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Welch's Fruit Snacks, Mixed Fruit, Gluten Free, Bulk Pack, 0.9 oz Individual Single Serve Bags 40 Count (Pack of 1)",
+    "raw_query_mapping": [
+      "Welch's Fruit Snacks, Mixed Fruit, Gluten Free, Bulk Pack, 0.9 oz Individual Single Serve Bags 40 Count (Pack of 1)"
+    ],
+    "freq_mapping": [
+      200
+    ],
+    "query_mapping": [
+      "Welch's Fruit Snacks, Mixed Fruit, Gluten Free, Bulk Pack, 0.9 oz Individual Single Serve Bags 40 Count (Pack of 1)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic fruit snack product with no ambiguity, but such snacks are purchased by a wide range of demographics and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep, LCD Display, Medium, 304 Stainless Steel",
+    "raw_query_mapping": [
+      "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep, LCD Display, Medium, 304 Stainless Steel"
+    ],
+    "freq_mapping": [
+      112
+    ],
+    "query_mapping": [
+      "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep, LCD Display, Medium, 304 Stainless Steel"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic kitchen scale used for various cooking and diet purposes, which is a common household item purchased across all demographics without signaling a specific user attribute.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Uber Gift Card - Email Delivery",
+    "raw_query_mapping": [
+      "Uber Gift Card - Email Delivery"
+    ],
+    "freq_mapping": [
+      512
+    ],
+    "query_mapping": [
+      "Uber Gift Card - Email Delivery"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic gift card for a ride-sharing service, which is purchased by a wide demographic and does not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "TERRO T300B Liquid Ant Killer, 12 Bait Stations",
+    "raw_query_mapping": [
+      "TERRO T300B Liquid Ant Killer, 12 Bait Stations"
+    ],
+    "freq_mapping": [
+      125
+    ],
+    "query_mapping": [
+      "TERRO T300B Liquid Ant Killer, 12 Bait Stations"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a common household pest control product, so no search is needed. Ant killer is a generic item purchased by a wide range of demographics and does not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Show 5 (1st Gen, 2019 release) -- Smart display with Alexa – stay connected with video calling - Charcoal",
+    "raw_query_mapping": [
+      "Echo Show 5 (1st Gen, 2019 release) -- Smart display with Alexa – stay connected with video calling - Charcoal"
+    ],
+    "freq_mapping": [
+      112
+    ],
+    "query_mapping": [
+      "Echo Show 5 (1st Gen, 2019 release) -- Smart display with Alexa – stay connected with video calling - Charcoal"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a specific model of smart display, requiring no search. As a general consumer electronics item, it is purchased across diverse demographics and does not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick Lite, free and live TV, Alexa Voice Remote Lite, smart home controls, HD streaming",
+    "raw_query_mapping": [
+      "Fire TV Stick Lite, free and live TV, Alexa Voice Remote Lite, smart home controls, HD streaming"
+    ],
+    "freq_mapping": [
+      129
+    ],
+    "query_mapping": [
+      "Fire TV Stick Lite, free and live TV, Alexa Voice Remote Lite, smart home controls, HD streaming"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic streaming media player used by a wide range of demographics, providing no specific signal about the buyer's personal attributes or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "REVLON One-Step Volumizer Original 1.0 Hair Dryer and Hot Air Brush, Black",
+    "raw_query_mapping": [
+      "REVLON One-Step Volumizer Original 1.0 Hair Dryer and Hot Air Brush, Black"
+    ],
+    "freq_mapping": [
+      117
+    ],
+    "query_mapping": [
+      "REVLON One-Step Volumizer Original 1.0 Hair Dryer and Hot Air Brush, Black"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific hair styling tool, so no search is needed. However, hair dryers are generic personal care items purchased across all demographics and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Apple Gift Card - App Store, iTunes, iPhone, iPad, AirPods, MacBook, accessories and more (Email Delivery)",
+    "raw_query_mapping": [
+      "Apple Gift Card - App Store, iTunes, iPhone, iPad, AirPods, MacBook, accessories and more (Email Delivery)"
+    ],
+    "freq_mapping": [
+      563
+    ],
+    "query_mapping": [
+      "Apple Gift Card - App Store, iTunes, iPhone, iPad, AirPods, MacBook, accessories and more (Email Delivery)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic digital gift card for Apple services, which is purchased by a wide range of demographics for various occasions and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool",
+    "raw_query_mapping": [
+      "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool"
+    ],
+    "freq_mapping": [
+      106
+    ],
+    "query_mapping": [
+      "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "has-child"
+      ],
+      "reason": "The title clearly describes a pet hair remover, which strongly signals the presence of a pet in the household; while 'has-pet' is not in the allowed attribute list, owning a pet is often correlated with having children in household demographic models, but strictly adhering to the closed set, this product does not map to any specific allowed attribute category like 'has-child' or 'substance-use'. Therefore, is_diagnostic should be false as no allowed attribute is directly signaled.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Echo Dot (2nd Generation) - Smart speaker with Alexa - Black",
+    "raw_query_mapping": [
+      "Echo Dot (2nd Generation) - Smart speaker with Alexa - Black"
+    ],
+    "freq_mapping": [
+      119
+    ],
+    "query_mapping": [
+      "Echo Dot (2nd Generation) - Smart speaker with Alexa - Black"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic smart speaker, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "LiBa PEVA 8G Bathroom Shower Curtain Liner, 72\" W x 72\" H, Clear, 8G Heavy Duty Waterproof Shower Curtain Liner",
+    "raw_query_mapping": [
+      "LiBa PEVA 8G Bathroom Shower Curtain Liner, 72\" W x 72\" H, Clear, 8G Heavy Duty Waterproof Shower Curtain Liner"
+    ],
+    "freq_mapping": [
+      126
+    ],
+    "query_mapping": [
+      "LiBa PEVA 8G Bathroom Shower Curtain Liner, 72\" W x 72\" H, Clear, 8G Heavy Duty Waterproof Shower Curtain Liner"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a standard bathroom shower curtain liner, which is a generic household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Crocs Unisex-Adult Classic Clogs (Best Sellers)",
+    "raw_query_mapping": [
+      "Crocs Unisex-Adult Classic Clogs (Best Sellers)"
+    ],
+    "freq_mapping": [
+      137
+    ],
+    "query_mapping": [
+      "Crocs Unisex-Adult Classic Clogs (Best Sellers)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a popular, unisex footwear item that is purchased across all demographics and does not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60",
+    "raw_query_mapping": [
+      "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60"
+    ],
+    "freq_mapping": [
+      112
+    ],
+    "query_mapping": [
+      "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly identifies the product as a 'Mens Grooming Kit' for beard and face hair, which is a strong signal for a male user or household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "CeraVe Hydrating Facial Cleanser | Moisturizing Non-Foaming Face Wash with Hyaluronic Acid, Ceramides and Glycerin | Fragrance Free Paraben Free | 16 Fluid Ounce",
+    "raw_query_mapping": [
+      "CeraVe Hydrating Facial Cleanser | Moisturizing Non-Foaming Face Wash with Hyaluronic Acid, Ceramides and Glycerin | Fragrance Free Paraben Free | 16 Fluid Ounce"
+    ],
+    "freq_mapping": [
+      136
+    ],
+    "query_mapping": [
+      "CeraVe Hydrating Facial Cleanser | Moisturizing Non-Foaming Face Wash with Hyaluronic Acid, Ceramides and Glycerin | Fragrance Free Paraben Free | 16 Fluid Ounce"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic facial cleanser with specific ingredients, requiring no search. As a common skincare item used by a wide demographic, it does not provide a strong, specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Lysol Disinfectant Wipes, Multi-Surface Antibacterial Cleaning Wipes, For Disinfecting and Cleaning, Lemon and Lime Blossom, 80 Count (Pack of 4)",
+    "raw_query_mapping": [
+      "Lysol Disinfectant Wipes, Multi-Surface Antibacterial Cleaning Wipes, For Disinfecting and Cleaning, Lemon and Lime Blossom, 80 Count (Pack of 4)"
+    ],
+    "freq_mapping": [
+      246
+    ],
+    "query_mapping": [
+      "Lysol Disinfectant Wipes, Multi-Surface Antibacterial Cleaning Wipes, For Disinfecting and Cleaning, Lemon and Lime Blossom, 80 Count (Pack of 4)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic household cleaning product with no ambiguity. Disinfectant wipes are purchased by a wide range of demographics and do not signal specific user attributes like health conditions or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Seagate Portable 2TB External Hard Drive HDD — USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Rescue Service (STGX2000400)",
+    "raw_query_mapping": [
+      "Seagate Portable 2TB External Hard Drive HDD — USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Rescue Service (STGX2000400)"
+    ],
+    "freq_mapping": [
+      107
+    ],
+    "query_mapping": [
+      "Seagate Portable 2TB External Hard Drive HDD — USB 3.0 for PC, Mac, PlayStation, & Xbox -1-Year Rescue Service (STGX2000400)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic external hard drive compatible with multiple platforms, which is a common utility item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Yootech Wireless Charger,10W Max Fast Wireless Charging Pad Compatible with iPhone 14/14 Plus/14 Pro/14 Pro Max/13/13 Mini/SE 2022/12/11/X/8,Samsung Galaxy S22/S21/S20,AirPods Pro 2(No AC Adapter)",
+    "raw_query_mapping": [
+      "Yootech Wireless Charger,10W Max Fast Wireless Charging Pad Compatible with iPhone 14/14 Plus/14 Pro/14 Pro Max/13/13 Mini/SE 2022/12/11/X/8,Samsung Galaxy S22/S21/S20,AirPods Pro 2(No AC Adapter)"
+    ],
+    "freq_mapping": [
+      111
+    ],
+    "query_mapping": [
+      "Yootech Wireless Charger,10W Max Fast Wireless Charging Pad Compatible with iPhone 14/14 Plus/14 Pro/14 Pro Max/13/13 Mini/SE 2022/12/11/X/8,Samsung Galaxy S22/S21/S20,AirPods Pro 2(No AC Adapter)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic wireless charging pad compatible with common smartphones, requiring no search for identification. As a ubiquitous accessory purchased across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Prime (One Year Membership)",
+    "raw_query_mapping": [
+      "Amazon Prime (One Year Membership)"
+    ],
+    "freq_mapping": [
+      141
+    ],
+    "query_mapping": [
+      "Amazon Prime (One Year Membership)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a one-year Amazon Prime membership, requiring no search. While it indicates a subscription, it is a generic service purchased across all demographics and does not signal specific life changes, health conditions, or substance use.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "SAMSUNG (MB-ME64GA/AM) 64GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter",
+    "raw_query_mapping": [
+      "SAMSUNG (MB-ME64GA/AM) 64GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter"
+    ],
+    "freq_mapping": [
+      106
+    ],
+    "query_mapping": [
+      "SAMSUNG (MB-ME64GA/AM) 64GB 100MB/s (U3) MicroSDXC EVO Select Memory Card with Full-Size Adapter"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic memory card with specific brand and capacity details, requiring no search. As a common electronic accessory used across all demographics, it provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 12 Pack D Cell All-Purpose Alkaline Batteries, Easy to Open Value Pack",
+    "raw_query_mapping": [
+      "Amazon Basics 12 Pack D Cell All-Purpose Alkaline Batteries, Easy to Open Value Pack"
+    ],
+    "freq_mapping": [
+      114
+    ],
+    "query_mapping": [
+      "Amazon Basics 12 Pack D Cell All-Purpose Alkaline Batteries, Easy to Open Value Pack"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household item (alkaline batteries) that is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics High-Density Round Foam Roller for Exercise, Massage, Muscle Recovery - 12\", 18\", 24\", 36\"",
+    "raw_query_mapping": [
+      "Amazon Basics High-Density Round Foam Roller for Exercise, Massage, Muscle Recovery - 12\", 18\", 24\", 36\""
+    ],
+    "freq_mapping": [
+      102
+    ],
+    "query_mapping": [
+      "Amazon Basics High-Density Round Foam Roller for Exercise, Massage, Muscle Recovery - 12\", 18\", 24\", 36\""
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic fitness accessory used for muscle recovery, which is purchased by a wide demographic without signaling specific life events or substance use.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Finish - All in 1 - Dishwasher Detergent - Powerball - Dishwashing Tablets - Dish Tabs - Fresh Scent, 94 Count (Pack of 1) - Packaging May Vary",
+    "raw_query_mapping": [
+      "Finish - All in 1 - Dishwasher Detergent - Powerball - Dishwashing Tablets - Dish Tabs - Fresh Scent, 94 Count (Pack of 1) - Packaging May Vary"
+    ],
+    "freq_mapping": [
+      258
+    ],
+    "query_mapping": [
+      "Finish - All in 1 - Dishwasher Detergent - Powerball - Dishwashing Tablets - Dish Tabs - Fresh Scent, 94 Count (Pack of 1) - Packaging May Vary"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household cleaning product (dishwasher detergent) that is purchased across all demographics and provides no specific signal about the buyer's attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Etekcity Digital Body Weight Bathroom Scale with Step-On Technology, Reliable Results with High Precision Measurements, Large Backlit LCD Display, 400 Pounds",
+    "raw_query_mapping": [
+      "Etekcity Digital Body Weight Bathroom Scale with Step-On Technology, Reliable Results with High Precision Measurements, Large Backlit LCD Display, 400 Pounds"
+    ],
+    "freq_mapping": [
+      100
+    ],
+    "query_mapping": [
+      "Etekcity Digital Body Weight Bathroom Scale with Step-On Technology, Reliable Results with High Precision Measurements, Large Backlit LCD Display, 400 Pounds"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a standard bathroom scale, which is a generic household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "LifeStraw Personal Water Filter for Hiking, Camping, Travel, and Emergency Preparedness",
+    "raw_query_mapping": [
+      "LifeStraw Personal Water Filter for Hiking, Camping, Travel, and Emergency Preparedness"
+    ],
+    "freq_mapping": [
+      111
+    ],
+    "query_mapping": [
+      "LifeStraw Personal Water Filter for Hiking, Camping, Travel, and Emergency Preparedness"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a personal water filter for outdoor activities, requiring no search. However, such items are purchased by a wide range of demographics for general preparedness or hobbies and do not signal a specific user attribute like substance use or life stage.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Amazon Basics 8 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack,8 Count (Pack of 1)",
+    "raw_query_mapping": [
+      "Amazon Basics 8 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack,8 Count (Pack of 1)"
+    ],
+    "freq_mapping": [
+      109
+    ],
+    "query_mapping": [
+      "Amazon Basics 8 Pack AAA High-Performance Alkaline Batteries, 10-Year Shelf Life, Easy to Open Value Pack,8 Count (Pack of 1)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic household item (AAA batteries) with no ambiguity. Batteries are purchased by all demographics for various devices and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fire TV Stick with Alexa Voice Remote (includes TV controls), free & live TV without cable or satellite, HD streaming device",
+    "raw_query_mapping": [
+      "Fire TV Stick with Alexa Voice Remote (includes TV controls), free & live TV without cable or satellite, HD streaming device"
+    ],
+    "freq_mapping": [
+      115
+    ],
+    "query_mapping": [
+      "Fire TV Stick with Alexa Voice Remote (includes TV controls), free & live TV without cable or satellite, HD streaming device"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic streaming device used by a wide range of demographics, providing no specific signal about the buyer's personal attributes or life changes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "NatureWise Vitamin D3 5000iu (125 mcg) 1 Year Supply for Healthy Muscle Function, and Immune Support, Non-GMO, Gluten Free in Cold-Pressed Olive Oil, Packaging Vary ( Mini Softgel), 360 Count",
+    "raw_query_mapping": [
+      "NatureWise Vitamin D3 5000iu (125 mcg) 1 Year Supply for Healthy Muscle Function, and Immune Support, Non-GMO, Gluten Free in Cold-Pressed Olive Oil, Packaging Vary ( Mini Softgel), 360 Count"
+    ],
+    "freq_mapping": [
+      142
+    ],
+    "query_mapping": [
+      "NatureWise Vitamin D3 5000iu (125 mcg) 1 Year Supply for Healthy Muscle Function, and Immune Support, Non-GMO, Gluten Free in Cold-Pressed Olive Oil, Packaging Vary ( Mini Softgel), 360 Count"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a Vitamin D3 supplement, requiring no search. However, vitamin supplements are purchased by a broad demographic for general wellness and do not signal a specific user attribute like a medical condition or life event.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Doctor's Best High Absorption Magnesium Glycinate Lysinate, 100% Chelated, Non-GMO, Vegan, Gluten & Soy Free, 100 mg, 240 Count",
+    "raw_query_mapping": [
+      "Doctor's Best High Absorption Magnesium Glycinate Lysinate, 100% Chelated, Non-GMO, Vegan, Gluten & Soy Free, 100 mg, 240 Count"
+    ],
+    "freq_mapping": [
+      276
+    ],
+    "query_mapping": [
+      "Doctor's Best High Absorption Magnesium Glycinate Lysinate, 100% Chelated, Non-GMO, Vegan, Gluten & Soy Free, 100 mg, 240 Count"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific magnesium supplement, but vitamins are generic health products purchased across all demographics without signaling a specific user attribute.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "CeraVe AM Facial Moisturizing Lotion SPF 30 | Oil-Free Face Moisturizer with Sunscreen | Non-Comedogenic | 3 Ounce",
+    "raw_query_mapping": [
+      "CeraVe AM Facial Moisturizing Lotion SPF 30 | Oil-Free Face Moisturizer with Sunscreen | Non-Comedogenic | 3 Ounce"
+    ],
+    "freq_mapping": [
+      113
+    ],
+    "query_mapping": [
+      "CeraVe AM Facial Moisturizing Lotion SPF 30 | Oil-Free Face Moisturizer with Sunscreen | Non-Comedogenic | 3 Ounce"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a generic facial moisturizer with sunscreen, which is a common household item purchased across all demographics without signaling specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  },
+  {
+    "resolved_query": "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5",
+    "raw_query_mapping": [
+      "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5"
+    ],
+    "freq_mapping": [
+      96
+    ],
+    "query_mapping": [
+      "Fit Simplify Resistance Loop Exercise Bands with Instruction Guide and Carry Bag, Set of 5"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic set of exercise bands, which are purchased by a wide range of demographics for general fitness and do not signal a specific user attribute.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041
+  }
+]

@@ -1,0 +1,81 @@
+2026-09-04 05:04:44.379 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-04 05:04:44.379 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-04 05:04:44.380 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-04 05:04:44.380 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-04 05:04:44.380 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-04 05:04:44.380 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-04 05:04:44.381 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-04 05:04:44.381 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'attribute_branches': [{'name': 'demographic', 'out_dir': './results/open_ecommerce/clustering/demographic/v4', 'target_patterns': ['user_attribute_demographic'], 'cache_embedding_path': './cache/embedding/demographic'}, {'name': 'psycho_behavioral', 'out_dir': './results/open_ecommerce/clustering/psycho_behavioral/v4', 'target_patterns': ['user_attribute_psycho_behavioral'], 'cache_embedding_path': './cache/embedding/psycho_behavioral'}, {'name': 'life_event', 'out_dir': './results/open_ecommerce/clustering/life_event/v4', 'target_patterns': ['user_attribute_life_event'], 'cache_embedding_path': './cache/embedding/life_event'}], 'out_dir': './results/open_ecommerce/clustering/v4', 'log_dir': './logs/open_ecommerce/clustering', 'model_name': './models/Qwen3-Embedding-0.6B', 'torch_dtype': 'bfloat16', 'embedding_backend': 'qwen3_embedding', 'n_clusters': 10, 'enable_cache': False, 'batch_size': 100, 'qwen3_max_length': 8192, 'query_path': './results/open_ecommerce/user/v4', 'algorithm': 'hdbscan', 'seed': 3407, 'minibatch_kmeans_batch_size': 1024, 'minibatch_kmeans_max_iter': 300, 'minibatch_kmeans_n_init': 10, 'minibatch_kmeans_max_no_improvement': 10, 'minibatch_kmeans_reassignment_ratio': 0.01, 'dimension_reduction': 'umap', 'pca_n_components': 512, 'pca_random_state': 0, 'umap_n_components': 8, 'umap_min_dist': 0.1, 'umap_n_neighbors': 20, 'umap_metric': 'cosine', 'min_cluster_ratio': 0.01, 'min_samples': 20, 'metric': 'euclidean', 'cluster_selection_method': 'eom', 'hdbscan_n_jobs': -1, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-04_14-04-44'}
+2026-09-04 05:04:44.391 | INFO     | cluster_attribute.dataset:load_profiles:77 - 📚 loaded 130 profiles from results/open_ecommerce/user/v4/output-2026-09-04_13-59-33.json (1/1)
+2026-09-04 05:04:44.392 | INFO     | cluster_attribute.dataset:load_profiles:79 - 📊 Total: 130 profiles from 1 file(s)
+2026-09-04 05:04:44.392 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_demographic']
+2026-09-04 05:04:44.394 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  1 attributes were extracted
+2026-09-04 05:04:44.394 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  1 unique accounts were extracted
+2026-09-04 05:04:44.394 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  1 unique attributes were extracted
+2026-09-04 05:04:44.402 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+              resolved_query  ... pseudo_confidence
+0  Baby Registry Welcome Box  ...              0.95
+
+[1 rows x 4 columns]
+2026-09-04 05:04:45.951 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from ./models/Qwen3-Embedding-0.6B
+2026-09-04 05:04:45.955 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:139 - 🔍 Found existing embedding file for model 'Qwen3-Embedding-0.6B' in cache: cache/embedding/demographic/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_18-26-09.csv
+2026-09-04 05:04:45.956 | WARNING  | cluster_attribute.model:_load_embeddings_from_cache:146 - ⚠️ Cached embeddings do not match the current attribute set (1 cached vs 1 current), recomputing: cache/embedding/demographic/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_18-26-09.csv
+2026-09-04 05:04:45.957 | INFO     | cluster_attribute.model:_compute_embeddings:161 - 📦 Batch inference started: 1 items at 100 per batch (1 batches)
+2026-09-04 05:04:46.613 | DEBUG    | cluster_attribute.model:_compute_embeddings:175 - ✅ Batch 1/1: processed 1 items
+2026-09-04 05:04:46.614 | INFO     | cluster_attribute.model:_compute_embeddings:178 - ⏱️ Embedding calculation completed in 0.66 seconds
+2026-09-04 05:04:46.614 | INFO     | cluster_attribute.model:_reduce_dimensions:241 - 🔬 Applying UMAP dimension reduction: (1, 1024) -> n_components=8
+2026-09-04 05:04:46.624 | INFO     | cluster_attribute.model:_reduce_dimensions:250 - ✅ UMAP completed: shape=(1, 8)
+2026-09-04 05:04:46.627 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: cache/embedding/demographic/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-04_14-04-44.csv
+2026-09-04 05:04:46.630 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 1
+2026-09-04 05:04:46.630 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply hdbscan
+2026-09-04 05:04:46.630 | WARNING  | cluster_attribute.model:_fit_clusters:312 - ⚠️ only 1 attribute(s) to cluster; assigning a single cluster (id 0)
+2026-09-04 05:04:46.662 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_psycho_behavioral']
+2026-09-04 05:04:46.663 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  39 attributes were extracted
+2026-09-04 05:04:46.663 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  31 unique accounts were extracted
+2026-09-04 05:04:46.663 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  38 unique attributes were extracted
+2026-09-04 05:04:46.668 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query  ... pseudo_confidence
+0  Echo Dot (3rd Gen, 2018 release) - Smart speak...  ...              0.85
+1  Amazon Smart Plug, works with Alexa – A Certif...  ...              0.85
+2  Apple AirPods (2nd Generation) Wireless Earbud...  ...              0.85
+3  essence | Lash Princess False Lash Effect Masc...  ...              0.70
+4  Echo Dot (3rd Gen) - Smart speaker with Alexa ...  ...              0.85
+
+[5 rows x 4 columns]
+2026-09-04 05:04:47.437 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from ./models/Qwen3-Embedding-0.6B
+2026-09-04 05:04:47.442 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:139 - 🔍 Found existing embedding file for model 'Qwen3-Embedding-0.6B' in cache: cache/embedding/psycho_behavioral/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_18-26-09.csv
+2026-09-04 05:04:47.444 | WARNING  | cluster_attribute.model:_load_embeddings_from_cache:146 - ⚠️ Cached embeddings do not match the current attribute set (79 cached vs 38 current), recomputing: cache/embedding/psycho_behavioral/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_18-26-09.csv
+2026-09-04 05:04:47.444 | INFO     | cluster_attribute.model:_compute_embeddings:161 - 📦 Batch inference started: 38 items at 100 per batch (1 batches)
+2026-09-04 05:04:47.528 | DEBUG    | cluster_attribute.model:_compute_embeddings:175 - ✅ Batch 1/1: processed 38 items
+2026-09-04 05:04:47.529 | INFO     | cluster_attribute.model:_compute_embeddings:178 - ⏱️ Embedding calculation completed in 0.08 seconds
+2026-09-04 05:04:47.529 | INFO     | cluster_attribute.model:_reduce_dimensions:241 - 🔬 Applying UMAP dimension reduction: (38, 1024) -> n_components=8
+2026-09-04 05:05:18.138 | INFO     | cluster_attribute.model:_reduce_dimensions:250 - ✅ UMAP completed: shape=(38, 8)
+2026-09-04 05:05:18.145 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: cache/embedding/psycho_behavioral/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-04_14-04-44.csv
+2026-09-04 05:05:18.145 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 38
+2026-09-04 05:05:18.146 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply hdbscan
+2026-09-04 05:05:18.146 | INFO     | cluster_attribute.model:_fit_clusters:319 - 📐 min_cluster_size=2 (min_cluster_ratio=0.01 × 38 attributes)
+2026-09-04 05:05:18.235 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_life_event']
+2026-09-04 05:05:18.236 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  1 attributes were extracted
+2026-09-04 05:05:18.237 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  1 unique accounts were extracted
+2026-09-04 05:05:18.237 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  1 unique attributes were extracted
+2026-09-04 05:05:18.242 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query  ... pseudo_confidence
+0  ChomChom Pet Hair Remover - Reusable Cat and D...  ...              0.75
+
+[1 rows x 4 columns]
+2026-09-04 05:05:19.599 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from ./models/Qwen3-Embedding-0.6B
+2026-09-04 05:05:19.602 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: cache/embedding/life_event/Qwen3-Embedding-0.6B
+2026-09-04 05:05:19.602 | INFO     | cluster_attribute.model:_compute_embeddings:161 - 📦 Batch inference started: 1 items at 100 per batch (1 batches)
+2026-09-04 05:05:19.637 | DEBUG    | cluster_attribute.model:_compute_embeddings:175 - ✅ Batch 1/1: processed 1 items
+2026-09-04 05:05:19.637 | INFO     | cluster_attribute.model:_compute_embeddings:178 - ⏱️ Embedding calculation completed in 0.04 seconds
+2026-09-04 05:05:19.637 | INFO     | cluster_attribute.model:_reduce_dimensions:241 - 🔬 Applying UMAP dimension reduction: (1, 1024) -> n_components=8
+2026-09-04 05:05:19.639 | INFO     | cluster_attribute.model:_reduce_dimensions:250 - ✅ UMAP completed: shape=(1, 8)
+2026-09-04 05:05:19.641 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: cache/embedding/life_event/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-04_14-04-44.csv
+2026-09-04 05:05:19.642 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 1
+2026-09-04 05:05:19.642 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply hdbscan
+2026-09-04 05:05:19.642 | WARNING  | cluster_attribute.model:_fit_clusters:312 - ⚠️ only 1 attribute(s) to cluster; assigning a single cluster (id 0)
+2026-09-04 05:05:19.702 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/clustering/v4/output-2026-09-04_14-04-44.json
+2026-09-04 05:05:19.703 | INFO     | __main__:main:86 - 💾 clustering results: 130 profiles -> ./results/open_ecommerce/clustering/v4/output-2026-09-04_14-04-44.json

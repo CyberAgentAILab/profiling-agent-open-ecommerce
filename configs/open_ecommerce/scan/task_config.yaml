@@ -1,0 +1,46 @@
+out_dir: ./results/open_ecommerce/scan
+log_dir: ./logs/open_ecommerce/scan
+
+use_validation_data: False
+validation_path: ""
+query_path: ./data/public/open-ecommerce/titles_ge3_buyers.csv
+
+is_reverse: False
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 512
+max_model_len: 8192
+do_sample: True
+temperature: 0.0
+top_p: 0.9
+enable_cache: True
+enable_thinking: False
+
+prompt_path: ./configs/prompt/open-ecommerce/scan_diagnostic.txt
+
+debug_num_sample: 10000000
+
+# additional schema keys for is_diagnostic gate
+json_schema_scan:
+  - need_search
+  - is_diagnostic
+  - diagnostic_for
+  - reason
+
+yes_tokens:
+  - "yes"
+
+use_vllm: True
+batch_size: 10000
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+
+begin:
+end:

@@ -1,0 +1,70 @@
+Your task is to estimate, for each of 10 user attributes, the probability that a single Amazon buyer (or a member of their household, or someone they share their Amazon account with) matches the attribute. Base your judgment ONLY on the purchase history provided.
+
+## Household scope (important)
+
+The 10 attributes are evaluated at the HOUSEHOLD level, not at the individual buyer level. An attribute is POSITIVE if the buyer themselves, OR anyone in their household, OR anyone who shares the buyer's Amazon account matches it. Purchases made for a parent, partner, child, or roommate count as evidence for the household.
+
+Examples: a wheelchair bought for an elderly parent → wheelchair is positive; cigarettes-related purchases by a partner → cigarettes is positive; baby items for a niece living with the household → had_child is positive.
+
+## Input
+
+A single user's purchase history rendered as three labeled sections. Each section covers a different attribute domain derived from the user's Amazon purchases:
+
+- "## Demographic tags": signals related to age group, gender, family structure, and other demographic characteristics inferred from purchase patterns.
+- "## Psycho-behavioral tags": signals related to lifestyle, interests, values, and behavioral tendencies inferred from purchase patterns.
+- "## Life event tags": signals related to recent life events (e.g., moving, having a child, job changes) inferred from purchase patterns.
+
+Each section contains two parts:
+
+1. "### Tag frequency (count > 0)": lines "- tag-name: count" for the tags this user matched in that domain, ordered by count descending. Only matched tags are listed; a tag's absence means no purchase mapped to it.
+2. "### Tagged products and their <domain>": lines '- "Product Title" -> tag, tag' showing which purchased products produced those tags (may be capped for heavy buyers).
+
+A fourth section may follow:
+
+- "## Fixed product-level attribute signals": for a fixed taxonomy of attributes (age, gender, income, education, lifestyle, personality, recent life events, etc.), each of the user's purchased products was independently assigned a predicted value. This section aggregates those product-level predictions across the user's purchases, showing per category the distribution of predicted values as "value (count)" (counts weighted by purchase count; "unknown" predictions omitted). These are noisy product-level guesses, NOT ground truth — use them as soft priors alongside the tag evidence. The life-event signals (positive/negative) overlap with, but are not identical to, the target attributes, so treat them as hints, not answers. This section is omitted when the user has no such predictions.
+
+Treat all sections together as a single combined evidence base for this user. Use both the aggregated tag counts and the underlying product→tag mappings as evidence.
+
+## Amazon-external purchases
+
+For substances and items often purchased OUTSIDE Amazon (alcohol, tobacco, cannabis, prescription medications, controlled substances), the substance itself rarely appears in the Amazon history. Most U.S. consumers buy these from physical stores or specialized retailers. For these attributes, look for proxy purchases — accessories, consumables, related supplies, or contextual lifestyle indicators — rather than expecting direct evidence of the substance itself. Absence of direct alcohol/tobacco/cannabis purchases on Amazon is NOT evidence of abstinence.
+
+## Output
+
+Output a single JSON object with two top-level keys:
+
+- "reasoning": a single string. For EACH of the 10 attributes, briefly state (1) what evidence (if any) you found across the three tag domains, (2) how you classify it — "direct" (item explicitly tied to the attribute), "proxy" (accessory or related consumable), "contextual" (loosely associated lifestyle indicator), or "absent" (no relevant purchases), (3) any caveats such as household-scope ambiguity.
+
+- "attributes": an object with EXACTLY the 10 keys below. Each value is a single floating-point number in [0, 1] representing your probability estimate that the attribute is positive for this household.
+
+## The 10 attribute keys (use these exact spellings)
+
+  - cigarettes        — someone in the household / sharing the Amazon account smokes cigarettes
+  - marijuana         — someone in the household / sharing the Amazon account uses marijuana
+  - alcohol           — someone in the household / sharing the Amazon account drinks alcohol
+  - diabetes          — someone in the household / sharing the Amazon account has diabetes
+  - wheelchair        — someone in the household / sharing the Amazon account uses a wheelchair
+  - had_child         — someone in the household / sharing the Amazon account had a child
+  - became_pregnant   — someone in the household / sharing the Amazon account became pregnant
+  - moved             — someone in the household / sharing the Amazon account moved place of residence
+  - lost_job          — someone in the household / sharing the Amazon account lost a job
+  - divorce           — someone in the household / sharing the Amazon account is going through or recently went through a divorce
+
+## Confidence semantics
+
+- Each confidence is your probability that the attribute is POSITIVE for this household.
+- Interpret it as: out of 100 different households whose purchase history looks exactly like this one, your estimate of how many actually have the attribute, divided by 100. For example, if you think roughly 35 of 100 such households would have a smoker, output 0.35.
+- Use the full continuous range [0, 1]. Do NOT round to round-number values. Let the evidence drive the value — if many attributes truly have no evidence, it is correct for them all to be low; do not invent variation.
+
+## Output formatting rules
+
+- Output ONLY a single valid JSON object. No markdown fences, no commentary before or after.
+- Use double quotes; no trailing commas.
+- All 10 attribute keys MUST appear under "attributes". Missing keys are an error.
+- Each attribute value MUST be a single number in [0, 1].
+
+[Input]
+
+{query}
+
+[Output]

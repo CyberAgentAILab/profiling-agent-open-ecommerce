@@ -1,0 +1,21 @@
+backend:
+- google
+- bing
+begin: null
+csv_path: ./results/e2e_sample/prepare_titles/titles_sample10.csv
+ddgs_region: us-en
+end: null
+filter_is_diagnostic: true
+filter_need_search: true
+log_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/logs/search
+num_debug: null
+num_search: 10
+out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search
+query_suffix: ' Amazon product'
+search_cache_dir: /tmp/e2e_sample_9mi6tm53/search_cache
+search_engine: serper
+serp_url: https://www.searchapi.io/api/v1/search
+serper_url: https://google.serper.dev/search
+timeout: 60
+use_validation_data: true
+validation_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/scan

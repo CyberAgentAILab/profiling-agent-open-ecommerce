@@ -1,0 +1,158 @@
+[
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      234
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child"
+      ],
+      "reason": "A baby registry welcome box is explicitly tied to the event of having a new child, providing a strong signal of a recent life change and the presence of an infant in the household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041,
+    "search": {
+      "searched": false,
+      "success_search": false,
+      "search_result": [],
+      "search_duration": 0.0
+    }
+  },
+  {
+    "resolved_query": "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane",
+    "raw_query_mapping": [
+      "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane"
+    ],
+    "freq_mapping": [
+      182
+    ],
+    "query_mapping": [
+      "Schick Hydro Silk Touch-Up Dermaplaning Tool, 3 Count | Eyebrow Razor, Face Razors for Women, Face Shaver, Dermaplane"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly markets the product for women and describes a facial grooming tool, providing a strong signal for the buyer's gender.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041,
+    "search": {
+      "searched": false,
+      "success_search": false,
+      "search_result": [],
+      "search_duration": 0.0
+    }
+  },
+  {
+    "resolved_query": "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+    "raw_query_mapping": [
+      "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks"
+    ],
+    "freq_mapping": [
+      170
+    ],
+    "query_mapping": [
+      "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly specifies 'Women's' underwear, providing a clear signal for the gender attribute, though it is a generic household item otherwise.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041,
+    "search": {
+      "searched": false,
+      "success_search": false,
+      "search_result": [],
+      "search_duration": 0.0
+    }
+  },
+  {
+    "resolved_query": "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool",
+    "raw_query_mapping": [
+      "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool"
+    ],
+    "freq_mapping": [
+      106
+    ],
+    "query_mapping": [
+      "ChomChom Pet Hair Remover - Reusable Cat and Dog Hair Remover for Furniture, Couch, Carpet, Car Seats or Bedding - Portable, Multi-Surface Lint Roller and Fur Removal Tool"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "has-child"
+      ],
+      "reason": "The title clearly describes a pet hair remover, which strongly signals the presence of a pet in the household; while 'has-pet' is not in the allowed attribute list, owning a pet is often correlated with having children in household demographic models, but strictly adhering to the closed set, this product does not map to any specific allowed attribute category like 'has-child' or 'substance-use'. Therefore, is_diagnostic should be false as no allowed attribute is directly signaled.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041,
+    "search": {
+      "searched": false,
+      "success_search": false,
+      "search_result": [],
+      "search_duration": 0.0
+    }
+  },
+  {
+    "resolved_query": "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60",
+    "raw_query_mapping": [
+      "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60"
+    ],
+    "freq_mapping": [
+      112
+    ],
+    "query_mapping": [
+      "Philips Norelco Multigroomer All-in-One Trimmer Series 3000, 13 Piece Mens Grooming Kit, for Beard, Face, Nose, and Ear Hair Trimmer and Hair Clipper, NO Blade Oil Needed, MG3750/60"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly identifies the product as a 'Mens Grooming Kit' for beard and face hair, which is a strong signal for a male user or household.",
+      "is_json": true
+    },
+    "duration_per_sample": 0.0041,
+    "search": {
+      "searched": false,
+      "success_search": false,
+      "search_result": [],
+      "search_duration": 0.0
+    }
+  }
+]

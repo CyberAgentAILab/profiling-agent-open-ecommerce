@@ -1,0 +1,27 @@
+batch_size: 100
+begin: null
+cache_embed_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/embedding_cache
+cache_embed_model: ./models/Qwen3-Embedding-0.6B
+cluster_id_namespace: per_pattern
+debug_num_sample: 100000
+enable_cache: true
+enable_thinking: false
+end: null
+enforce_eager: true
+gpu_memory_utilization: 0.9
+json_schema_tag:
+- reasoning
+- tag
+log_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/logs/tag_cluster
+max_model_len: 8192
+max_new_tokens: 2048
+model_name: ./models/Qwen3.5-4B
+out_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/tag
+path_prompt_template: ./configs/prompt/open-ecommerce/tag_cluster.txt
+query_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/clustering
+sampling_method: kmedoids
+seed: 3407
+tensor_parallel_size: 1
+torch_dtype: bfloat16
+trust_remote_code: true
+use_vllm: true

@@ -1,0 +1,45 @@
+Your task is to predict the demographic profile of a single Amazon buyer's household, based ONLY on their purchase history. You output one best value per attribute, drawn from a fixed closed set of options. Do NOT consult any external knowledge base — reason directly from the product titles.
+
+## Household scope
+
+Predict at the HOUSEHOLD level. The buyer may share their Amazon account with a partner, child, parent, or roommate, and may buy items for any of them. Infer the attribute that best describes the primary account holder when the purchases point to one, otherwise the most likely value for the household.
+
+## Input
+
+A single user's Amazon purchase history, rendered as a ranked frequency list of product titles ("- Title (xN)" where N is how many times it was purchased). Heavy buyers may be truncated to their most frequent titles.
+
+## Output
+
+Output a SINGLE JSON object with EXACTLY these six keys. Each value MUST be chosen verbatim from the allowed set for that key (or the literal "unknown" when the purchases give no usable signal). Do NOT invent values outside these sets.
+
+- "reasoning": a single string briefly explaining, per attribute, what purchase evidence drove your choice (or why it is "unknown").
+
+- "age_bin": the age band of the primary buyer. One of:
+    "18-24", "25-34", "35-44", "45-54", "55-64", "65+", or "unknown".
+
+- "gender": the gender of the primary buyer. One of:
+    "male", "female", "other", or "unknown".
+
+- "income_bin": the annual household income band. One of:
+    "<25k", "25-49k", "50-74k", "75-99k", "100-149k", "150k+", or "unknown".
+
+- "education": the highest education level in the household. One of:
+    "<high-school", "high-school", "bachelor", "graduate", or "unknown".
+
+- "relocation": whether the household recently moved place of residence,
+  inferred from moving/relocation-related purchases (boxes, packing supplies,
+  new-home setup, address-change-driven bulk buying, etc.). One of:
+    "positive" (evidence of a recent move), or "negative" (no such evidence).
+
+## Output formatting rules
+
+- Output ONLY a single valid JSON object. No markdown fences, no commentary before or after.
+- Use double quotes; no trailing commas.
+- All six keys MUST appear. Each value MUST be from the allowed set above (or "unknown" where permitted).
+- Prefer "unknown" over guessing when the purchase history carries no real signal for an attribute. Let the evidence drive the value.
+
+[Input]
+
+{query}
+
+[Output]

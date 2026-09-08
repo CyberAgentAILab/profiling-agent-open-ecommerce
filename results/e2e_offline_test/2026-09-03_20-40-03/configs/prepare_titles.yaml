@@ -1,0 +1,5 @@
+log_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/logs/prepare_titles
+min_unique_buyers: 1
+out_csv: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/prepare_titles/titles_sample10.csv
+out_dir: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/prepare_titles
+purchases_csv: ./tests/e2e/fixtures/sample_purchases_10.csv

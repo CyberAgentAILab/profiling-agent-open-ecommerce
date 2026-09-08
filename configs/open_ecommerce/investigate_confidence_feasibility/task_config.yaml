@@ -1,0 +1,50 @@
+out_dir: ./results/open_ecommerce/investigate_confidence_feasibility/v1
+log_dir: ./logs/open_ecommerce/investigate_confidence_feasibility/v1
+
+# Inputs
+survey_csv: ./data/public/open-ecommerce/survey.csv
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+# Product-level tag DB (clustered user-attribute tags + pseudo_confidence), i.e. the
+# merged tag_cluster output. Set tag_db_path to pin a specific file; otherwise the
+# latest output-*.json in tag_db_dir is used.
+tag_db_dir: ./results/open_ecommerce/tag/v4
+tag_db_path: null
+
+# Per-user representative pseudo_confidence over their tag-carrying products.
+# "max" (spec default) | "mean"
+representative_agg: max
+
+# Confidence threshold sweep, top-k cutoffs, and calibration bin edges.
+thresholds: [0.0, 0.3, 0.5, 0.7, 0.9]
+precision_at_ks: [10, 25, 50, 100]
+calibration_edges: [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+
+# Tag -> survey-attribute targets.
+#   match: "yes_no"     -> survey cell == positive_value (Yes/No; others excluded)
+#          "substring"  -> positive_value is a substring of the cell (multi-select free text)
+# NOTE: tag strings differ per embedding model. The list below matches the tags that
+# actually exist in the Qwen3-Embedding-0.6B DB (tag/v4/output-2026-06-04_16-07-52.json).
+# - became_pregnant: excluded because the 0.6B DB has no pregnancy-related tag in any category.
+# - diabetes: the 0.6B DB has no diabetes-specific tag, so the proxy tag
+#   "recently diagnosed with chronic or cardiovascular health conditions" is used.
+#   Since it covers chronic/cardiovascular conditions in general rather than diabetes
+#   specifically, interpret the AUC as closer to "detecting a chronic-disease diagnosis".
+tag_targets:
+  - tag: "recent onset of mobility or dexterity limitations requiring assistive devices"
+    category: life_event
+    name: wheelchair
+    survey_col: Q-personal-wheelchair
+    match: yes_no
+    positive_value: "Yes"
+  - tag: "users experiencing relationship crisis or breakup"
+    category: life_event
+    name: divorce
+    survey_col: Q-life-changes
+    match: substring
+    positive_value: "Divorce"
+  - tag: "recently diagnosed with chronic or cardiovascular health conditions"
+    category: life_event
+    name: diabetes
+    survey_col: Q-personal-diabetes
+    match: yes_no
+    positive_value: "Yes"

@@ -1,0 +1,35 @@
+# Minimal sample config for BaseAgent (default of parse_config --config).
+# Each task module ships its own task_config.yaml in a later PR; this file
+# documents the common keys shared by all of them.
+
+out_dir: ./results/base_agent
+log_dir: ./logs/base_agent
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 512
+max_model_len: 8192
+do_sample: False
+temperature: 0.0
+top_p: 0.9
+top_k: 50
+min_p: 0.0
+
+use_vllm: True
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+enable_cache: True
+enable_prefix_caching: False
+enable_thinking: False
+
+prompt_path: ""
+
+begin:
+end:

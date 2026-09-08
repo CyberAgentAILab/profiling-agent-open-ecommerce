@@ -1,0 +1,85 @@
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:43:02.506 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/user', 'log_dir': './results/e2e_sample/2026-09-03_20-40-08/logs/user', 'model_name': './models/Qwen3.5-4B', 'torch_dtype': 'bfloat16', 'max_new_tokens': 8192, 'max_model_len': 16384, 'enable_cache': True, 'enable_thinking': False, 'use_validation_data': True, 'validation_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/transaction', 'scan_output_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/scan', 'frequent_patterns_path': None, 'allowed_titles_csv': None, 'query_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/transaction', 'is_reverse': False, 'prompt_user_attribute_path': './configs/prompt/open-ecommerce/combined_kotler.txt', 'debug_num_sample': 10, 'json_schema_parent': 'consumer_attributes', 'json_schema_child': ['category', 'reason', 'attribute'], 'use_vllm': True, 'batch_size': 10, 'tensor_parallel_size': 1, 'trust_remote_code': True, 'seed': 3407, 'gpu_memory_utilization': 0.9, 'enforce_eager': True, 'enable_prefix_caching': False, 'begin': None, 'end': None, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-43-02'}
+2026-09-03 11:43:02.506 | INFO     | __main__:main:17 - 📝 prompt_path: ./configs/prompt/open-ecommerce/combined_kotler.txt
+2026-09-03 11:43:02.508 | INFO     | predict_user.dataset:load_recovered_transaction:205 - 📚 loaded 2 samples from results/e2e_sample/2026-09-03_20-40-08/outputs/transaction/output-2026-09-03_20-41-53.json
+2026-09-03 11:43:02.508 | INFO     | predict_user.dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:43:02.509 | INFO     | predict_user.dataset:_load_scan_only_records:143 - 🛒 scanned 10 records from results/e2e_sample/2026-09-03_20-40-08/outputs/scan/output-2026-09-03_20-40-36.json
+2026-09-03 11:43:02.509 | INFO     | predict_user.dataset:load_recovered_transaction:217 - 🛒 appended 8 scan-only records (no search/transaction context) from ./results/e2e_sample/2026-09-03_20-40-08/outputs/scan
+2026-09-03 11:43:02.509 | INFO     | predict_user.dataset:load_recovered_transaction:236 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:43:02.509 | INFO     | predict_user.dataset:load_recovered_transaction:239 - 📦 returning 10 transactions (predict_transaction=2, scan_only=8, pattern=0)
+2026-09-03 11:43:02.510 | INFO     | base_agent.model:load_model_and_tokenizer:174 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3.5-4B
+2026-09-03 11:43:41.313 | INFO     | base_agent.model:load_model_and_tokenizer:200 - ✅ load ./models/Qwen3.5-4B
+2026-09-03 11:43:41.313 | INFO     | base_agent.model:load_model_and_tokenizer:201 - ✅ activate vllm ? True
+2026-09-03 11:43:41.315 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/user/output-2026-09-03_20-43-02.json
+2026-09-03 11:44:32.972 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.973 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.973 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.973 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.973 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.973 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.974 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | ERROR    | predict_user.model:_parse_combined_attributes:82 - failed parse example:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Vacuum hair trimmers are popular among men in their 30s to 50s who value grooming efficiency and have established routines.", "attribute": ["35-44", "45-54"]},
+      {"category": "signal:gender", "reason": "The product is explicitly marketed as a 'Vacuum Beard Trimmer' and 'for Men', indicating a male buyer.", "attribute": "male"},
+      {"category": "signal:income-bin", "reason": "Specialized grooming tools like vacuum haircuts fall into the mid-to-upper price tier, suggesting a household with disposable income.", "attribute": ["50-74k", "75-99k"]},
+      {"category": "signal:education", "reason": "Grooming enthusiasts using specialized tools span all education levels, with no specific correlation to degree attainment.", "attribute": "unknown"},
+      {"category": "signal:occupation-class", "reason": "Personal grooming habits are not diagnostic of a specific occupation class.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Beard grooming is practiced across all ethnic groups; the product is not ethnicity-specific.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Men with beards and grooming kits are found in urban, suburban, and rural areas, but the product is not location-specific.", "attribute": "unknown"}
+    ],
+    "free_description_attributes": []
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "The use of a vacuum hair trimmer suggests a tech-enthusiast or modern aesthetic preference for efficient grooming.", "attribute": ["tech-enthusiast"]},
+      {"category": "signal:personality", "reason": "Investing in specialized grooming tools indicates a practical-pragmatic approach to self-care.", "attribute": ["practical-pragmatic"]},
+      {"category": "signal:purchase-occasion", "reason": "Grooming tools are typically purchased as replacements or upgrades for ongoing personal care routines.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "The vacuum feature is chosen for the convenience of cleaning up hair clippings, a key benefit for grooming.", "attribute": ["convenience"]},
+      {"category": "free_description_attributes": []
+    }
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Vacuum hair trimmers are not specifically associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Grooming tools are unrelated to childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Grooming tools are not specifically associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Grooming tools are not specifically associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Grooming tools are not specifically associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Grooming tools are not specifically associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Grooming tools are not specifically associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Grooming tools are not specifically associated with bereavement.", "attribute": "unknown"},
+      {"category": "free_description_attributes": []
+    }
+  }
+}
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.975 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.976 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:44:32.980 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/user/output-2026-09-03_20-43-02.json
+2026-09-03 11:44:32.980 | INFO     | predict_user.model:predict_user_attributes:185 - 💾 user-attribute predictions: 10 records -> ./results/e2e_sample/2026-09-03_20-40-08/outputs/user/output-2026-09-03_20-43-02.json

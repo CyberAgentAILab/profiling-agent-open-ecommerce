@@ -1,0 +1,70 @@
+# tag_cluster now writes one merged file with all three tag domains, so every
+# branch points at the same tag/v4 dir and only tag_suffix differs. __main__.py
+# resolves tag_db_dir to the latest output-*.json automatically.
+# In db mode the branches are combined into a single per-user prompt (one
+# section per domain); out_dir comes from the top-level key.
+attribute_branches:
+  - name: demographic
+    tag_db_dir: ./results/open_ecommerce/tag/v4
+    tag_suffix: demographic
+
+  - name: psycho_behavioral
+    tag_db_dir: ./results/open_ecommerce/tag/v4
+    tag_suffix: psycho_behavioral
+
+  - name: life_event
+    tag_db_dir: ./results/open_ecommerce/tag/v4
+    tag_suffix: life_event
+
+# Top-level out_dir/log_dir used by baseline and combined-db outputs.
+out_dir: ./results/open_ecommerce/judge_user_attribute
+log_dir: ./logs/open_ecommerce/judge_user_attribute
+
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+min_unique_buyers: 3
+survey_csv: ./data/public/open-ecommerce/survey.csv
+
+prompt_path: ./configs/prompt/open-ecommerce/judge_user_attribute.txt
+db_prompt_path: ./configs/prompt/open-ecommerce/judge_user_attribute_db.txt
+
+enable_db: True
+enable_baseline: False
+
+# enable_signals: whether db mode adds the per-product fixed-attribute predictions
+# (signal: prefix) to the prompt. True=hybrid (DB tags + signals), False=tags_only
+# (DB tags only). Set to False to regenerate tags_only (0.6B).
+enable_signals: False
+
+# Shared product budget: both baseline and db select the top-N unique titles by
+# purchase count per user, so they consume the EXACT same purchase set (fair
+# comparison). Baseline renders them as raw titles; db maps them to tags
+# (frequency + product→tag), aggregated only over these same N titles.
+baseline_max_titles_per_user: 500
+log_first_n: 3
+debug_num_user: null
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 16384
+# json_max_tokens is the cap that judge_users() actually applies per call
+# (SamplingParams.max_tokens). NOTE: max_new_tokens above does NOT bound this
+# module's inference; the paper runs used this 2048 cap, so keep it to reproduce.
+json_max_tokens: 2048
+max_model_len: 32768
+use_vllm: True
+batch_size: 1000
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+enable_prefix_caching: True
+enable_cache: True
+enable_thinking: False
+
+begin:
+end:
+

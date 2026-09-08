@@ -1,0 +1,8 @@
+# E2E sample run: 10 committed purchase rows -> titles CSV.
+out_dir: ./results/e2e_sample/prepare_titles
+log_dir: ./logs/e2e_sample/prepare_titles
+
+purchases_csv: ./tests/e2e/fixtures/sample_purchases_10.csv
+out_csv: ./results/e2e_sample/prepare_titles/titles_sample10.csv
+
+min_unique_buyers: 1

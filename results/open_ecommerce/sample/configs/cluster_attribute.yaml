@@ -1,0 +1,45 @@
+attribute_branches:
+- name: demographic
+  out_dir: ./results/open_ecommerce/sample/outputs/clustering/demographic/v4
+  target_patterns:
+  - user_attribute_demographic
+  cache_embedding_path: ./cache/embedding/demographic
+- name: psycho_behavioral
+  out_dir: ./results/open_ecommerce/sample/outputs/clustering/psycho_behavioral/v4
+  target_patterns:
+  - user_attribute_psycho_behavioral
+  cache_embedding_path: ./cache/embedding/psycho_behavioral
+- name: life_event
+  out_dir: ./results/open_ecommerce/sample/outputs/clustering/life_event/v4
+  target_patterns:
+  - user_attribute_life_event
+  cache_embedding_path: ./cache/embedding/life_event
+out_dir: ./results/open_ecommerce/sample/outputs/clustering/v4
+log_dir: ./results/open_ecommerce/sample/logs/clustering
+model_name: ./models/Qwen3-Embedding-0.6B
+torch_dtype: bfloat16
+embedding_backend: qwen3_embedding
+n_clusters: 10
+enable_cache: false
+batch_size: 100
+qwen3_max_length: 8192
+query_path: ./results/open_ecommerce/sample/outputs/user/v4
+algorithm: hdbscan
+seed: 3407
+minibatch_kmeans_batch_size: 1024
+minibatch_kmeans_max_iter: 300
+minibatch_kmeans_n_init: 10
+minibatch_kmeans_max_no_improvement: 10
+minibatch_kmeans_reassignment_ratio: 0.01
+dimension_reduction: umap
+pca_n_components: 512
+pca_random_state: 0
+umap_n_components: 8
+umap_min_dist: 0.1
+umap_n_neighbors: 20
+umap_metric: cosine
+min_cluster_ratio: 0.01
+min_samples: 20
+metric: euclidean
+cluster_selection_method: eom
+hdbscan_n_jobs: -1

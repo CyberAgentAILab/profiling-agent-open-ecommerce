@@ -1,0 +1,52 @@
+# E2E sample run: user-attribute inference over all 10 sample products.
+out_dir: ./results/e2e_sample/user
+log_dir: ./logs/e2e_sample/user
+
+model_name: ./models/Qwen3.5-4B
+# model_name: ./models/Qwen3.5-27B  # model used in the paper
+torch_dtype: bfloat16
+# max_new_tokens caps the response only (SamplingParams.max_tokens).
+# max_model_len caps prompt + response (vLLM max_model_len).
+max_new_tokens: 8192
+max_model_len: 16384
+enable_cache: True
+enable_thinking: False
+
+use_validation_data: True
+validation_path: ./results/e2e_sample/transaction
+
+# Also load scan output and append items dropped by the search gate
+# (e.g. need_search=False) so every sample product gets a user-attribute
+# prediction. This keeps the run at exactly 10 records.
+scan_output_path: ./results/e2e_sample/scan
+
+# Frequent product-combination patterns are out of scope for the 10-sample run.
+frequent_patterns_path:
+
+# No extra title filtering: the fixture CSV is already the allowlist.
+allowed_titles_csv:
+
+query_path: ./results/e2e_sample/transaction
+is_reverse: False
+
+# Single English prompt covering demographic + psycho_behavioral + life_event.
+prompt_user_attribute_path: ./configs/prompt/open-ecommerce/combined_kotler.txt
+debug_num_sample: 10
+
+json_schema_parent: consumer_attributes
+json_schema_child:
+  - category
+  - reason
+  - attribute
+
+use_vllm: True
+batch_size: 10
+tensor_parallel_size: 1
+trust_remote_code: True
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: True
+enable_prefix_caching: False
+
+begin:
+end:

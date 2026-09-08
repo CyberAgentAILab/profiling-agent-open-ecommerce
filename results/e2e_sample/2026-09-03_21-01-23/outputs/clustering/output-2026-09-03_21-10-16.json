@@ -1,0 +1,1970 @@
+[
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child"
+      ],
+      "reason": "The title is a generic marketing phrase without specific product details, requiring a search to identify the exact item, but the context of a registry strongly signals the household has a new child.",
+      "is_json": true
+    },
+    "duration_per_sample": 1.2443,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. How to get your free Amazon baby registry welcome box ...\n   AmazonOpens a new window is one of the retailers that offer a welcome box as a baby registry perk, and Amazon says the box is worth $35, thanks to all of the freebies like diapers and wipes in it. It's a pretty sweet deal to get baby products for free.\n   URL: https://www.babycenter.com/baby-products/baby-registry/how-to-get-your-free-amazon-baby-registry-welcome-box_40009690\n\n",
+          "title": "How to get your free Amazon baby registry welcome box ...",
+          "body": "AmazonOpens a new window is one of the retailers that offer a welcome box as a baby registry perk, and Amazon says the box is worth $35, thanks to all of the freebies like diapers and wipes in it. It's a pretty sweet deal to get baby products for free.",
+          "url": "https://www.babycenter.com/baby-products/baby-registry/how-to-get-your-free-amazon-baby-registry-welcome-box_40009690"
+        },
+        {
+          "retrieval_context": "### Search result 2. Amazon Baby Registry Welcome Box – WebBabyShower\n   Let’s compare Amazon ’s welcome box to the Target baby registry welcome box . Both are similar in the types of items you receive, but Target’s welcome box comes with $100 worth of products . There is also no membership required to receive Target’s box , unlike Amazon ...\n   URL: https://webbabyshower.com/guides/amazon-baby-registry-welcome-box/\n\n",
+          "title": "Amazon Baby Registry Welcome Box – WebBabyShower",
+          "body": "Let’s compare Amazon ’s welcome box to the Target baby registry welcome box . Both are similar in the types of items you receive, but Target’s welcome box comes with $100 worth of products . There is also no membership required to receive Target’s box , unlike Amazon ...",
+          "url": "https://webbabyshower.com/guides/amazon-baby-registry-welcome-box/"
+        },
+        {
+          "retrieval_context": "### Search result 3. Amazon.com: Amazon Baby Registry Welcome Box\n   Welcome Baby Care Package All w/Newborn Essentials Bundle for Expecting Moms Baby Shower, After Labor Unisex.\n   URL: https://www.amazon.com/clp/B00N1NBOV2\n\n",
+          "title": "Amazon.com: Amazon Baby Registry Welcome Box",
+          "body": "Welcome Baby Care Package All w/Newborn Essentials Bundle for Expecting Moms Baby Shower, After Labor Unisex.",
+          "url": "https://www.amazon.com/clp/B00N1NBOV2"
+        },
+        {
+          "retrieval_context": "### Search result 4. Baby Registry Welcome Box - Amazon Customer Service\n   The Welcome Box is available to customers with active Amazon Prime accounts, who create a Baby Registry , add 10 unique items from their Baby Registry Checklist and have over $10 of purchases from their registry (by themselves or others).\n   URL: https://www.amazon.com/gp/help/customer/display.html?nodeId=T1TqJNUkJOJNkgs12j\n\n",
+          "title": "Baby Registry Welcome Box - Amazon Customer Service",
+          "body": "The Welcome Box is available to customers with active Amazon Prime accounts, who create a Baby Registry , add 10 unique items from their Baby Registry Checklist and have over $10 of purchases from their registry (by themselves or others).",
+          "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=T1TqJNUkJOJNkgs12j"
+        },
+        {
+          "retrieval_context": "### Search result 5. What’s Inside the Amazon Baby Registry Welcome Box?\n   Jan 16, 2025 · The Amazon Baby Registry Welcome Box is super easy to claim and comes with a carefully curated selection of goodies from beloved baby brands like Dr. Brown’s, CeraVe Baby and MAM. It also includes several coupons and a parenting guide that first-time moms and dads are sure to find helpful.\n   URL: https://www.whattoexpect.com/baby-products/registry/amazon-baby-registry-welcome-box-review\n\n",
+          "title": "What’s Inside the Amazon Baby Registry Welcome Box?",
+          "body": "Jan 16, 2025 · The Amazon Baby Registry Welcome Box is super easy to claim and comes with a carefully curated selection of goodies from beloved baby brands like Dr. Brown’s, CeraVe Baby and MAM. It also includes several coupons and a parenting guide that first-time moms and dads are sure to find helpful.",
+          "url": "https://www.whattoexpect.com/baby-products/registry/amazon-baby-registry-welcome-box-review"
+        },
+        {
+          "retrieval_context": "### Search result 6. Amazon Baby Registry Welcome Box 2026: How to Get It Free\n   Learn how to get the Amazon Baby Registry Welcome Box , qualify for free baby samples, and make the most of your baby registry benefits.\n   URL: https://www.fatkiddeals.com/blog/amazon-baby-registry-welcome-box-2026\n\n",
+          "title": "Amazon Baby Registry Welcome Box 2026: How to Get It Free",
+          "body": "Learn how to get the Amazon Baby Registry Welcome Box , qualify for free baby samples, and make the most of your baby registry benefits.",
+          "url": "https://www.fatkiddeals.com/blog/amazon-baby-registry-welcome-box-2026"
+        },
+        {
+          "retrieval_context": "### Search result 7. Amazon Baby Registry Welcome Box + 15% Discount\n   Apr 9, 2026 · Get the Amazon Baby Registry Welcome Box and use the 15% completion discount. Step-by-step guide, perks, and money-saving tips.\n   URL: https://fabulesslyfrugal.com/deals/amazon-baby-registry-welcome-box/\n\n",
+          "title": "Amazon Baby Registry Welcome Box + 15% Discount",
+          "body": "Apr 9, 2026 · Get the Amazon Baby Registry Welcome Box and use the 15% completion discount. Step-by-step guide, perks, and money-saving tips.",
+          "url": "https://fabulesslyfrugal.com/deals/amazon-baby-registry-welcome-box/"
+        },
+        {
+          "retrieval_context": "### Search result 8. Baby Registry Welcome Box : Amazon .ca: Baby\n   I received the Amazon Baby Registry Welcome Box and really enjoyed opening it. It included a nice variety of baby samples and useful products , which gave me the opportunity to try different brands before purchasing full-size items.\n   URL: https://www.amazon.ca/Amazon-Family-Baby-Registry-Welcome/dp/B00N1NBOV2\n\n",
+          "title": "Baby Registry Welcome Box : Amazon .ca: Baby",
+          "body": "I received the Amazon Baby Registry Welcome Box and really enjoyed opening it. It included a nice variety of baby samples and useful products , which gave me the opportunity to try different brands before purchasing full-size items.",
+          "url": "https://www.amazon.ca/Amazon-Family-Baby-Registry-Welcome/dp/B00N1NBOV2"
+        },
+        {
+          "retrieval_context": "### Search result 9. 2026 Amazon Baby Registry Box | TikTok\n   Amazon Baby Registry Welcome Box contents, unboxing Amazon baby products , benefits of Amazon baby registry , family friendly pregnancy tips, 4th pregnancy essentials, new baby products to try, March 2026 baby registry .\n   URL: https://www.tiktok.com/discover/2026-amazon-baby-registry-box\n\n",
+          "title": "2026 Amazon Baby Registry Box | TikTok",
+          "body": "Amazon Baby Registry Welcome Box contents, unboxing Amazon baby products , benefits of Amazon baby registry , family friendly pregnancy tips, 4th pregnancy essentials, new baby products to try, March 2026 baby registry .",
+          "url": "https://www.tiktok.com/discover/2026-amazon-baby-registry-box"
+        },
+        {
+          "retrieval_context": "### Search result 10. Daily Freebie: Amazon Welcome Box for Expecting Parents\n   What’s the Amazon Baby Registry Welcome Box ? The Amazon Baby Registry Welcome Box is a free gift available to Prime members who create a baby registry on Amazon . Inside, you’ll find a curated mix of sample- and full-sized items.\n   URL: https://www.retailmenot.com/blog/daily-freebie-amazon-welcome-box.html\n\n",
+          "title": "Daily Freebie: Amazon Welcome Box for Expecting Parents",
+          "body": "What’s the Amazon Baby Registry Welcome Box ? The Amazon Baby Registry Welcome Box is a free gift available to Prime members who create a baby registry on Amazon . Inside, you’ll find a curated mix of sample- and full-sized items.",
+          "url": "https://www.retailmenot.com/blog/daily-freebie-amazon-welcome-box.html"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results describe the Amazon Baby Registry Welcome Box as a free gift for Prime members who create a baby registry and meet purchase criteria. <reference1>Amazon says the box is worth $35, thanks to all of the freebies like diapers and wipes in it</reference1>. <reference5>It also includes several coupons and a parenting guide that first-time moms and dads are sure to find helpful</reference5>. <reference10>Inside, you'll find a curated mix of sample- and full-sized items</reference10>. The product is a curated collection of baby samples and essentials provided to expecting parents.",
+        "canonical_name": "curated baby registry welcome box with samples and essentials",
+        "category_inferred": "baby care / registry rewards",
+        "use_case": [
+          "expecting parent claiming free registry rewards",
+          "new parent trying baby brands before full purchase",
+          "family member purchasing for a new baby"
+        ],
+        "household_signals": [
+          "implies_pregnancy",
+          "implies_newborn_or_infant"
+        ],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 5.011,
+      "input_tokens": 1715,
+      "output_tokens": 234,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "Baby Registry Welcome Box",
+        "canonical_name": "curated baby registry welcome box with samples and essentials"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Baby registry purchases are concentrated among parents in the child-rearing age range, typically 25-44.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "While both parents and grandparents buy registries, the primary demographic for initiating a registry skews female.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Curated registry boxes imply a household with disposable income for baby goods, often middle-to-upper-middle class.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Registry usage correlates with higher education levels, particularly bachelor's degree or above.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Parents purchasing registries span all occupation classes, though service and professional roles are common.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Baby registries are purchased across all ethnic groups without specific bias.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Registry usage is prevalent in urban and suburban areas where family planning is common.",
+            "attribute": "urban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the general demographic skew of registry buyers; the specific intent of a 'welcome box' does not add finer-grained demographic traits beyond the core buyer profile.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Creating a curated registry indicates a family-oriented lifestyle focused on preparing for a new dependent.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "The act of curating a welcome box suggests a nurturing-caregiver disposition and attention to detail.",
+            "attribute": [
+              "nurturing-caregiver"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A registry is a planned purchase made in anticipation of a future event, not a routine or emergency buy.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Curated boxes are chosen for the convenience of receiving a complete set of essentials rather than individual items.",
+            "attribute": [
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented and convenience-seeking framing; the specific intent of a 'welcome box' is a stable planning behavior rather than a recent transition, so no additional psychographic attributes are added here.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A baby registry can be created by couples or single parents and is not exclusively tied to marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A baby registry is a strong signal that a child is expected or has recently been born, as it is the primary tool for gathering gifts and supplies.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A registry is not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A registry is not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "A registry is not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A registry is not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A registry is not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A registry is not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-childbirth captures the strong life event; no finer-grained life-stage transition can be inferred from a baby registry purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12930,
+      "output_tokens": 1043,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+    "raw_query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": true,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title contains marketing fluff and lacks specific brand or model details, making it ambiguous without external context. Reading glasses are generic accessories with no strong signal regarding specific user attributes.",
+      "is_json": true
+    },
+    "duration_per_sample": 1.2443,
+    "search": {
+      "searched": true,
+      "success_search": true,
+      "search_result": [
+        {
+          "retrieval_context": "### Search result 1. Amazon .com: JOSCHOO Reading Glasses with Strong Spring ...\n   JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas .JOLISU 5 Pack Reading Glasses for Women , Spring Hinges Lightweight Readers Glasses ,Blue Light Reading Glasses Anti Eyestrain.\n   URL: https://www.amazon.com/Reading-Glasses-Colorful-Trendy-Readers/dp/B07JHJ9PQ3\n\n",
+          "title": "Amazon .com: JOSCHOO Reading Glasses with Strong Spring ...",
+          "body": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas .JOLISU 5 Pack Reading Glasses for Women , Spring Hinges Lightweight Readers Glasses ,Blue Light Reading Glasses Anti Eyestrain.",
+          "url": "https://www.amazon.com/Reading-Glasses-Colorful-Trendy-Readers/dp/B07JHJ9PQ3"
+        },
+        {
+          "retrieval_context": "### Search result 2. Reading Glasses for Sale - eBay\n   Capture great deals on stylish Reading Glasses from Foster Grant, Ray-Ban & more. Shop our wide variety of products at the lowest online prices.\n   URL: https://www.ebay.com/b/Reading-Glasses/67670/bn_2311122\n\n",
+          "title": "Reading Glasses for Sale - eBay",
+          "body": "Capture great deals on stylish Reading Glasses from Foster Grant, Ray-Ban & more. Shop our wide variety of products at the lowest online prices.",
+          "url": "https://www.ebay.com/b/Reading-Glasses/67670/bn_2311122"
+        },
+        {
+          "retrieval_context": "### Search result 3. JOSCHOO Product Guide: 15 Best Things to Buy from JOSCHOO ...\n   JOSCHOO 5 Pack Reading Glasses Men Women Spring Hinges Comfortable Glasses for Reading (5 Mix, 1.25). JOSCHOO 6-Pack Women and men Colored Frame Reading Glasses try them risk-free today. We are confident that our product will meet or exceed your expectations.\n   URL: https://www.cherrypicksreviews.com/brand/joschoo\n\n",
+          "title": "JOSCHOO Product Guide: 15 Best Things to Buy from JOSCHOO ...",
+          "body": "JOSCHOO 5 Pack Reading Glasses Men Women Spring Hinges Comfortable Glasses for Reading (5 Mix, 1.25). JOSCHOO 6-Pack Women and men Colored Frame Reading Glasses try them risk-free today. We are confident that our product will meet or exceed your expectations.",
+          "url": "https://www.cherrypicksreviews.com/brand/joschoo"
+        },
+        {
+          "retrieval_context": "### Search result 4. woman with strong glasses - Buy woman with strong glasses with ...\n   Zilead Reading Glasses Women Men Metal Round Presbyopic Reading Eyeglasses Unisex Read Optical Spectacle Diopters 0 to+4.0 Gafas .The product is of good quality. Affordable Price, arrived on time. Not expected that color lens, otherwise all conforming.\n   URL: https://www.aliexpress.com/w/wholesale-woman-with-strong-glasses.html\n\n",
+          "title": "woman with strong glasses - Buy woman with strong glasses with ...",
+          "body": "Zilead Reading Glasses Women Men Metal Round Presbyopic Reading Eyeglasses Unisex Read Optical Spectacle Diopters 0 to+4.0 Gafas .The product is of good quality. Affordable Price, arrived on time. Not expected that color lens, otherwise all conforming.",
+          "url": "https://www.aliexpress.com/w/wholesale-woman-with-strong-glasses.html"
+        },
+        {
+          "retrieval_context": "### Search result 5. Shop all Reading Glasses in Reading Glasses - Walmart.com\n   Buy products such as Mens Spring Hinge Plastic Reading Glasses Blk 1.25 Oliver in Classic Black at Walmart and save.\n   URL: https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402_1070325\n\n",
+          "title": "Shop all Reading Glasses in Reading Glasses - Walmart.com",
+          "body": "Buy products such as Mens Spring Hinge Plastic Reading Glasses Blk 1.25 Oliver in Classic Black at Walmart and save.",
+          "url": "https://www.walmart.com/browse/health-medicine/shop-all-reading-glasses/976760_1078944_8905402_1070325"
+        },
+        {
+          "retrieval_context": "### Search result 6. Lenskart.com® - Buy Eyeglasses , Sunglasses & Contact Lens\n   Trending at Lenskart. eyeglasses . sunglasses . contact lens. gold max membership. lenskart@home. zero power computer glasses .\n   URL: https://www.lenskart.com/\n\n",
+          "title": "Lenskart.com® - Buy Eyeglasses , Sunglasses & Contact Lens",
+          "body": "Trending at Lenskart. eyeglasses . sunglasses . contact lens. gold max membership. lenskart@home. zero power computer glasses .",
+          "url": "https://www.lenskart.com/"
+        },
+        {
+          "retrieval_context": "### Search result 7. Stylish Protection with UV-Blocking mens reader sunglasses for...\n   Unisex Sunglasses 2025 Sun Reading Glasses Fashion Retro Sunglasses Men Womens Round Shape Frame With Reading UV400 Grey Lenses.High Quality Spring Hinges Blue Light Blocking Lightweight Sunglasses Readers Trendy Reading Glasses for Women Men .\n   URL: https://www.alibaba.com/showroom/mens-reader-sunglasses.html\n\n",
+          "title": "Stylish Protection with UV-Blocking mens reader sunglasses for...",
+          "body": "Unisex Sunglasses 2025 Sun Reading Glasses Fashion Retro Sunglasses Men Womens Round Shape Frame With Reading UV400 Grey Lenses.High Quality Spring Hinges Blue Light Blocking Lightweight Sunglasses Readers Trendy Reading Glasses for Women Men .",
+          "url": "https://www.alibaba.com/showroom/mens-reader-sunglasses.html"
+        },
+        {
+          "retrieval_context": "### Search result 8. Health and beauty | Round reading glasses , Lens width, 20mm\n   JOSCHOO Reading Glasses 5 Pack Color Small Round Women HD Spring Hinge Reader - Walmart.com.\n   URL: https://ru.pinterest.com/pin/kokobin-4pack-mini-small-round-reading-glasses-comfortable-readers-for-women-and-men-multicoloured-275-multiplier_x--654218283398216902/\n\n",
+          "title": "Health and beauty | Round reading glasses , Lens width, 20mm",
+          "body": "JOSCHOO Reading Glasses 5 Pack Color Small Round Women HD Spring Hinge Reader - Walmart.com.",
+          "url": "https://ru.pinterest.com/pin/kokobin-4pack-mini-small-round-reading-glasses-comfortable-readers-for-women-and-men-multicoloured-275-multiplier_x--654218283398216902/"
+        },
+        {
+          "retrieval_context": "### Search result 9. 5 Pack Reading Glasses Men Women Spring Hinge ... | luxe faves\n   This Rectangular frames reading glasses Stylish and elegant ，Lightweight frame design and Excellent nose pads do not produce uncomfortable squeeze,very suitable for office learning, casual reading , etc.. color include: black, tortoise, blue, gray,tortoise/black...\n   URL: https://luxefaves.com/?product=5-pack-reading-glasses-men-women-spring-hinge-comfortable-glasses-for-reading\n\n",
+          "title": "5 Pack Reading Glasses Men Women Spring Hinge ... | luxe faves",
+          "body": "This Rectangular frames reading glasses Stylish and elegant ，Lightweight frame design and Excellent nose pads do not produce uncomfortable squeeze,very suitable for office learning, casual reading , etc.. color include: black, tortoise, blue, gray,tortoise/black...",
+          "url": "https://luxefaves.com/?product=5-pack-reading-glasses-men-women-spring-hinge-comfortable-glasses-for-reading"
+        },
+        {
+          "retrieval_context": "### Search result 10. Bargain Mart | Stylish JOSCHOO Eyewear - Trendy and Affordable\n   JOSCHOO Computer Reading Glasses for Women and Men 6p. Check Price. JOSCHOO Reading Glasses 5-Pack Quality Readers Spring Hinge .\n   URL: https://bargainmart.com/joschoo\n\n",
+          "title": "Bargain Mart | Stylish JOSCHOO Eyewear - Trendy and Affordable",
+          "body": "JOSCHOO Computer Reading Glasses for Women and Men 6p. Check Price. JOSCHOO Reading Glasses 5-Pack Quality Readers Spring Hinge .",
+          "url": "https://bargainmart.com/joschoo"
+        }
+      ],
+      "search_duration": 0.0
+    },
+    "transaction": {
+      "prediction": {
+        "reasoning": "Search results describe JOSCHOO Reading Glasses as lightweight, colorful, and featuring strong spring hinges suitable for reading, office work, and casual use. <reference1>JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge</reference1> and <reference3>JOSCHOO 5 Pack Reading Glasses Men Women Spring Hinges Comfortable Glasses for Reading</reference3> confirm the product is a set of unisex reading eyeglasses designed for comfort and style.",
+        "canonical_name": "colorful spring hinge reading glasses for unisex office and casual use",
+        "category_inferred": "eyewear / reading glasses",
+        "use_case": [
+          "adults needing magnification for reading books or documents",
+          "office workers requiring temporary vision correction during work",
+          "individuals seeking stylish, lightweight eyewear for daily activities"
+        ],
+        "household_signals": [],
+        "is_json": true
+      },
+      "run_recovery": true,
+      "success_recovery": true,
+      "duration_recovery": 5.011,
+      "input_tokens": 1742,
+      "output_tokens": 206,
+      "thinking": ""
+    },
+    "items": [
+      {
+        "product_name": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+        "canonical_name": "colorful spring hinge reading glasses for unisex office and casual use"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Reading glasses are primarily purchased by adults over 40 who require vision correction, with a peak concentration in the 45-64 age range.",
+            "attribute": [
+              "45-54",
+              "55-64"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "The product title explicitly specifies 'Women Men', indicating a unisex design that appeals to both genders equally.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Reading glasses are a low-cost, essential accessory available across all income brackets.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Vision correction needs are not correlated with education level; buyers span all educational backgrounds.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "The glasses are marketed for 'office and casual use', implying utility for various occupations but not specific to one class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Reading glasses are a universal necessity purchased across all ethnicities.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Vision correction is a universal need regardless of whether the buyer lives in urban, suburban, or rural areas.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The product is a generic vision correction item with no specific demographic signals beyond the broad age requirement for presbyopia.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Colorful, trendy reading glasses suggest an appreciation for aesthetics and fashion, aligning with an urban-trendy lifestyle.",
+            "attribute": [
+              "urban-trendy"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing a 'colorful' and 'trendy' accessory over a standard black frame indicates a fashion-individualist disposition.",
+            "attribute": [
+              "fashion-individualist"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Reading glasses are typically purchased as a routine replacement or upgrade for existing eyewear rather than for a special occasion.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The emphasis on 'colorful' and 'trendy' features indicates a primary benefit of aesthetic design over pure functionality.",
+            "attribute": [
+              "aesthetic-design"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the trend-conscious and aesthetic-seeking traits; the specific choice of 'spring hinge' technology is a minor functional detail not requiring a separate atomic attribute.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Reading glasses are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Reading glasses are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Reading glasses are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "While vision changes can occur in retirement, reading glasses are bought by active workers and students as well; not a specific signal.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Reading glasses are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Reading glasses are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Reading glasses are not specifically associated with job change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Reading glasses are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The purchase of reading glasses reflects an ongoing health need or lifestyle preference, not a recent life-stage transition.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12950,
+      "output_tokens": 1017,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+    "raw_query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "has-child"
+      ],
+      "reason": "The inclusion of both ovulation and pregnancy test strips strongly indicates the household is actively trying to conceive or is monitoring fertility, signaling a potential pregnancy or plans for one.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+        "canonical_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Ovulation and pregnancy testing kits are primarily used by women of reproductive age, concentrating in the 25-34 and 35-44 age bins.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Ovulation and pregnancy tests are biological tools specific to female physiology.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Over-the-counter home test kits are accessible across all income levels and do not indicate a specific income bracket.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Home pregnancy testing is not diagnostic of education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Purchasing home health tests is not occupation-specific.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Home pregnancy testing is not associated with any specific ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Home health tests are purchased in urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the reproductive-age female demographic; no finer-grained demographic traits are reliably inferable from a single test kit purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Home pregnancy testing is a health-wellness practice often associated with a family-oriented or health-conscious lifestyle.",
+            "attribute": [
+              "family-oriented",
+              "health-wellness"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Users of home pregnancy tests are often detail-oriented regarding their reproductive health and family planning.",
+            "attribute": [
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Test kits are bought as routine consumables or during specific moments of uncertainty, but the combo kit suggests a general preparation for testing.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Home test kits are chosen for the convenience of self-testing at home rather than visiting a clinic.",
+            "attribute": [
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the health-conscious and family-oriented framing; the specific intent of testing for pregnancy or ovulation is a behavioral state best captured in the life-event dimension.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Pregnancy tests are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "The purchase of ovulation and pregnancy test strips is a direct and specific signal that the user is actively trying to conceive or is in the process of testing for pregnancy.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Pregnancy tests are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Pregnancy tests are not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Pregnancy tests are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Pregnancy tests are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Pregnancy tests are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Pregnancy tests are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-childbirth captures the strong life event; no finer-grained life-stage transition can be inferred from a single test kit purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12990,
+      "output_tokens": 1023,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+    "raw_query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-moved"
+      ],
+      "reason": "Moving boxes are a specific signal indicating the household is currently in the process of relocating.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+        "canonical_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Moving box purchases span all adult age bins but are most common among middle-aged adults managing household transitions.",
+            "attribute": [
+              "25-34",
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Moving boxes are a shared household utility item with no specific gender skew.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Moving boxes are a standard consumable for relocation and are purchased across all income brackets.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Moving boxes are not diagnostic for education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Relocation occurs across all occupation classes.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Moving boxes are not ethnicity-specific.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Moves occur between urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A pack of moving boxes does not reveal specific demographic dimensions beyond Layer 1; the relocation aspect is captured in the life-event dimension.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Moving boxes are utility purchases that do not map to any single lifestyle enum value.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing moving boxes indicates a practical-pragmatic disposition focused on logistics.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Moving boxes are bought specifically for the discrete event of a residential move.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Moving boxes are chosen for the convenience of transporting household goods efficiently.",
+            "attribute": [
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the special-occasion and convenience-seeking framing; the move itself is a life event captured in the life-event dimension, not an ongoing psychographic trait.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Moving boxes can be bought during marriage-related moves but are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Moving boxes are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Moving boxes exist almost exclusively to transport household goods during residential moves; the product has no significant non-moving use case.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Moving boxes can be bought during retirement-related downsizing but are not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Moving boxes are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Moving boxes can be bought during empty-nest-related moves but are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Moving boxes can be bought during job-change-related moves but are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Moving boxes are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-relocation captures the strong life event; no finer-grained life-stage transition can be inferred from a moving box purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12962,
+      "output_tokens": 977,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+    "raw_query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "has-child"
+      ],
+      "reason": "The title explicitly mentions 'Maternity' and 'Pregnancy', which are strong indicators that the buyer is currently pregnant or has recently had a child.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+        "canonical_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Maternity clothing is purchased during pregnancy, which typically occurs in the 25-44 age range where childbearing is most common.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "The product is explicitly labeled 'Women's', indicating the primary demographic is female.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Maternity apparel is a discretionary household expense that spans various income levels but is not diagnostic of a specific bracket.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Maternity clothing is not diagnostic of education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Purchasing maternity wear is not specific to any single occupation class.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Maternity clothing is purchased across all ethnic groups.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Maternity clothing is available and purchased in urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The product indicates a specific life stage (pregnancy) which is captured in the life_event dimension, so no additional demographic attributes are needed here.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Maternity clothing is associated with the family-oriented lifestyle of caring for a new dependent.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "The style (loose swing, empire waist) suggests a preference for comfort and ease, aligning with a practical-pragmatic approach.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Maternity clothes are bought as a routine necessity during the pregnancy period.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The 'loose swing' and 'empire waist' descriptions indicate a primary benefit of comfort and accommodation for a growing belly.",
+            "attribute": [
+              "comfort"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented and comfort-seeking framing; the specific pregnancy context is a life event, not a psychographic trait.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Maternity dresses are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Maternity clothing is purchased during the pregnancy period, which precedes childbirth and is a direct signal of expecting a child.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Maternity dresses are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Maternity dresses are not associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Maternity dresses are not associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Maternity dresses are not associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Maternity dresses are not associated with job change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Maternity dresses are not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The strong signal of recent-childbirth is captured in Layer 1; no finer-grained life-event attributes are needed.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12944,
+      "output_tokens": 986,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+    "raw_query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a grooming tool for men, but purchasing such items is common across all demographics and does not signal a specific user attribute or life change.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+        "canonical_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "is_json": false
+      },
+      "user_attribute_psycho_behavioral": {
+        "is_json": false
+      },
+      "user_attribute_life_event": {
+        "is_json": false
+      },
+      "input_tokens": 12972,
+      "output_tokens": 880,
+      "success_predict": false
+    },
+    "attribute2cluster_id": {}
+  },
+  {
+    "resolved_query": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+    "raw_query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a specific dog food product for small senior breeds, but purchasing it does not reveal specific user attributes beyond owning a dog, which is not listed as a diagnostic category.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+        "canonical_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Senior dog food is purchased by owners of aging pets, typically in households with middle-aged adults who have had pets for 10+ years.",
+            "attribute": [
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Pet food purchasing skews slightly female on average, though small-breed senior food is shared across genders.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Premium natural dog food brands like Nutro are accessible across middle-to-upper-middle income brackets.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Pet owners of senior dogs often have higher education levels due to correlation with pet ownership rates.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Pet ownership is occupation-agnostic.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Pet ownership patterns are not strongly diagnostic for ethnicity from this product.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Dog ownership is over-represented in suburban single-family-home households.",
+            "attribute": "suburban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the demographic skew of senior pet owners; no additional finer-grained demographic dimensions are reliably inferable from this product alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Pet owners, especially those with senior dogs, reflect a family-oriented lifestyle that prioritizes care of dependents.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Caring for a senior dog requires patience and attentiveness, indicating a nurturing-caregiver personality.",
+            "attribute": [
+              "nurturing-caregiver"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Dog food is a recurring consumable bought as part of routine pet care.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Senior-specific formulas are chosen for health-wellness benefits tailored to aging pets.",
+            "attribute": [
+              "health-wellness"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented and nurturing-caregiver framing; the specific pet-acquisition aspect is a recent transition captured in the life-event dimension, not an ongoing psychographic trait, so no additional psychographic attributes are added here.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Senior dog food is not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Senior dog food is not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Senior dog food is not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Senior dog food is not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Senior dog food is not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Senior dog food is not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Senior dog food is not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Senior dog food is not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 cannot express pet-acquisition life events (the closed enum only covers human life transitions), so we add this as an atomic attribute orthogonal to Layer 1.",
+            "attribute": [
+              "user or household recently acquired a dog or small breed dog"
+            ],
+            "confidence": {
+              "user or household recently acquired a dog or small breed dog": 0.65
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12972,
+      "output_tokens": 1058,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {
+        "user or household recently acquired a dog or small breed dog": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.65
+        }
+      }
+    }
+  },
+  {
+    "resolved_query": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+    "raw_query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a coffee machine, which is a generic household appliance with no specific signal about user attributes.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+        "canonical_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Premium single-serve espresso machines are purchased predominantly by adults aged 35 and above who have established disposable income for home coffee upgrades.",
+            "attribute": [
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Espresso machine buyers show a slight male skew in US market data, though the trend is narrowing.",
+            "attribute": "male"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "High-end Nespresso machines with titanium finishes are mid-to-high tier purchases that align with middle-to-upper-middle income households.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Home espresso enthusiasts correlate moderately with bachelor-level education in consumer panel data.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Home coffee upgrades are occupation-agnostic and purchased by professionals, service workers, and blue-collar workers alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Espresso machine ownership is not strongly diagnostic for ethnicity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Home espresso culture is over-represented in urban and suburban households with dedicated kitchen spaces.",
+            "attribute": "urban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the demographic skew of premium espresso machine buyers; no finer-grained demographic dimensions are reliably inferable from this product alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Home espresso machines reflect a tech-enthusiast or gourmet-foodie lifestyle focused on high-quality daily rituals.",
+            "attribute": [
+              "tech-enthusiast",
+              "gourmet-foodie"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Investing in a dedicated espresso machine indicates a status-conscious and quality-premium disposition.",
+            "attribute": [
+              "status-conscious",
+              "quality-premium"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Espresso machines are bought as planned upgrades to home appliances rather than for a specific seasonal or special occasion.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The purchase is driven by the desire for premium coffee quality, convenience of single-serve, and aesthetic design.",
+            "attribute": [
+              "quality-premium",
+              "convenience",
+              "aesthetic-design"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the tech-enthusiast and gourmet-foodie framing; the specific behavior of making daily espresso at home is an atomic psychographic attribute orthogonal to Layer 1.",
+            "attribute": [
+              "user makes daily espresso or specialty coffee at home"
+            ],
+            "confidence": {
+              "user makes daily espresso or specialty coffee at home": 0.85
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Espresso machines are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Espresso machines are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Espresso machines are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Espresso machines are not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Espresso machines are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Espresso machines are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Espresso machines are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Espresso machines are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Espresso machine purchases reflect an ongoing lifestyle upgrade rather than a recent life-stage transition; the life_event list is empty.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12948,
+      "output_tokens": 1077,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {
+        "user makes daily espresso or specialty coffee at home": {
+          "cluster_id": 0,
+          "pseudo_confidence": 0.85
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+    "raw_query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a sous vide precision cooker, a generic kitchen appliance with no specific signal about user attributes.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+        "canonical_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Precision sous vide cookers are adopted by adults aged 35 and above who have the disposable income and culinary interest to invest in high-end kitchen appliances.",
+            "attribute": [
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "While cooking is a shared activity, the purchase of specialized high-end kitchen gadgets like sous vide machines skews slightly male in consumer electronics data.",
+            "attribute": "male"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Precision sous vide units are premium kitchen appliances that require a higher disposable income bracket to purchase.",
+            "attribute": [
+              "75-99k",
+              "100-149k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Adoption of precision cooking technology correlates with higher education levels where health and culinary skills are prioritized.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Precision cooking is a hobbyist activity spanning all occupation classes, but the product itself is not occupation-specific.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Precision cooking is a global culinary trend adopted across all ethnicities.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "High-end kitchen appliances are purchased in urban and suburban areas where modern home kitchens are common.",
+            "attribute": "urban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the demographic skew of precision cooking adopters; no finer-grained demographic dimensions are reliably inferable from this product alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Precision sous vide cooking aligns with a gourmet-foodie lifestyle that values culinary technique and high-quality results.",
+            "attribute": [
+              "gourmet-foodie"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Users of precision cooking equipment tend to be analytical-detail-oriented, seeking exact control over cooking variables.",
+            "attribute": [
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Precision cookers are bought as capital investments for the kitchen rather than as routine consumables.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Sous vide technology is chosen primarily for the performance benefit of consistent, precise cooking results.",
+            "attribute": [
+              "performance"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the gourmet-foodie and analytical framing; the specific behavior of using immersion circulators for precision cooking is added as an atomic attribute.",
+            "attribute": [
+              "user practices precision cooking using sous vide immersion circulators"
+            ],
+            "confidence": {
+              "user practices precision cooking using sous vide immersion circulators": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Sous vide cookers are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Sous vide cookers are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Sous vide cookers are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Sous vide cookers are not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Sous vide cookers are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Sous vide cookers are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Sous vide cookers are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Sous vide cookers are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Precision cooking equipment reflects an ongoing lifestyle choice rather than a recent life-stage transition.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12976,
+      "output_tokens": 1066,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {
+        "user practices precision cooking using sous vide immersion circulators": {
+          "cluster_id": 1,
+          "pseudo_confidence": 0.9
+        }
+      },
+      "user_attribute_life_event": {}
+    }
+  },
+  {
+    "resolved_query": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+    "raw_query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a USB-C cable with specific compatibility details, making it self-describing. As a generic electronic accessory, it is purchased across all demographics and provides no specific signal about the user.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 9.295499679096975,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "High-end branded cables with specific compatibility lists (MacBook, iPad Pro) are purchased by tech-savvy adults in the 25-44 age range.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Premium tech accessories and Apple ecosystem products show a slight male skew in purchase data.",
+            "attribute": "male"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Anker Powerline II cables are premium accessories ($30-$50) that align with middle-to-upper-middle income households.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Users seeking specific high-speed (3.1 Gen 2) and power delivery features for laptops typically hold a bachelor's degree or higher.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Owners of MacBook, iPad Pro, and Chromebooks span white-collar, professional, and student occupations.",
+            "attribute": [
+              "white-collar",
+              "professional",
+              "student"
+            ]
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Tech accessory buyers are distributed across all ethnic groups without strong demographic skew.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Users with high-end laptops and tablets are over-represented in urban and suburban areas.",
+            "attribute": [
+              "urban",
+              "suburban"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the demographic skew of premium tech accessory buyers; no finer-grained demographic dimensions are reliably inferable from this product alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "The purchase of a premium, multi-device compatible cable indicates a tech-enthusiast lifestyle.",
+            "attribute": [
+              "tech-enthusiast"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Users who invest in high-speed, branded cables for their devices demonstrate a practical-pragmatic approach to technology.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Replacement cables are bought as routine maintenance items for existing electronics.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The Powerline II model is chosen specifically for its high-speed data transfer and power delivery capabilities.",
+            "attribute": [
+              "performance"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the tech-enthusiast and performance-seeking framing; the specific brand preference for Anker is a consumer choice not captured by the broad lifestyle enum.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "USB-C cables are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Cables are unrelated to childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Cables are bought regardless of relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Cables are bought regardless of retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Cables are bought regardless of schooling transitions.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Cables are bought regardless of household composition change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Cables are bought regardless of employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Cables are unrelated to bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A generic USB-C cable carries no life-stage signal beyond Layer 1's unknowns, so the free-description list is empty.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 13028,
+      "output_tokens": 1029,
+      "success_predict": true
+    },
+    "attribute2cluster_id": {
+      "user_attribute_psycho_behavioral": {},
+      "user_attribute_life_event": {}
+    }
+  }
+]

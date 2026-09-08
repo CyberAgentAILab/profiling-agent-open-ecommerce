@@ -1,0 +1,69 @@
+# Each attribute_branches entry overrides out_dir, target_patterns, and
+# cache_embedding_path; all other keys are shared. Logging always goes to the
+# top-level log_dir (load_config activates it once, before the branch loop).
+attribute_branches:
+  - name: demographic
+    out_dir: ./results/open_ecommerce/clustering/demographic/v4
+    target_patterns:
+      - user_attribute_demographic
+    cache_embedding_path: ./cache/embedding/demographic
+
+  - name: psycho_behavioral
+    out_dir: ./results/open_ecommerce/clustering/psycho_behavioral/v4
+    target_patterns:
+      - user_attribute_psycho_behavioral
+    cache_embedding_path: ./cache/embedding/psycho_behavioral
+
+  - name: life_event
+    out_dir: ./results/open_ecommerce/clustering/life_event/v4
+    target_patterns:
+      - user_attribute_life_event
+    cache_embedding_path: ./cache/embedding/life_event
+
+# Top-level out_dir/log_dir: the merged output (all branches combined into one
+# file) is written here after every branch finishes. Branches override out_dir
+# per their own embedding/cache needs, but the final clustering result is saved
+# once to these top-level paths.
+out_dir: ./results/open_ecommerce/clustering/v4
+log_dir: ./logs/open_ecommerce/clustering
+
+model_name: ./models/Qwen3-Embedding-0.6B
+
+torch_dtype: bfloat16
+embedding_backend: qwen3_embedding  # one of: sentence_transformer | plamo | qwen3_embedding
+n_clusters: 10
+enable_cache: False
+
+batch_size: 100
+
+# qwen3_embedding settings (used only when embedding_backend=qwen3_embedding).
+# Point model_name at a local Qwen/Qwen3-Embedding-* checkout (e.g.
+# ./models/Qwen3-Embedding-0.6B). qwen3_max_length caps the tokenized input
+# length per the model card (context supports up to 32K, default 8192).
+qwen3_max_length: 8192
+
+query_path: ./results/open_ecommerce/user/v4
+
+algorithm: hdbscan # kmeans
+seed: 3407
+
+minibatch_kmeans_batch_size: 1024
+minibatch_kmeans_max_iter: 300
+minibatch_kmeans_n_init: 10
+minibatch_kmeans_max_no_improvement: 10
+minibatch_kmeans_reassignment_ratio: 0.01
+
+dimension_reduction: umap
+pca_n_components: 512
+pca_random_state: 0
+
+umap_n_components: 8
+umap_min_dist: 0.1
+umap_n_neighbors: 20
+umap_metric: cosine
+
+min_cluster_ratio: 0.01 # min_cluster_size = max(2, int(min_cluster_ratio * num_attributes))
+min_samples: 20
+metric: euclidean
+cluster_selection_method: eom
+hdbscan_n_jobs: -1

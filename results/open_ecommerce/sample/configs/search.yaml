@@ -1,0 +1,21 @@
+out_dir: ./results/open_ecommerce/sample/outputs/search
+log_dir: ./results/open_ecommerce/sample/logs/search
+csv_path: ./data/public/open-ecommerce/titles_ge3_buyers.csv
+use_validation_data: true
+validation_path: ./results/open_ecommerce/sample/outputs/scan
+filter_need_search: false
+filter_is_diagnostic: true
+num_search: 10
+timeout: 60
+num_debug: null
+query_suffix: ' Amazon product'
+search_engine: serper
+ddgs_region: us-en
+backend:
+- google
+- bing
+serp_url: https://www.searchapi.io/api/v1/search
+serper_url: https://google.serper.dev/search
+begin: null
+end: null
+search_cache_dir: ./search_cache/open-ecommerce

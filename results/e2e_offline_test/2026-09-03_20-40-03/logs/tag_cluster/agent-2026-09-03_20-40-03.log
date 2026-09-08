@@ -1,0 +1,274 @@
+2026-09-03 11:40:03.412 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:40:03.412 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:40:03.412 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:40:03.413 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:40:03.413 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:40:03.413 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:40:03.413 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:40:03.413 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'batch_size': 100, 'begin': None, 'cache_embed_dir': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/embedding_cache', 'cache_embed_model': './models/Qwen3-Embedding-0.6B', 'cluster_id_namespace': 'per_pattern', 'debug_num_sample': 100000, 'enable_cache': True, 'enable_thinking': False, 'end': None, 'enforce_eager': True, 'gpu_memory_utilization': 0.9, 'json_schema_tag': ['reasoning', 'tag'], 'log_dir': './results/e2e_offline_test/2026-09-03_20-40-03/logs/tag_cluster', 'max_model_len': 8192, 'max_new_tokens': 2048, 'model_name': './models/Qwen3.5-4B', 'out_dir': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/tag', 'path_prompt_template': './configs/prompt/open-ecommerce/tag_cluster.txt', 'query_dir': './results/e2e_offline_test/2026-09-03_20-40-03/outputs/clustering', 'sampling_method': 'kmedoids', 'seed': 3407, 'tensor_parallel_size': 1, 'torch_dtype': 'bfloat16', 'trust_remote_code': True, 'use_vllm': True, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-40-03'}
+2026-09-03 11:40:03.422 | INFO     | tag_cluster.model:_load_embeddings:191 - 📂 Loaded 11 attribute embeddings from 3 CSV(s) under ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/embedding_cache
+2026-09-03 11:40:03.422 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.422 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.423 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.423 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.423 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.423 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.424 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.424 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.424 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.424 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.424 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.425 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 11:40:03.425 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.425 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.429 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/tag/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.429 | INFO     | tag_cluster.model:run_tagging:461 - 💾 tagging results: 10 profiles -> ./results/e2e_offline_test/2026-09-03_20-40-03/outputs/tag/output-2026-09-03_20-40-03.json
+2026-09-03 11:40:03.500 | INFO     | icf_dataset:build_user_tag_confidence:169 - 👥 tag='moving': 2 users hold the tag (agg=max)
+2026-09-03 11:40:03.502 | INFO     | icf_dataset:build_user_tag_confidence:169 - 👥 tag='moving': 1 users hold the tag (agg=mean)
+2026-09-03 11:40:03.503 | INFO     | icf_dataset:build_user_tag_confidence:169 - 👥 tag='moving': 1 users hold the tag (agg=max)
+2026-09-03 11:40:03.505 | INFO     | icf_dataset:build_user_tag_confidence:169 - 👥 tag='moving': 0 users hold the tag (agg=max)
+2026-09-03 11:40:03.506 | INFO     | icf_dataset:load_tag_confidences:121 - 🏷️ scanned 3 product objects from tag DB
+2026-09-03 11:40:03.506 | INFO     | icf_dataset:load_tag_confidences:123 -    tag='moving': 2 titles carry it
+2026-09-03 11:40:03.511 | INFO     | investigate_confidence_feasibility.model:evaluate_tag:235 - 📊 wheelchair: n_tagged=5 n_eval=4 m=2 tag_TP=2 AUC=1.0
+2026-09-03 11:40:03.512 | INFO     | investigate_confidence_feasibility.model:evaluate_tag:235 - 📊 wheelchair: n_tagged=2 n_eval=2 m=2 tag_TP=2 AUC=None
+2026-09-03 11:40:03.513 | INFO     | judge_demographic_attribute_model:fill_unknown_demographics:1416 - 🎲 unknown_fill[majority] filled missing predictions: {'signal:age-bin': 2, 'signal:gender': 1, 'signal:income-bin': 2, 'signal:education': 2} (seed=3407)
+2026-09-03 11:40:03.513 | INFO     | judge_demographic_attribute_model:fill_unknown_demographics:1416 - 🎲 unknown_fill[random] filled missing predictions: {'signal:age-bin': 2, 'signal:gender': 1, 'signal:income-bin': 2, 'signal:education': 2} (seed=7)
+2026-09-03 11:40:03.513 | INFO     | judge_demographic_attribute_model:fill_unknown_demographics:1416 - 🎲 unknown_fill[random] filled missing predictions: {'signal:age-bin': 2, 'signal:gender': 1, 'signal:income-bin': 2, 'signal:education': 2} (seed=7)
+2026-09-03 11:40:03.515 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:254 - 🔖 user[1/3] id=u1 titles=2 titles_with_tags=2 distinct_tags_seen=2/3
+2026-09-03 11:40:03.515 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): [['tech'], ['food']]
+2026-09-03 11:40:03.515 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 3 DB tags, incl. zeros): {'tech': 2, 'food': 1, 'unused': 0}
+2026-09-03 11:40:03.516 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:263 - 🧮 aggregated tags for 1 users over 3 DB tags (zero-count tags included)
+2026-09-03 11:40:03.517 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:254 - 🔖 user[1/3] id=u1 titles=2 titles_with_tags=1 distinct_tags_seen=1/2
+2026-09-03 11:40:03.517 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:259 -     per-title tag lists (first 20): [['tech']]
+2026-09-03 11:40:03.517 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:260 -     aggregated tag counts (all 2 DB tags, incl. zeros): {'tech': 2, 'food': 0}
+2026-09-03 11:40:03.517 | INFO     | judge_user_attribute_dataset:aggregate_tags_per_user:263 - 🧮 aggregated tags for 1 users over 2 DB tags (zero-count tags included)
+2026-09-03 11:40:03.518 | INFO     | judge_user_attribute_dataset:aggregate_titles_per_user:296 - 🧾 baseline-user[1/3] id=u1 total_titles=4 unique_titles=3
+2026-09-03 11:40:03.518 | INFO     | judge_user_attribute_dataset:aggregate_titles_per_user:300 -     top-10 titles by count: [('b', 2), ('a', 1), ('c', 1)]
+2026-09-03 11:40:03.518 | INFO     | judge_user_attribute_dataset:aggregate_titles_per_user:303 - 📦 aggregated raw Titles for 1 users (baseline mode)
+2026-09-03 11:40:03.520 | INFO     | judge_user_attribute_dataset:filter_purchases_by_min_buyers:181 - 🔍 filter min_unique_buyers=2: 2 titles → 1 titles kept, 3 rows → 2 rows
+2026-09-03 11:40:03.520 | INFO     | judge_user_attribute_dataset:load_tag_db:46 - 📚 loaded tag DB: 2 records, 0 titles with tags, 0 unique tags
+2026-09-03 11:40:03.521 | INFO     | judge_user_attribute_dataset:load_tag_db:46 - 📚 loaded tag DB: 1 records, 1 titles with tags, 2 unique tags
+2026-09-03 11:40:03.522 | INFO     | predict_transaction_dataset:load_search_result:14 - detect a directory that contains json files
+2026-09-03 11:40:03.522 | INFO     | predict_transaction_dataset:load_search_result:50 - 📚 loaded 1 samples from /tmp/tmpone6y7ku/part-0.json
+2026-09-03 11:40:03.522 | INFO     | predict_transaction_dataset:load_search_result:51 - Omitted 0 samples due to search failure
+2026-09-03 11:40:03.522 | INFO     | predict_transaction_dataset:load_search_result:50 - 📚 loaded 1 samples from /tmp/tmpone6y7ku/part-1.json
+2026-09-03 11:40:03.522 | INFO     | predict_transaction_dataset:load_search_result:51 - Omitted 0 samples due to search failure
+2026-09-03 11:40:03.523 | INFO     | predict_transaction_dataset:load_search_result:56 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:40:03.523 | INFO     | predict_transaction_dataset:load_search_result:14 - detect a directory that contains json files
+2026-09-03 11:40:03.523 | WARNING  | predict_transaction_dataset:load_search_result:17 - No .json files found in /tmp/tmpp8zz2wmm
+2026-09-03 11:40:03.524 | INFO     | predict_transaction_dataset:load_search_result:11 - detect a single json file
+2026-09-03 11:40:03.524 | INFO     | predict_transaction_dataset:load_search_result:50 - 📚 loaded 3 samples from /tmp/tmpy_wz2i6j.json
+2026-09-03 11:40:03.524 | INFO     | predict_transaction_dataset:load_search_result:51 - Omitted 2 samples due to search failure
+2026-09-03 11:40:03.524 | INFO     | predict_transaction_dataset:load_search_result:56 - 📊 Total: 3 samples, 2 failures
+2026-09-03 11:40:03.525 | INFO     | predict_transaction_dataset:load_search_result:11 - detect a single json file
+2026-09-03 11:40:03.525 | INFO     | predict_transaction_dataset:load_search_result:50 - 📚 loaded 2 samples from /tmp/tmp96l451dx.json
+2026-09-03 11:40:03.525 | INFO     | predict_transaction_dataset:load_search_result:51 - Omitted 0 samples due to search failure
+2026-09-03 11:40:03.525 | INFO     | predict_transaction_dataset:load_search_result:56 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:40:03.526 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp95nbg9h8/output-ts.json
+2026-09-03 11:40:03.527 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.527 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.527 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp95nbg9h8/output-ts.json
+2026-09-03 11:40:03.527 | INFO     | predict_transaction_model:predict_transaction_attribute:151 - 💾 transaction predictions: 2 records -> /tmp/tmp95nbg9h8/output-ts.json
+2026-09-03 11:40:03.528 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp8ladgvv4/output-ts.json
+2026-09-03 11:40:03.528 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.529 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp8ladgvv4/output-ts.json
+2026-09-03 11:40:03.529 | INFO     | predict_transaction_model:predict_transaction_attribute:151 - 💾 transaction predictions: 1 records -> /tmp/tmp8ladgvv4/output-ts.json
+2026-09-03 11:40:03.529 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpfjix817v/output-ts.json
+2026-09-03 11:40:03.530 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.530 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.530 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpfjix817v/output-ts.json
+2026-09-03 11:40:03.530 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.531 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpfjix817v/output-ts.json
+2026-09-03 11:40:03.531 | INFO     | predict_transaction_model:predict_transaction_attribute:151 - 💾 transaction predictions: 3 records -> /tmp/tmpfjix817v/output-ts.json
+2026-09-03 11:40:03.532 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpn3ikk36z/output-ts.json
+2026-09-03 11:40:03.532 | INFO     | predict_transaction_model:predict_transaction_attribute:151 - 💾 transaction predictions: 0 records -> /tmp/tmpn3ikk36z/output-ts.json
+2026-09-03 11:40:03.532 | INFO     | predict_user_dataset:_load_allowed_titles:17 - 🎯 loaded 1 allowed titles from /tmp/tmpx7hlky0r/allowed.csv
+2026-09-03 11:40:03.533 | INFO     | predict_user_dataset:load_recovered_transaction:205 - 📚 loaded 2 samples from /tmp/tmpx7hlky0r/out.json
+2026-09-03 11:40:03.533 | INFO     | predict_user_dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:40:03.533 | INFO     | predict_user_dataset:load_recovered_transaction:208 - 🎯 Filtered out 1 samples not in allowed_titles
+2026-09-03 11:40:03.533 | INFO     | predict_user_dataset:load_recovered_transaction:236 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:40:03.533 | INFO     | predict_user_dataset:load_recovered_transaction:238 - 🎯 Filtered out 1 transaction samples not in allowed_titles
+2026-09-03 11:40:03.534 | INFO     | predict_user_dataset:load_recovered_transaction:239 - 📦 returning 1 transactions (predict_transaction=1, scan_only=0, pattern=0)
+2026-09-03 11:40:03.534 | INFO     | predict_user_dataset:load_recovered_transaction:205 - 📚 loaded 2 samples from /tmp/tmph9y9tn9y/out.json
+2026-09-03 11:40:03.534 | INFO     | predict_user_dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:40:03.535 | WARNING  | predict_user_dataset:_load_frequent_pattern_records:60 - 🛒 pattern skipped, missing canonical_name for: ['unknown']
+2026-09-03 11:40:03.535 | INFO     | predict_user_dataset:_load_frequent_pattern_records:77 - 🛒 loaded 1 pattern records, skipped 1 (out of 2) from /tmp/tmph9y9tn9y/patterns.json
+2026-09-03 11:40:03.535 | INFO     | predict_user_dataset:load_recovered_transaction:236 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:40:03.535 | INFO     | predict_user_dataset:load_recovered_transaction:239 - 📦 returning 3 transactions (predict_transaction=2, scan_only=0, pattern=1)
+2026-09-03 11:40:03.536 | INFO     | predict_user_dataset:load_recovered_transaction:205 - 📚 loaded 3 samples from /tmp/tmpihzhf13s/out.json
+2026-09-03 11:40:03.536 | INFO     | predict_user_dataset:load_recovered_transaction:206 - Omitted 2 samples due to recovery failure
+2026-09-03 11:40:03.536 | INFO     | predict_user_dataset:load_recovered_transaction:236 - 📊 Total: 3 samples, 2 failures
+2026-09-03 11:40:03.537 | INFO     | predict_user_dataset:load_recovered_transaction:239 - 📦 returning 1 transactions (predict_transaction=1, scan_only=0, pattern=0)
+2026-09-03 11:40:03.537 | INFO     | predict_user_dataset:load_recovered_transaction:205 - 📚 loaded 2 samples from /tmp/tmpj24iqvc8/out.json
+2026-09-03 11:40:03.537 | INFO     | predict_user_dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:40:03.538 | INFO     | predict_user_dataset:load_recovered_transaction:236 - 📊 Total: 2 samples, 0 failures
+2026-09-03 11:40:03.538 | INFO     | predict_user_dataset:load_recovered_transaction:239 - 📦 returning 2 transactions (predict_transaction=2, scan_only=0, pattern=0)
+2026-09-03 11:40:03.539 | INFO     | predict_user_dataset:load_recovered_transaction:205 - 📚 loaded 1 samples from /tmp/tmpdjx7z7s2/transactions.json
+2026-09-03 11:40:03.539 | INFO     | predict_user_dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 11:40:03.539 | INFO     | predict_user_dataset:_load_scan_only_records:143 - 🛒 scanned 2 records from /tmp/tmpdjx7z7s2/scan/scan.json
+2026-09-03 11:40:03.539 | INFO     | predict_user_dataset:load_recovered_transaction:217 - 🛒 appended 1 scan-only records (no search/transaction context) from /tmp/tmpdjx7z7s2/scan
+2026-09-03 11:40:03.539 | INFO     | predict_user_dataset:load_recovered_transaction:236 - 📊 Total: 1 samples, 0 failures
+2026-09-03 11:40:03.540 | INFO     | predict_user_dataset:load_recovered_transaction:239 - 📦 returning 2 transactions (predict_transaction=1, scan_only=1, pattern=0)
+2026-09-03 11:40:03.540 | ERROR    | predict_user_model:_parse_combined_attributes:82 - failed parse example:
+not a json
+2026-09-03 11:40:03.540 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.540 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.541 | ERROR    | predict_user_model:_parse_combined_attributes:86 - combined output is not an object:
+[1, 2]
+2026-09-03 11:40:03.541 | ERROR    | predict_user_model:_parse_combined_attributes:82 - failed parse example:
+not a json
+2026-09-03 11:40:03.541 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.541 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.541 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.542 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpei1ynibo/output-ts.json
+2026-09-03 11:40:03.542 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.542 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.542 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.543 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.543 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.543 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.545 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpei1ynibo/output-ts.json
+2026-09-03 11:40:03.545 | INFO     | predict_user_model:predict_user_attributes:185 - 💾 user-attribute predictions: 2 records -> /tmp/tmpei1ynibo/output-ts.json
+2026-09-03 11:40:03.546 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp92qt7ejl/output-ts.json
+2026-09-03 11:40:03.546 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.546 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.546 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.546 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.547 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.547 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.547 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp92qt7ejl/output-ts.json
+2026-09-03 11:40:03.548 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.548 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.548 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.549 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp92qt7ejl/output-ts.json
+2026-09-03 11:40:03.549 | INFO     | predict_user_model:predict_user_attributes:185 - 💾 user-attribute predictions: 3 records -> /tmp/tmp92qt7ejl/output-ts.json
+2026-09-03 11:40:03.549 | WARNING  | predict_user_model:predict_user_attributes:153 - ⚠️ no transactions to predict (input length 0). Check upstream out_dir matches predict_user.validation_path / query_path.
+2026-09-03 11:40:03.549 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpya7lt0np/output-ts.json
+2026-09-03 11:40:03.550 | INFO     | predict_user_model:predict_user_attributes:185 - 💾 user-attribute predictions: 0 records -> /tmp/tmpya7lt0np/output-ts.json
+2026-09-03 11:40:03.550 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpw_v83rfk/output-ts.json
+2026-09-03 11:40:03.550 | ERROR    | predict_user_model:_parse_combined_attributes:82 - failed parse example:
+not a json
+2026-09-03 11:40:03.551 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpw_v83rfk/output-ts.json
+2026-09-03 11:40:03.551 | INFO     | predict_user_model:predict_user_attributes:185 - 💾 user-attribute predictions: 1 records -> /tmp/tmpw_v83rfk/output-ts.json
+2026-09-03 11:40:03.551 | INFO     | prepare_titles_dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 1 → kept: 1 (min_unique_buyers=1)
+2026-09-03 11:40:03.552 | INFO     | prepare_titles_dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 0 → kept: 0 (min_unique_buyers=1)
+2026-09-03 11:40:03.552 | INFO     | prepare_titles_dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 1 → kept: 1 (min_unique_buyers=1)
+2026-09-03 11:40:03.552 | INFO     | prepare_titles_dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 3 → kept: 3 (min_unique_buyers=1)
+2026-09-03 11:40:03.553 | INFO     | prepare_titles_dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 2 → kept: 1 (min_unique_buyers=2)
+2026-09-03 11:40:03.553 | INFO     | prepare_titles_dataset:save_titles_csv:52 - 💾 saved 1 titles to /tmp/tmpep5feier/titles.csv
+2026-09-03 11:40:03.554 | INFO     | prepare_titles_dataset:save_titles_csv:52 - 💾 saved 0 titles to /tmp/tmps1cr_u4s/nested/dir/titles.csv
+2026-09-03 11:40:03.555 | INFO     | prepare_titles_dataset:save_titles_csv:52 - 💾 saved 1 titles to /tmp/tmpqrsuv4re/titles.csv
+2026-09-03 11:40:03.556 | INFO     | scan_dataset:load_titles_for_ecommerce:40 - 🛒 ecommerce: loaded 2 titles from /tmp/tmpjjg3pwji.csv
+2026-09-03 11:40:03.557 | INFO     | scan_dataset:load_titles_for_ecommerce:40 - 🛒 ecommerce: loaded 1 titles from /tmp/tmpeltsdw4t.csv
+2026-09-03 11:40:03.558 | INFO     | scan_dataset:load_titles_for_ecommerce:40 - 🛒 ecommerce: loaded 2 titles from /tmp/tmp6qfgvcr8.csv
+2026-09-03 11:40:03.559 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpkfs6u2ld/output-ts.json
+2026-09-03 11:40:03.559 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.559 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.559 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.560 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.560 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpkfs6u2ld/output-ts.json
+2026-09-03 11:40:03.560 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.560 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.561 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpkfs6u2ld/output-ts.json
+2026-09-03 11:40:03.561 | INFO     | scan_model:scan_need_search:146 - 💾 scan results: 3 records -> /tmp/tmpkfs6u2ld/output-ts.json
+2026-09-03 11:40:03.562 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpxph7qe75/output-ts.json
+2026-09-03 11:40:03.562 | INFO     | scan_model:scan_need_search:146 - 💾 scan results: 0 records -> /tmp/tmpxph7qe75/output-ts.json
+2026-09-03 11:40:03.562 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmplvaood9u/output-ts-0-3.json
+2026-09-03 11:40:03.563 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.563 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.563 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmplvaood9u/output-ts-0-3.json
+2026-09-03 11:40:03.563 | INFO     | scan_model:scan_need_search:146 - 💾 scan results: 1 records -> /tmp/tmplvaood9u/output-ts-0-3.json
+2026-09-03 11:40:03.564 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpd26_1qiw/output-ts.json
+2026-09-03 11:40:03.564 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.564 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.564 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.565 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.565 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpd26_1qiw/output-ts.json
+2026-09-03 11:40:03.565 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.565 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.566 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.566 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.566 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpd26_1qiw/output-ts.json
+2026-09-03 11:40:03.566 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.567 | INFO     | scan_model:need_search:93 - llm_output
+{"need_search": "yes", "is_diagnostic": null, "diagnostic_for": null, "reason": "r"}
+2026-09-03 11:40:03.567 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpd26_1qiw/output-ts.json
+2026-09-03 11:40:03.567 | INFO     | scan_model:scan_need_search:146 - 💾 scan results: 5 records -> /tmp/tmpd26_1qiw/output-ts.json
+2026-09-03 11:40:03.568 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 3 scan records from /tmp/tmpx57c6izw.json
+2026-09-03 11:40:03.568 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 3 → 1 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 11:40:03.569 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 2 scan records from /tmp/tmpwqf3bksb.json
+2026-09-03 11:40:03.569 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 2 → 2 (filter_need_search=False, filter_is_diagnostic=True)
+2026-09-03 11:40:03.569 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 1 scan records from /tmp/tmplb7lsytj/part-0.json
+2026-09-03 11:40:03.569 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 1 scan records from /tmp/tmplb7lsytj/part-1.json
+2026-09-03 11:40:03.570 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 2 → 2 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 11:40:03.570 | WARNING  | search_dataset:load_ecommerce_search_list:39 - No .json files found in /tmp/tmp1tmhm6xa
+2026-09-03 11:40:03.571 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 1 scan records from /tmp/tmpk94sbilo.json
+2026-09-03 11:40:03.571 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 1 → 0 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 11:40:03.571 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 2 scan records from /tmp/tmpie9sv161.json
+2026-09-03 11:40:03.571 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 2 → 1 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 11:40:03.572 | INFO     | search_dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 2 scan records from /tmp/tmpihvu29dn.json
+2026-09-03 11:40:03.572 | INFO     | search_dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 2 → 2 (filter_need_search=False, filter_is_diagnostic=False)
+2026-09-03 11:40:03.573 | ERROR    | search_model:serp_search:121 - didn't parse the API response correctly: [1, 2]
+2026-09-03 11:40:03.574 | ERROR    | search_model:serper_search:83 - didn't parse the API response correctly: [1, 2]
+2026-09-03 11:40:03.574 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpk2gc1ixs/output-ts.json
+2026-09-03 11:40:03.574 | INFO     | search_model:run_search:296 - 💾 search results: 0 records -> /tmp/tmpk2gc1ixs/output-ts.json
+2026-09-03 11:40:03.575 | INFO     | search_model:run_search:297 - 🔍 0 search API calls in total
+2026-09-03 11:40:03.575 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmppnmp0mmb/output-ts.json
+2026-09-03 11:40:03.575 | DEBUG    | search_model:check_and_get_cache:196 - ➡️ cache disabled: no-hits. use search API
+2026-09-03 11:40:03.576 | DEBUG    | search_model:save_to_cache:208 - 💾 cache disabled: skipping save for no-hits
+2026-09-03 11:40:03.576 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmppnmp0mmb/output-ts.json
+2026-09-03 11:40:03.576 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.576 | DEBUG    | search_model:run_search:294 - 1 search API called
+2026-09-03 11:40:03.577 | INFO     | search_model:run_search:296 - 💾 search results: 1 records -> /tmp/tmppnmp0mmb/output-ts.json
+2026-09-03 11:40:03.577 | INFO     | search_model:run_search:297 - 🔍 1 search API calls in total
+2026-09-03 11:40:03.577 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp3xtq_vg8/output-ts.json
+2026-09-03 11:40:03.578 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp3xtq_vg8/output-ts.json
+2026-09-03 11:40:03.578 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.578 | DEBUG    | search_model:run_search:294 - 0 search API called
+2026-09-03 11:40:03.579 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmp3xtq_vg8/output-ts.json
+2026-09-03 11:40:03.579 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.579 | DEBUG    | search_model:run_search:294 - 0 search API called
+2026-09-03 11:40:03.579 | INFO     | search_model:run_search:244 - 🔍 Debug mode: Breaking search loop at step 2 (num_debug=2)
+2026-09-03 11:40:03.579 | INFO     | search_model:run_search:296 - 💾 search results: 2 records -> /tmp/tmp3xtq_vg8/output-ts.json
+2026-09-03 11:40:03.579 | INFO     | search_model:run_search:297 - 🔍 0 search API calls in total
+2026-09-03 11:40:03.580 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpvjwda19i/output-ts.json
+2026-09-03 11:40:03.580 | DEBUG    | search_model:check_and_get_cache:196 - ➡️ cache disabled: USB Cable Amazon product. use search API
+2026-09-03 11:40:03.581 | DEBUG    | search_model:save_to_cache:208 - 💾 cache disabled: skipping save for USB Cable Amazon product
+2026-09-03 11:40:03.581 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpvjwda19i/output-ts.json
+2026-09-03 11:40:03.581 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.581 | DEBUG    | search_model:run_search:294 - 1 search API called
+2026-09-03 11:40:03.582 | INFO     | search_model:run_search:296 - 💾 search results: 1 records -> /tmp/tmpvjwda19i/output-ts.json
+2026-09-03 11:40:03.582 | INFO     | search_model:run_search:297 - 🔍 1 search API calls in total
+2026-09-03 11:40:03.582 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpt1o8022j/output-ts.json
+2026-09-03 11:40:03.583 | DEBUG    | search_model:check_and_get_cache:196 - ➡️ cache disabled: searched. use search API
+2026-09-03 11:40:03.583 | DEBUG    | search_model:save_to_cache:208 - 💾 cache disabled: skipping save for searched
+2026-09-03 11:40:03.583 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpt1o8022j/output-ts.json
+2026-09-03 11:40:03.583 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.583 | DEBUG    | search_model:run_search:294 - 1 search API called
+2026-09-03 11:40:03.584 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpt1o8022j/output-ts.json
+2026-09-03 11:40:03.584 | DEBUG    | search_model:run_search:293 - saved timestamp: ts, job_id: None
+2026-09-03 11:40:03.584 | DEBUG    | search_model:run_search:294 - 1 search API called
+2026-09-03 11:40:03.584 | INFO     | search_model:run_search:296 - 💾 search results: 2 records -> /tmp/tmpt1o8022j/output-ts.json
+2026-09-03 11:40:03.584 | INFO     | search_model:run_search:297 - 🔍 1 search API calls in total
+2026-09-03 11:40:03.586 | ERROR    | base_agent.config:validate_json:73 - failed parse example:
+not a json
+2026-09-03 11:40:03.586 | WARNING  | base_agent.config:validate_json:86 - ❌ JSON keys {'reasoning'} do not match required keys {'tag', 'reasoning'}
+2026-09-03 11:40:03.586 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.586 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.586 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.587 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.587 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.588 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpqx6obpfx/output-ts.json
+2026-09-03 11:40:03.588 | INFO     | tag_cluster_model:run_tagging:461 - 💾 tagging results: 1 profiles -> /tmp/tmpqx6obpfx/output-ts.json
+2026-09-03 11:40:03.588 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.588 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 11:40:03.589 | DEBUG    | common.io:save_as_json:39 - save_path: /tmp/tmpm_14pvd7/output-ts.json
+2026-09-03 11:40:03.589 | INFO     | tag_cluster_model:run_tagging:461 - 💾 tagging results: 1 profiles -> /tmp/tmpm_14pvd7/output-ts.json

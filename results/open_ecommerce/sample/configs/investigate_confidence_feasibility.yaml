@@ -1,0 +1,44 @@
+out_dir: ./results/open_ecommerce/sample/outputs/investigate_confidence_feasibility/v1
+log_dir: ./results/open_ecommerce/sample/logs/investigate_confidence_feasibility/v1
+survey_csv: ./data/public/open-ecommerce/survey.csv
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+tag_db_dir: ./results/open_ecommerce/sample/outputs/tag/v4
+tag_db_path: null
+representative_agg: max
+thresholds:
+- 0.0
+- 0.3
+- 0.5
+- 0.7
+- 0.9
+precision_at_ks:
+- 10
+- 25
+- 50
+- 100
+calibration_edges:
+- 0.0
+- 0.2
+- 0.4
+- 0.6
+- 0.8
+- 1.0
+tag_targets:
+- tag: recent onset of mobility or dexterity limitations requiring assistive devices
+  category: life_event
+  name: wheelchair
+  survey_col: Q-personal-wheelchair
+  match: yes_no
+  positive_value: 'Yes'
+- tag: users experiencing relationship crisis or breakup
+  category: life_event
+  name: divorce
+  survey_col: Q-life-changes
+  match: substring
+  positive_value: Divorce
+- tag: recently diagnosed with chronic or cardiovascular health conditions
+  category: life_event
+  name: diabetes
+  survey_col: Q-personal-diabetes
+  match: yes_no
+  positive_value: 'Yes'

@@ -1,0 +1,40 @@
+out_dir: ./results/open_ecommerce/frequent_pattern_mining
+log_dir: ./logs/open_ecommerce/frequent_pattern_mining
+
+# Raw purchases (downloaded by scripts/open_ecommerce/local/download_dataset.py).
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+item_column: Title
+user_column: Survey ResponseID
+
+# Keep titles bought by at least this many distinct users. Stricter than
+# prepare_titles' min_unique_buyers (3), so every mined product is also a pipeline title
+# and predict_user can resolve its canonical_name.
+min_users_per_title: 10
+
+# A basket is one user's purchases on one order date; the same title inside a basket
+# counts once. Baskets smaller than min_basket_size carry no co-purchase and are dropped.
+basket_keys:
+  - Survey ResponseID
+  - Order Date
+min_basket_size: 2
+
+# FP-Growth: 0.02% of the 53,890 baskets = 10 baskets; itemsets of up to 4 titles.
+min_support: 0.0002
+max_len: 4
+
+# Association rules (mined from the frequent itemsets and summarised in the log only;
+# not used by later stages). skip_rules: True skips them.
+skip_rules: False
+rule_metric: lift
+rule_min_threshold: 1.0
+rule_min_confidence: 0.1
+rule_min_lift: 1.2
+
+# Number of patterns / rules echoed to the log (all statistics are log only).
+top_n: 20
+# Minimum itemset size written to frequent_patterns.json (predict_user input).
+export_min_pattern_length: 2
+
+# Optional: a previously produced frequent_patterns.json to compare against
+# (set equality and order; exit code 1 on mismatch). Empty = skip.
+reference_json: ""

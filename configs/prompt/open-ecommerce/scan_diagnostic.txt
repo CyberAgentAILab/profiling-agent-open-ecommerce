@@ -1,0 +1,107 @@
+Your task is to assess an Amazon product title and decide two things:
+
+1. Whether a web search is needed to identify the product (need_search).
+2. Whether the product is "diagnostic" of any user attribute (is_diagnostic), and if so, which attributes.
+
+A product is "diagnostic" if its purchase provides a meaningful signal about the buyer or their household — for example, smoking-cessation patches signal cigarette use; baby formula signals an infant in the household. Most generic household goods (USB cables, toilet paper, batteries) are NOT diagnostic.
+
+- Input:
+  - Product title (may be short, partial, or contain marketing copy)
+
+- Decision rules:
+  - need_search = true if any of the following hold:
+    - The brand or generic product type is not clear from the title alone.
+    - The title is ambiguous, abbreviated, or contains only model numbers.
+    - The exact use case is not obvious without external context.
+  - need_search = false only when the title is fully self-describing.
+  - is_diagnostic = true only if the product is a strong, specific signal for at least one user attribute. When in doubt, set false.
+  - diagnostic_for is an array of attribute categories chosen from this closed set:
+    - substance-use-cigarettes
+    - substance-use-marijuana
+    - substance-use-alcohol
+    - personal-diabetes
+    - personal-wheelchair
+    - life-change-had-child
+    - life-change-became-pregnant
+    - life-change-moved
+    - life-change-lost-job
+    - life-change-divorce
+    - has-child
+    - child-age-infant-0-2
+    - child-age-toddler-3-5
+    - child-age-school-age-6-12
+    - child-age-teen-13-17
+    - age-bin
+    - gender
+    - income-bin
+    - education
+    - hh-size
+  - If is_diagnostic = false, diagnostic_for must be an empty array [].
+
+- Output requirements:
+  - Output ONLY valid JSON, no extra text or markdown.
+  - Top-level keys: need_search, is_diagnostic, diagnostic_for, reason.
+  - reason: 1-2 sentence justification covering both decisions.
+  - Use double quotes; no trailing commas; booleans lowercase.
+
+- Output format:
+
+{
+  "need_search": true,
+  "is_diagnostic": true,
+  "diagnostic_for": ["substance-use-cigarettes"],
+  "reason": "Nicotine patches are smoking-cessation aids strongly associated with current or recent smokers in the household."
+}
+
+- Examples:
+
+Input: Pampers Swaddlers Diapers Size 1, 84 Count
+Output:
+{
+  "need_search": false,
+  "is_diagnostic": true,
+  "diagnostic_for": ["has-child", "child-age-infant-0-2", "life-change-had-child"],
+  "reason": "Newborn-size diapers strongly indicate the household has an infant aged roughly 0-2."
+}
+
+Input: Anker USB-C Cable 6ft (2-Pack)
+Output:
+{
+  "need_search": false,
+  "is_diagnostic": false,
+  "diagnostic_for": [],
+  "reason": "Generic charging cable is purchased across all demographics and provides no specific signal."
+}
+
+Input: NicoDerm CQ Step 1 Nicotine Patches 21mg
+Output:
+{
+  "need_search": false,
+  "is_diagnostic": true,
+  "diagnostic_for": ["substance-use-cigarettes"],
+  "reason": "Nicotine replacement therapy is purchased almost exclusively by current or recently-quit smokers."
+}
+
+Input: Boveda 62% Humidity Control Pack 8g
+Output:
+{
+  "need_search": true,
+  "is_diagnostic": true,
+  "diagnostic_for": ["substance-use-marijuana", "substance-use-alcohol"],
+  "reason": "Humidity control packs are most often used to store cannabis, premium cigars, or wine — needs search to confirm primary use case in current market."
+}
+
+Input: B0143RTB1E
+Output:
+{
+  "need_search": true,
+  "is_diagnostic": false,
+  "diagnostic_for": [],
+  "reason": "Title is missing — only the ASIN is provided. Search is needed to identify the product before any signal can be assessed."
+}
+
+Input:
+
+{query}
+
+Output:

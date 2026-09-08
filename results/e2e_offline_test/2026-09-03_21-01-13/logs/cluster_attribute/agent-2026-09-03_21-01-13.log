@@ -1,0 +1,68 @@
+2026-09-03 12:01:13.372 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 12:01:13.372 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 12:01:13.372 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 12:01:13.372 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 12:01:13.372 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 12:01:13.373 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 12:01:13.373 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 12:01:13.373 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'algorithm': 'kmeans', 'attribute_branches': [{'cache_embedding_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/demographic', 'n_clusters': 2, 'name': 'demographic', 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/demographic', 'target_patterns': ['user_attribute_demographic']}, {'cache_embedding_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/psycho_behavioral', 'n_clusters': 3, 'name': 'psycho_behavioral', 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/psycho_behavioral', 'target_patterns': ['user_attribute_psycho_behavioral']}, {'cache_embedding_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/life_event', 'n_clusters': 2, 'name': 'life_event', 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/life_event', 'target_patterns': ['user_attribute_life_event']}], 'batch_size': 100, 'cluster_selection_method': 'eom', 'dimension_reduction': 'none', 'embedding_backend': 'qwen3_embedding', 'enable_cache': True, 'hdbscan_n_jobs': -1, 'log_dir': './results/e2e_offline_test/2026-09-03_21-01-13/logs/cluster_attribute', 'metric': 'euclidean', 'min_cluster_ratio': 0.01, 'min_samples': 2, 'minibatch_kmeans_batch_size': 1024, 'minibatch_kmeans_max_iter': 300, 'minibatch_kmeans_max_no_improvement': 10, 'minibatch_kmeans_n_init': 10, 'minibatch_kmeans_reassignment_ratio': 0.01, 'model_name': './models/Qwen3-Embedding-0.6B', 'n_clusters': 3, 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering', 'pca_n_components': 8, 'pca_random_state': 0, 'query_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/user', 'qwen3_max_length': 8192, 'seed': 3407, 'torch_dtype': 'bfloat16', 'umap_metric': 'cosine', 'umap_min_dist': 0.1, 'umap_n_components': 8, 'umap_n_neighbors': 5, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_21-01-13'}
+2026-09-03 12:01:13.374 | INFO     | cluster_attribute.dataset:load_profiles:77 - 📚 loaded 10 profiles from ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/user/output-2026-09-03_21-01-13.json (1/1)
+2026-09-03 12:01:13.374 | INFO     | cluster_attribute.dataset:load_profiles:79 - 📊 Total: 10 profiles from 1 file(s)
+2026-09-03 12:01:13.375 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_demographic']
+2026-09-03 12:01:13.381 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  3 attributes were extracted
+2026-09-03 12:01:13.381 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  3 unique accounts were extracted
+2026-09-03 12:01:13.382 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  3 unique attributes were extracted
+2026-09-03 12:01:13.390 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query      pattern                                          attribute  pseudo_confidence
+0  levaca Women's Maternity Empire Waist Loose Sw...  demographic                user is a woman of childbearing age                0.9
+1  Remington HKVAC2000A Vacuum Haircut Kit, Vacuu...  demographic         user is an adult man who maintains a beard                0.8
+2  JOSCHOO Reading Glasses Women Men Colorful Tre...  demographic  user is middle-aged or older with age-related ...                0.7
+2026-09-03 12:01:13.391 | INFO     | base_agent.model:__init__:122 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.391 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.399 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/demographic/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.399 | INFO     | cluster_attribute.model:_reduce_dimensions:252 - ⏭️ Skipping dimension reduction (dimension_reduction=none)
+2026-09-03 12:01:13.406 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/demographic/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_21-01-13.csv
+2026-09-03 12:01:13.407 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 3
+2026-09-03 12:01:13.407 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply kmeans
+2026-09-03 12:01:13.476 | INFO     | cluster_attribute.model:_fit_clusters:352 - ✅ KMeans completed: inertia=0.00
+2026-09-03 12:01:13.476 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_psycho_behavioral']
+2026-09-03 12:01:13.477 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  4 attributes were extracted
+2026-09-03 12:01:13.477 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  4 unique accounts were extracted
+2026-09-03 12:01:13.477 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  4 unique attributes were extracted
+2026-09-03 12:01:13.481 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query            pattern                                          attribute  pseudo_confidence
+0  Remington HKVAC2000A Vacuum Haircut Kit, Vacuu...  psycho_behavioral  user cuts their own hair at home instead of vi...               0.80
+1  NUTRO NATURAL CHOICE Small Breed Senior Dry Do...  psycho_behavioral                 user owns a senior small-breed dog               0.90
+2  Nespresso Vertuo Coffee and Espresso Machine b...  psycho_behavioral           user enjoys barista-style coffee at home               0.70
+3  Instant Pot Accu Slim Sous Vide, Precision Coo...  psycho_behavioral  user practices precision low-temperature cooki...               0.75
+2026-09-03 12:01:13.481 | INFO     | base_agent.model:__init__:122 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.482 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.483 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/psycho_behavioral/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.483 | INFO     | cluster_attribute.model:_reduce_dimensions:252 - ⏭️ Skipping dimension reduction (dimension_reduction=none)
+2026-09-03 12:01:13.485 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/psycho_behavioral/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_21-01-13.csv
+2026-09-03 12:01:13.486 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 4
+2026-09-03 12:01:13.486 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply kmeans
+2026-09-03 12:01:13.487 | INFO     | cluster_attribute.model:_fit_clusters:352 - ✅ KMeans completed: inertia=0.00
+2026-09-03 12:01:13.488 | INFO     | cluster_attribute.dataset:build_attribute_df:97 - 🎯 target_patterns: ['user_attribute_life_event']
+2026-09-03 12:01:13.488 | INFO     | cluster_attribute.dataset:build_attribute_df:134 - 🗃️  4 attributes were extracted
+2026-09-03 12:01:13.488 | INFO     | cluster_attribute.dataset:build_attribute_df:135 - 🗃️  4 unique accounts were extracted
+2026-09-03 12:01:13.489 | INFO     | cluster_attribute.dataset:build_attribute_df:136 - 🗃️  4 unique attributes were extracted
+2026-09-03 12:01:13.492 | INFO     | cluster_attribute.dataset:build_attribute_df:137 - 🗃️  Head
+
+                                      resolved_query     pattern                                          attribute  pseudo_confidence
+0  Easy@Home 50 Ovulation Test Strips and 20 Preg...  life_event  user or household recently started trying to c...                0.7
+1                          Baby Registry Welcome Box  life_event   user is expecting or recently welcomed a newborn                0.8
+2  Uboxes Medium Moving Boxes 18"x14"x12" (Pack o...  life_event      user is in the middle of moving to a new home                0.8
+3  levaca Women's Maternity Empire Waist Loose Sw...  life_event                         user is currently pregnant                0.9
+2026-09-03 12:01:13.492 | INFO     | base_agent.model:__init__:122 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.493 | INFO     | base_agent.model:__init__:136 - 🪢 Qwen3-Embedding model ./models/Qwen3-Embedding-0.6B loaded successfully from models/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.494 | INFO     | cluster_attribute.model:_load_embeddings_from_cache:132 - 🔍 Cache directory does not exist yet: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/life_event/Qwen3-Embedding-0.6B
+2026-09-03 12:01:13.494 | INFO     | cluster_attribute.model:_reduce_dimensions:252 - ⏭️ Skipping dimension reduction (dimension_reduction=none)
+2026-09-03 12:01:13.496 | INFO     | cluster_attribute.model:_save_embeddings_to_cache:273 - 💾 Saved reduced attribute embeddings to cache: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/life_event/Qwen3-Embedding-0.6B/attribute_embeddings_2026-09-03_21-01-13.csv
+2026-09-03 12:01:13.497 | INFO     | cluster_attribute.model:vectorize_attribute:299 - ✅ num_attributes: 4
+2026-09-03 12:01:13.497 | INFO     | cluster_attribute.model:_fit_clusters:306 - 🧮 apply kmeans
+2026-09-03 12:01:13.498 | INFO     | cluster_attribute.model:_fit_clusters:352 - ✅ KMeans completed: inertia=0.00
+2026-09-03 12:01:13.501 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.501 | INFO     | cluster_attribute.__main__:main:86 - 💾 clustering results: 10 profiles -> ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/output-2026-09-03_21-01-13.json

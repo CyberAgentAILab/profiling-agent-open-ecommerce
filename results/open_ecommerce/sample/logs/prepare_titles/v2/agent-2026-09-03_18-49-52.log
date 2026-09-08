@@ -1,0 +1,10 @@
+2026-09-03 09:49:52.400 | INFO     | base_agent.config:load_config:146 - ⛏️ Transformers version: 5.12.1
+2026-09-03 09:49:52.400 | INFO     | base_agent.config:load_config:147 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 09:49:52.400 | INFO     | base_agent.config:load_config:148 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 09:49:52.400 | INFO     | base_agent.config:load_config:149 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 09:49:52.400 | INFO     | base_agent.config:load_config:150 - ⛏️ CUDA available: True
+2026-09-03 09:49:52.401 | INFO     | base_agent.config:load_config:151 - ⛏️ MPS available: False
+2026-09-03 09:49:52.401 | INFO     | base_agent.config:load_config:152 - ⛏️ Device: cuda
+2026-09-03 09:49:52.401 | INFO     | base_agent.config:load_config:153 - ⚙️ config: {'out_dir': './results/open_ecommerce/prepare_titles/v2', 'log_dir': './logs/open_ecommerce/prepare_titles/v2', 'purchases_csv': './data/public/open-ecommerce/amazon-purchases.csv', 'min_unique_buyers': 3, 'out_csv': './data/public/open-ecommerce/titles_ge{min_unique_buyers}_buyers.csv', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_18-49-52'}
+2026-09-03 09:50:01.262 | INFO     | prepare_titles.dataset:filter_titles_by_buyers:37 - 📊 unique titles total: 824,722 → kept: 97,260 (min_unique_buyers=3)
+2026-09-03 09:50:01.713 | INFO     | prepare_titles.dataset:save_titles_csv:52 - 💾 saved 97,260 titles to ./data/public/open-ecommerce/titles_ge3_buyers.csv

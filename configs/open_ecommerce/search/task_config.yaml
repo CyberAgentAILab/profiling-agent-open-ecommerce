@@ -1,0 +1,42 @@
+out_dir: ./results/open_ecommerce/search
+log_dir: ./logs/open_ecommerce/search
+
+csv_path: ./data/public/open-ecommerce/titles_ge3_buyers.csv
+
+use_validation_data: True
+# Read scan output to filter by need_search & is_diagnostic.
+# If you want to bypass scan, set to a CSV path instead.
+validation_path: ./results/open_ecommerce/scan
+
+# Filter rules for ecommerce branch (consumed by src/search/dataset.py).
+# filter_need_search: False + filter_is_diagnostic: True keeps every title the scan
+# gate marked is_diagnostic (plus any need_search one); only need_search titles are
+# actually searched, the others pass through with an empty search_result so the
+# later stages still see them. filter_need_search: True would drop everything but
+# need_search titles, which leaves this stage empty when scan finds no ambiguous title.
+filter_need_search: False
+filter_is_diagnostic: True
+
+num_search: 10
+timeout: 60
+num_debug: null
+
+# Appended to every query before sending to the search engine (and used as the cache key).
+query_suffix: " Amazon product"
+
+search_engine: serper
+ddgs_region: us-en
+# ddgs backend(s) used when no API token is set (ordered; results are merged).
+# The google scraper alone often yields "No results found" for long product
+# titles, so bing is listed as a fallback.
+backend:
+  - google
+  - bing
+
+serp_url: https://www.searchapi.io/api/v1/search
+serper_url: https://google.serper.dev/search
+
+begin:
+end:
+
+search_cache_dir: ./search_cache/open-ecommerce

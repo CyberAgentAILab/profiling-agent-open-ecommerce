@@ -1,0 +1,11 @@
+out_dir: ./results/open_ecommerce/prepare_titles/v2
+log_dir: ./logs/open_ecommerce/prepare_titles/v2
+
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+
+# Keep titles bought by at least this many distinct buyers.
+min_unique_buyers: 3
+# "{min_unique_buyers}" is replaced with the value above, so the file name follows
+# the threshold (-> titles_ge3_buyers.csv). The scan and search configs read this file;
+# update their query_path / csv_path if you change the threshold.
+out_csv: ./data/public/open-ecommerce/titles_ge{min_unique_buyers}_buyers.csv

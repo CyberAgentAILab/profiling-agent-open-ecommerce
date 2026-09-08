@@ -1,0 +1,27 @@
+out_dir: ./results/open_ecommerce/sample/outputs/tag/v4
+log_dir: ./results/open_ecommerce/sample/logs/tag/v4
+query_dir: ./results/open_ecommerce/sample/outputs/clustering/v4
+cluster_id_namespace: per_pattern
+sampling_method: kmedoids
+cache_embed_dir: ./cache/embedding
+cache_embed_model: ./models/Qwen3-Embedding-0.6B
+model_name: ./models/Qwen3.5-4B
+torch_dtype: bfloat16
+max_new_tokens: 8192
+max_model_len: 16384
+enable_cache: true
+enable_thinking: false
+path_prompt_template: ./configs/prompt/open-ecommerce/tag_cluster.txt
+json_schema_tag:
+- reasoning
+- tag
+use_vllm: true
+tensor_parallel_size: 1
+trust_remote_code: true
+seed: 3407
+gpu_memory_utilization: 0.9
+enforce_eager: true
+batch_size: 100
+debug_num_sample: 100000
+begin: null
+end: null

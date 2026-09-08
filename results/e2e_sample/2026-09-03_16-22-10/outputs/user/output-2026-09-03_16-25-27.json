@@ -1,0 +1,1931 @@
+[
+  {
+    "resolved_query": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+    "raw_query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "has-child"
+      ],
+      "reason": "The title explicitly describes ovulation and pregnancy test strips, which are strong indicators that the buyer is actively trying to conceive or is currently pregnant.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary",
+        "canonical_name": "Easy@Home 50 Ovulation Test Strips and 20 Pregnancy Test Strips Combo Kit, (50 LH + 20 HCG)--Package May Vary"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Fertility testing kits are predominantly purchased by adults in their prime reproductive years attempting conception.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Ovulation and pregnancy tests are biologically specific to female physiology and are purchased almost exclusively by women or on their behalf.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Fertility testing is a standard healthcare expense accessible across income brackets, though the bulk combo pack suggests a middle-income household managing costs.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Fertility testing is not diagnostic for a specific education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Fertility testing is unrelated to specific occupation classes.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Fertility testing is purchased across all ethnicities.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Fertility testing is purchased in all location types without strong geographic bias.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the primary demographic signals (age, gender); no finer-grained demographic dimensions like marital status or household composition are definitively inferable from the product alone without assuming a specific relationship status.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Active use of fertility tracking kits indicates a family-oriented lifestyle focused on conception and future child-rearing.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "The purchase of a large bulk kit (50+20 strips) implies a methodical, analytical approach to tracking biological cycles over time.",
+            "attribute": [
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Fertility testing is a deliberate, goal-oriented purchase driven by the specific intent to conceive, rather than a routine or seasonal habit.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Buyers of combo kits seek the health-wellness benefit of conception and the convenience of having both ovulation and pregnancy tests in one package.",
+            "attribute": [
+              "health-wellness",
+              "convenience"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented and analytical traits, but cannot express the specific ongoing behavior of active fertility tracking or the specific intent to conceive, which are distinct psychographic states.",
+            "attribute": [
+              "user is actively trying to conceive a child",
+              "user tracks menstrual cycles and ovulation regularly"
+            ],
+            "confidence": {
+              "user is actively trying to conceive a child": 0.95,
+              "user tracks menstrual cycles and ovulation regularly": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "While often associated with marriage, fertility testing is not exclusive to recently married couples and can be used by long-term partners or singles; the signal is too weak to be positive.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "The purchase of ovulation and pregnancy tests indicates the *attempt* to conceive, which precedes childbirth; it is a strong signal that a pregnancy is imminent or expected soon, fitting the 'recent-childbirth' transition window of anticipation.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Fertility testing is not associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Fertility testing is not associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Fertility testing is not associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Fertility testing is the opposite of empty nest; it signals the start of a family, not the departure of children.",
+            "attribute": "negative"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Fertility testing is not associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Fertility testing is not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the positive signal for recent-childbirth (imminent pregnancy), but the specific nuance of 'actively attempting conception' as a distinct transitional phase before a confirmed pregnancy is a finer-grained life-event attribute orthogonal to the binary Layer 1 enum.",
+            "attribute": [
+              "user or household is in the active phase of trying to conceive"
+            ],
+            "confidence": {
+              "user or household is in the active phase of trying to conceive": 0.95
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12990,
+      "output_tokens": 1239,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Baby Registry Welcome Box",
+    "raw_query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Baby Registry Welcome Box"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-had-child",
+        "has-child"
+      ],
+      "reason": "A baby registry welcome box is explicitly tied to the event of having a new child, providing a strong signal of a recent life change and the presence of an infant in the household.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Baby Registry Welcome Box",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Baby Registry Welcome Box",
+        "canonical_name": "Baby Registry Welcome Box"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Baby registry welcome boxes are received by new parents, a demographic that concentrates heavily in the 25-44 age range.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "While the recipient is a new parent, the box is a household gift often opened by both parents, making gender inference from the box itself unreliable.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Baby registries and the associated welcome boxes are common across middle-to-upper-middle income brackets where disposable income supports registry participation.",
+            "attribute": [
+              "50-74k",
+              "75-99k",
+              "100-149k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Participation in formal baby registries correlates moderately with bachelor-level or higher education in US consumer data.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "New parents span all occupation classes; the product does not indicate a specific job type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Baby registry participation occurs across all ethnic groups without strong specificity from the product alone.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Baby registry culture and the associated welcome box program are prevalent in urban and suburban areas with access to major retailers.",
+            "attribute": "suburban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the age and income skew of new parents; no finer-grained demographic dimensions like specific household composition are uniquely inferable from the box alone beyond the general 'new parent' status.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Receiving a baby registry welcome box indicates a household transitioning into a family-oriented lifestyle centered on infant care.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "New parents utilizing registries often exhibit a practical-pragmatic approach to preparing for a child's arrival.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "The welcome box is a gift received specifically for the occasion of a new baby, not a routine purchase.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The box is valued for the convenience of curated essentials and the social benefit of gift-giving recognition.",
+            "attribute": [
+              "convenience",
+              "status-prestige"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented lifestyle; the specific act of using a registry is a transitional behavior captured in the life_event dimension, so no additional ongoing psychographic attributes are added here.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "While often bought by married couples, the box is specifically triggered by the baby, not the marriage itself.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A 'Baby Registry Welcome Box' is a product sent almost exclusively to parents who have recently had a baby or are expecting one within weeks, making it a definitive signal of this transition.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "The box is not associated with moving residence.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "The box is not associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "The box is for infants, not school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "The box signals the addition of a child, the opposite of an empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "The box is not associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "The box is not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-childbirth captures the primary life event; the specific nuance of 'expecting vs. just born' is too granular and the box covers both, so no additional life-event attributes are needed.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12924,
+      "output_tokens": 1122,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+    "raw_query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-moved"
+      ],
+      "reason": "The title clearly describes a bulk pack of moving boxes, which is a strong signal that the buyer is currently moving or has recently moved.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)",
+        "canonical_name": "Uboxes Medium Moving Boxes 18\"x14\"x12\" (Pack of 15)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Residential moves involving medium boxes for general household goods concentrate among adults in their prime working and family-formation years.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Moving box purchases are shared-household decisions with no strong gender skew.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Bulk moving boxes are purchased across all income brackets as a functional necessity for relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Moving supplies are not diagnostic for education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Relocation occurs across all occupation classes and the product is not occupation-specific.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Moving boxes are purchased by all ethnicities and are not diagnostic.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Moves occur between all location types and the purchase of boxes does not indicate a specific current location type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Moving boxes do not reveal specific demographic dimensions beyond Layer 1; the relocation aspect is captured in the life-event dimension.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Moving boxes are utility purchases that do not map to any single lifestyle enum value.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Purchasing a bulk pack of standardized boxes for an organized move indicates a practical-pragmatic disposition.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Moving boxes are bought specifically for the discrete event of a residential move.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Medium boxes are chosen for the convenience and durability required to pack general household items safely.",
+            "attribute": [
+              "convenience",
+              "durability"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the special-occasion and convenience-seeking framing; the move itself is a life event captured in the life-event dimension, not an ongoing psychographic trait.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Moving boxes can be bought during marriage-related moves but are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Moving boxes are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "A bulk pack of medium moving boxes is a product bought almost exclusively for the purpose of transporting household goods during a residential move.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Moving boxes can be bought during retirement-related downsizing but are not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Moving boxes can be bought for college moves but are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Moving boxes can be bought during empty-nest-related moves but are not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Moving boxes can be bought during job-change-related moves but are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Moving boxes are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-relocation captures the strong life event; no finer-grained life-stage transition can be inferred from a generic medium moving box purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12962,
+      "output_tokens": 1016,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+    "raw_query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "life-change-became-pregnant",
+        "gender"
+      ],
+      "reason": "The title explicitly states 'Maternity' and 'Pregnancy', which are strong signals that the buyer is pregnant, and 'Women's' indicates the gender.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress",
+        "canonical_name": "levaca Women's Maternity Empire Waist Loose Swing Pregnancy Casual Midi Dress"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Maternity apparel buyers are predominantly women of childbearing age, concentrating in the 25-44 range.",
+            "attribute": [
+              "25-34",
+              "35-44"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "The product is explicitly labeled 'Women's' and designed for pregnancy, indicating a female buyer.",
+            "attribute": "female"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Maternity dresses are purchased across income levels, though this specific casual style is common in middle-income brackets.",
+            "attribute": [
+              "25-49k",
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Maternity clothing purchases do not correlate strongly with specific education levels.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Pregnancy and maternity wear are purchased by women in all occupation classes.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Maternity dresses are purchased across all ethnic groups without specific diagnostic signal.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Maternity apparel is purchased in urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the core demographic traits (female, childbearing age); no finer-grained demographic dimensions like specific household composition or marital status are reliably inferable from a single dress purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Purchasing maternity wear indicates a family-oriented lifestyle focused on child-rearing and pregnancy.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing a 'loose swing' and 'empire waist' style suggests a preference for comfort and practicality during pregnancy.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Maternity clothing is bought to meet the specific, time-bound needs of pregnancy rather than as a routine everyday item or special occasion gift.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The 'loose swing' and 'empire waist' design features prioritize comfort and accommodation of a changing body shape.",
+            "attribute": [
+              "convenience",
+              "aesthetic-design"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the family-oriented and practical framing; the specific state of being pregnant is a life-stage transition captured in the life_event dimension, not an ongoing psychographic trait.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Maternity dresses are not specifically associated with marriage, though they may be bought by married women.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Maternity dresses are worn during pregnancy, which immediately precedes childbirth; the purchase is a strong signal that the user is currently expecting a child.",
+            "attribute": "positive"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Maternity dresses are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Maternity dresses are not associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Maternity dresses are not associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Purchasing maternity wear is the opposite of an empty-nest transition.",
+            "attribute": "negative"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Maternity dresses are not specifically associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Maternity dresses are not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 positive for recent-childbirth captures the strong life event; no finer-grained life-stage transition can be inferred from a single maternity dress purchase alone.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12944,
+      "output_tokens": 1071,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+    "raw_query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": true,
+      "diagnostic_for": [
+        "gender"
+      ],
+      "reason": "The title explicitly states 'for Men' and includes a beard trimmer, providing a strong signal that the buyer is male or purchasing for a male household member.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)",
+        "canonical_name": "Remington HKVAC2000A Vacuum Haircut Kit, Vacuum Beard Trimmer, Hair Clippers for Men (18 pieces)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Men's grooming kits with beard trimmers are predominantly purchased by adult males in the 25-54 age range.",
+            "attribute": [
+              "25-34",
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "The product title explicitly specifies 'for Men' and includes a beard trimmer, indicating a male buyer or gift-giver for a male.",
+            "attribute": "male"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Mid-range grooming kits like this Remington model are accessible to a broad income spectrum but skew toward middle-income households.",
+            "attribute": [
+              "25-49k",
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Personal grooming tools are purchased across all education levels with no specific diagnostic signal.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Grooming kits are used by men in all occupation classes and do not indicate a specific job type.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Men's hair and beard grooming products are purchased across all ethnicities.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Grooming kits are purchased in urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the male gender and broad age/income skews; no finer-grained demographic dimensions (like specific household composition or veteran status) are inferable from a generic men's grooming kit.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Purchasing a comprehensive home haircut kit suggests a practical, home-improver or budget-conscious approach to personal grooming rather than salon reliance.",
+            "attribute": [
+              "home-improver",
+              "budget-conscious"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing a vacuum kit to manage mess indicates a practical-pragmatic preference for convenience and cleanliness during grooming.",
+            "attribute": [
+              "practical-pragmatic"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Grooming kits are typically bought as routine replacements or upgrades to personal care equipment.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The vacuum feature specifically targets the benefit of convenience (mess reduction) and the kit format offers price-economy compared to salon visits.",
+            "attribute": [
+              "convenience",
+              "price-economy"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the practical and budget-conscious framing; the specific behavior of performing home haircuts is an ongoing habit best expressed as an atomic attribute orthogonal to the generic lifestyle enums.",
+            "attribute": [
+              "user performs home haircuts and beard trims regularly"
+            ],
+            "confidence": {
+              "user performs home haircuts and beard trims regularly": 0.85
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A men's grooming kit is not specifically associated with marriage or engagement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Grooming kits are not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Grooming kits are not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "While retirees may buy grooming kits, the product is not a specific signal of recent retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Grooming kits are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Grooming kits are not specifically associated with empty nest transitions.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Grooming kits are not specifically associated with employment changes.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Grooming kits are not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A men's grooming kit represents an ongoing personal care routine or a standard equipment upgrade, not a recent life-stage transition or change in household status.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12972,
+      "output_tokens": 1133,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+    "raw_query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as reading glasses for general use, which are purchased across all demographics and do not signal a specific user attribute.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas",
+        "canonical_name": "JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Reading glasses are specifically designed for presbyopia, a condition that typically manifests and requires correction starting in the 45-54 age bin and continuing through older ages.",
+            "attribute": [
+              "45-54",
+              "55-64",
+              "65+"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "The product title explicitly lists 'Women Men' and the 'Colorful Trendy' description suggests a style often marketed to women, but the unisex nature prevents a definitive single-gender assignment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "JOSCHOO is a budget-friendly brand sold on Amazon, indicating a preference for affordable, value-oriented eyewear rather than premium optical services.",
+            "attribute": [
+              "<25k",
+              "25-49k",
+              "50-74k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "The purchase of budget reading glasses is not diagnostic of a specific education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Presbyopia affects individuals across all occupation classes equally.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Reading glasses are purchased across all ethnicities.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Online purchases of generic reading glasses occur across all location types.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the age range and budget orientation; no finer-grained demographic dimensions like specific household composition or marital status are inferable from this single item.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "The 'Colorful Trendy' descriptor and the choice of a fashion-forward brand over a clinical one suggest an urban-trendy or bohemian-creative lifestyle that values aesthetics in functional items.",
+            "attribute": [
+              "urban-trendy"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing colorful, trendy frames over plain black or brown options indicates a fashion-individualist personality that expresses style through accessories.",
+            "attribute": [
+              "fashion-individualist"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Reading glasses are often bought as a routine replacement or a first-time purchase upon noticing vision changes, fitting a routine-everyday or emergency need.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The combination of a low-cost brand and 'trendy' styling indicates a primary seek for price-economy and aesthetic-design rather than premium optical quality.",
+            "attribute": [
+              "price-economy",
+              "aesthetic-design"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the trend-conscious and budget-oriented framing; the specific behavior of preferring fashion-forward eyewear over clinical options is already expressed by the lifestyle and personality enums.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Reading glasses are not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Reading glasses are not associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Reading glasses are not associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "While presbyopia is common in retirement age, the purchase of reading glasses is a gradual health adjustment, not a specific signal of the recent transition to retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Reading glasses are not associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Reading glasses are not associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Reading glasses are not associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Reading glasses are not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The onset of presbyopia is a gradual biological process, not a discrete recent life-stage transition like marriage or childbirth; therefore, no life-event attribute is appropriate.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12958,
+      "output_tokens": 1293,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+    "raw_query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as senior dog food for small breeds, requiring no search. However, owning a dog is a common household trait that does not map to the specific closed set of diagnostic attributes provided.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag",
+        "canonical_name": "NUTRO NATURAL CHOICE Small Breed Senior Dry Dog Food, Chicken & Brown Rice Recipe Dog Kibble, 5 lb. Bag"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Owners of senior dogs are typically middle-aged to older adults who have owned the pet for many years.",
+            "attribute": [
+              "45-54",
+              "55-64"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Pet food purchasing is a shared household task with no strong gender skew for this specific product.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "Premium natural dog food brands like Nutro Natural Choice target middle-to-upper-middle income households willing to pay for quality ingredients.",
+            "attribute": [
+              "50-74k",
+              "75-99k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Buyers of premium natural pet food often correlate with bachelor-level education or higher, reflecting health-conscious consumer trends.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Pet ownership spans all occupation classes and this product is not diagnostic.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Premium pet food is purchased across all ethnicities without specific bias.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Small breed dog ownership and premium pet food purchasing are slightly over-represented in suburban and urban areas.",
+            "attribute": "suburban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the general demographic skew; no finer-grained demographic dimensions like specific household composition are reliably inferable from a single bag of dog food.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Purchasing premium natural food for a senior dog indicates a family-oriented lifestyle that prioritizes the health and longevity of dependents.",
+            "attribute": [
+              "family-oriented"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Selecting specific life-stage nutrition (senior) and natural ingredients reflects a nurturing-caregiver and analytical-detail-oriented personality.",
+            "attribute": [
+              "nurturing-caregiver",
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Dog food is a recurring consumable bought as part of a routine household supply cycle.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The 'Natural Choice' branding and specific recipe indicate a primary benefit sought of health-wellness and quality-premium ingredients.",
+            "attribute": [
+              "health-wellness",
+              "quality-premium"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the general lifestyle and personality, but cannot express the specific pet ownership status (small breed, senior) or the specific dietary practice for the pet, which are atomic psychographic attributes.",
+            "attribute": [
+              "user owns a small breed dog that is in its senior life stage",
+              "user prioritizes natural and grain-inclusive diets for their pet"
+            ],
+            "confidence": {
+              "user owns a small breed dog that is in its senior life stage": 0.95,
+              "user prioritizes natural and grain-inclusive diets for their pet": 0.85
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "Senior dog food is not associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Senior dog food is not associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Senior dog food is not specifically associated with relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "While senior dog owners may be retiring, the product itself is not a specific signal of the retirement transition.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Senior dog food is not associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Senior dog food is not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Senior dog food is not associated with employment change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Senior dog food is not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The purchase of senior dog food indicates an ongoing life stage for the pet (aging) rather than a recent transition event like acquisition or loss; the pet is already established in the household.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12972,
+      "output_tokens": 1146,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+    "raw_query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies a specific coffee machine model, so no search is needed. However, coffee machines are generic household appliances purchased across all demographics and do not signal specific user attributes.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan",
+        "canonical_name": "Nespresso Vertuo Coffee and Espresso Machine by De'Longhi, Titan"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Premium single-serve espresso machines are predominantly purchased by adults in the 35-54 age range who have established household routines.",
+            "attribute": [
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Coffee machine purchases are gender-neutral household appliances with no strong skew in this category.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "The De'Longhi Nespresso Vertuo is a mid-to-high tier appliance ($150-$200), indicating disposable income consistent with middle-to-upper-middle class households.",
+            "attribute": [
+              "50-74k",
+              "75-99k",
+              "100-149k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Consumers of branded premium coffee systems correlate moderately with bachelor-level or higher education.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Home espresso machines are common among white-collar and professional workers seeking office-quality coffee at home.",
+            "attribute": "white-collar"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Premium coffee machine adoption is widespread across all ethnic groups in the US.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Premium countertop appliances are slightly over-represented in urban and suburban households with dedicated kitchen space.",
+            "attribute": "urban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the income and occupation skew; no finer-grained demographic traits like specific household composition or marital status are uniquely diagnostic from this single appliance.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Ownership of a branded single-serve espresso system signals a gourmet-foodie lifestyle focused on high-quality, convenient coffee preparation.",
+            "attribute": [
+              "gourmet-foodie",
+              "urban-trendy"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Investing in a specific branded ecosystem (Nespresso) suggests a consumer who values convenience and aesthetic design alongside quality.",
+            "attribute": [
+              "practical-pragmatic",
+              "status-conscious"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "This is a durable good purchase, often a special occasion gift or a deliberate upgrade to a home coffee setup.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Buyers of Vertuo machines specifically seek the convenience of one-touch brewing combined with the quality-premium of barista-style espresso.",
+            "attribute": [
+              "convenience",
+              "quality-premium",
+              "aesthetic-design"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the general gourmet and convenience traits, but cannot express the specific commitment to the Nespresso pod ecosystem or the daily ritual of specialty coffee consumption.",
+            "attribute": [
+              "user consumes specialty coffee or espresso daily",
+              "user prefers single-serve pod coffee systems over traditional brewing"
+            ],
+            "confidence": {
+              "user consumes specialty coffee or espresso daily": 0.85,
+              "user prefers single-serve pod coffee systems over traditional brewing": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "While often a wedding gift, a coffee machine is also a common standalone purchase for established households; it is not a specific signal of recent marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Coffee machines are not specifically associated with the transition to parenthood.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "While new homeowners may buy appliances, this specific machine is not a strong exclusive signal of recent relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Coffee machines are not specifically associated with retirement transitions.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Coffee machines are not specifically associated with school enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Coffee machines are not specifically associated with the empty nest transition.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "Coffee machines are not specifically associated with employment changes.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Coffee machines are not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A single coffee machine purchase does not strongly indicate a recent life-stage transition; it is more indicative of an ongoing lifestyle preference or a general home upgrade.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12948,
+      "output_tokens": 1177,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+    "raw_query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly identifies the product as a sous vide immersion circulator, requiring no search. While it indicates an interest in cooking, it is not a strong, specific signal for any of the defined user attributes like health conditions, life changes, or demographics.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)",
+        "canonical_name": "Instant Pot Accu Slim Sous Vide, Precision Cooker and Immersion Circulator with digital touchscreen display, Silver (Accu SSV800)"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "Sous vide precision cookers are purchased predominantly by adults in the 25-54 age range who have established cooking habits and disposable income.",
+            "attribute": [
+              "25-34",
+              "35-44",
+              "45-54"
+            ]
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Kitchen appliance purchases for precision cooking do not show a strong gender skew in aggregate data.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "A dedicated sous vide immersion circulator is a mid-to-high price point kitchen gadget, indicating middle-to-upper-middle income.",
+            "attribute": [
+              "50-74k",
+              "75-99k",
+              "100-149k"
+            ]
+          },
+          {
+            "category": "signal:education",
+            "reason": "Adoption of technical kitchen appliances like sous vide correlates moderately with bachelor-level or higher education.",
+            "attribute": "bachelor"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Home cooks using precision appliances span all occupation classes, though white-collar and professional buyers are slightly over-represented.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Sous vide cooking is a technique adopted across all ethnic groups without specific cultural exclusivity.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Precision cooking equipment is popular in urban and suburban households with modern kitchen setups.",
+            "attribute": "urban"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the general demographic skew; no finer-grained demographic dimensions like specific household composition or religion are inferable from a single appliance purchase.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Sous vide cooking appeals to gourmet-foodie and tech-enthusiast lifestyles that value precision and culinary experimentation.",
+            "attribute": [
+              "gourmet-foodie",
+              "tech-enthusiast"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Users of precision cookers tend to be analytical-detail-oriented, valuing exact temperature control and reproducible results.",
+            "attribute": [
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "A sous vide machine is a deliberate investment in a new cooking method, often bought as a special-occasion gift or a planned upgrade.",
+            "attribute": "special-occasion"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "Buyers seek performance (precision temperature control) and quality-premium results for their meals.",
+            "attribute": [
+              "performance",
+              "quality-premium"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the gourmet and tech aspects, but cannot express the specific habit of home-cooking with scientific precision or the specific interest in culinary science.",
+            "attribute": [
+              "user experiments with scientific cooking techniques at home",
+              "user prioritizes precise temperature control in meal preparation"
+            ],
+            "confidence": {
+              "user experiments with scientific cooking techniques at home": 0.85,
+              "user prioritizes precise temperature control in meal preparation": 0.9
+            }
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "While kitchen gadgets can be wedding gifts, a sous vide machine is not exclusively tied to marriage and is often bought by individuals or established couples.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "Sous vide machines are not specifically associated with the transition to parenthood or infant care.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "Kitchen appliances are not specific signals of a recent move, as they are often kept or bought regardless of location.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "Retirees may take up cooking hobbies, but this product is not a specific signal of recent retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "Sous vide machines are not associated with school enrollment transitions.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "Empty nesters may explore new hobbies, but this product does not specifically signal that transition.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A new job does not specifically trigger the purchase of a sous vide machine.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "Sous vide machines are not associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "The purchase of a sous vide machine reflects an ongoing interest in cooking rather than a specific recent life-stage transition; no life-event attributes are strongly indicated.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 12976,
+      "output_tokens": 1194,
+      "success_predict": true
+    }
+  },
+  {
+    "resolved_query": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+    "raw_query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "freq_mapping": [
+      1
+    ],
+    "query_mapping": [
+      "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+    ],
+    "direction": [
+      "purchase"
+    ],
+    "scan": {
+      "need_search": false,
+      "is_diagnostic": false,
+      "diagnostic_for": [],
+      "reason": "The title clearly describes a generic USB-C charging cable compatible with many devices, requiring no search for identification. As a common electronic accessory, it provides no specific signal about the buyer's demographics or life circumstances.",
+      "is_json": true
+    },
+    "search": {
+      "search_result": []
+    },
+    "transaction": {
+      "prediction": {
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "category_inferred": "",
+        "household_signals": [],
+        "use_case": []
+      },
+      "from_scan_only": true
+    },
+    "items": [
+      {
+        "product_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops",
+        "canonical_name": "Anker Powerline II USB-C to USB-C 3.1 Gen 2 Cable (3ft) with Power Delivery, for Apple MacBook, Huawei Matebook, iPad Pro 2020, Chromebook, Pixel, Switch, and More Type-C Devices/Laptops"
+      }
+    ],
+    "user": {
+      "run_predict": true,
+      "duration_predict": 13.755004757805729,
+      "user_attribute_demographic": {
+        "consumer_attributes": [
+          {
+            "category": "signal:age-bin",
+            "reason": "High-speed USB-C 3.1 Gen 2 cables are purchased by adults across all age bins who own modern laptops and tablets.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:gender",
+            "reason": "Computer accessories are gender-neutral and purchased equally by males and females.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:income-bin",
+            "reason": "The product is a mid-tier accessory compatible with premium devices (MacBook, iPad Pro), suggesting middle-to-upper-middle income, but is not diagnostic on its own.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:education",
+            "reason": "Ownership of modern computing devices correlates with higher education, but the cable itself is a generic accessory not specific to education level.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:occupation-class",
+            "reason": "Users of high-speed data cables span all occupation classes, from students to professionals.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:ethnicity",
+            "reason": "Computer accessories are not ethnicity-specific.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:location-type",
+            "reason": "Modern computing devices and accessories are purchased in urban, suburban, and rural areas alike.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A single branded cable purchase does not reveal specific demographic dimensions beyond the generic tech-user profile captured by Layer 1 unknowns.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_psycho_behavioral": {
+        "consumer_attributes": [
+          {
+            "category": "signal:lifestyle",
+            "reason": "Ownership of multiple modern devices (MacBook, iPad Pro, Switch) and investment in high-speed connectivity aligns with a tech-enthusiast lifestyle.",
+            "attribute": [
+              "tech-enthusiast"
+            ]
+          },
+          {
+            "category": "signal:personality",
+            "reason": "Choosing a specific high-performance cable (3.1 Gen 2) over a generic one suggests an analytical-detail-oriented approach to technology.",
+            "attribute": [
+              "analytical-detail-oriented"
+            ]
+          },
+          {
+            "category": "signal:purchase-occasion",
+            "reason": "Cables are typically bought as routine replacements or upgrades for existing device ecosystems.",
+            "attribute": "routine-everyday"
+          },
+          {
+            "category": "signal:benefit-sought",
+            "reason": "The product specification (3.1 Gen 2, Power Delivery) indicates a primary seek for performance and data transfer speed.",
+            "attribute": [
+              "performance",
+              "quality-premium"
+            ]
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "Layer 1 captures the tech-enthusiast and performance-seeking traits; the specific device ecosystem (Apple/Android hybrid) is a detail of the tech-enthusiast lifestyle already implied.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "user_attribute_life_event": {
+        "consumer_attributes": [
+          {
+            "category": "signal:recent-marriage",
+            "reason": "A USB-C cable is not specifically associated with marriage.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-childbirth",
+            "reason": "A USB-C cable is not specifically associated with childbirth.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-relocation",
+            "reason": "While new devices are bought during moves, a single cable is not a specific signal of relocation.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-retirement",
+            "reason": "A USB-C cable is not specifically associated with retirement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-school-enrollment",
+            "reason": "While students buy cables, a single purchase is not a specific signal of recent enrollment.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-empty-nest",
+            "reason": "A USB-C cable is not specifically associated with empty nest.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-job-change",
+            "reason": "A USB-C cable is not specifically associated with a job change.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "signal:recent-bereavement",
+            "reason": "A USB-C cable is not specifically associated with bereavement.",
+            "attribute": "unknown"
+          },
+          {
+            "category": "free_description_attributes",
+            "reason": "A single cable purchase does not indicate a recent life-stage transition; it is a routine consumable for tech users.",
+            "attribute": [],
+            "confidence": {}
+          }
+        ],
+        "is_json": true
+      },
+      "input_tokens": 13028,
+      "output_tokens": 1037,
+      "success_predict": true
+    }
+  }
+]

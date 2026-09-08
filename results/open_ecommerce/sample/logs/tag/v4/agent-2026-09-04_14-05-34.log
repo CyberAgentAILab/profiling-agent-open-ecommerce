@@ -1,0 +1,20 @@
+2026-09-04 05:05:34.531 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-04 05:05:34.532 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-04 05:05:34.532 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-04 05:05:34.532 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-04 05:05:34.533 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-04 05:05:34.533 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-04 05:05:34.533 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-04 05:05:34.533 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'out_dir': './results/open_ecommerce/tag/v4', 'log_dir': './logs/open_ecommerce/tag/v4', 'query_dir': './results/open_ecommerce/clustering/v4', 'cluster_id_namespace': 'per_pattern', 'sampling_method': 'kmedoids', 'cache_embed_dir': './cache/embedding', 'cache_embed_model': './models/Qwen3-Embedding-0.6B', 'model_name': './models/Qwen3.5-4B', 'torch_dtype': 'bfloat16', 'max_new_tokens': 8192, 'max_model_len': 16384, 'enable_cache': True, 'enable_thinking': False, 'path_prompt_template': './configs/prompt/open-ecommerce/tag_cluster.txt', 'json_schema_tag': ['reasoning', 'tag'], 'use_vllm': True, 'tensor_parallel_size': 1, 'trust_remote_code': True, 'seed': 3407, 'gpu_memory_utilization': 0.9, 'enforce_eager': True, 'batch_size': 100, 'debug_num_sample': 100000, 'begin': None, 'end': None, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-04_14-05-34'}
+2026-09-04 05:05:34.543 | INFO     | base_agent.model:load_model_and_tokenizer:174 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3.5-4B
+2026-09-04 05:06:16.084 | INFO     | base_agent.model:load_model_and_tokenizer:200 - ✅ load ./models/Qwen3.5-4B
+2026-09-04 05:06:16.085 | INFO     | base_agent.model:load_model_and_tokenizer:201 - ✅ activate vllm ? True
+2026-09-04 05:06:16.112 | INFO     | tag_cluster.model:_load_embeddings:191 - 📂 Loaded 461 attribute embeddings from 7 CSV(s) under ./cache/embedding
+2026-09-04 05:06:16.113 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-04 05:06:18.314 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-04 05:06:18.315 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-04 05:06:21.773 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-04 05:06:21.774 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-04 05:06:23.629 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-04 05:06:23.655 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/open_ecommerce/tag/v4/output-2026-09-04_14-05-34.json
+2026-09-04 05:06:23.655 | INFO     | tag_cluster.model:run_tagging:461 - 💾 tagging results: 130 profiles -> ./results/open_ecommerce/tag/v4/output-2026-09-04_14-05-34.json

@@ -1,0 +1,730 @@
+Your task is to profile a buyer based on the product(s) in their purchase history shown below, producing THREE attribute groups in a SINGLE JSON response:
+  1) demographic     — "who the buyer is"             (fixed personal/household traits)
+  2) psycho_behavioral — "how the buyer thinks/acts"  (ongoing lifestyle, hobby, dietary practice, fandom, value affiliation, pet ownership, media consumption)
+  3) life_event      — "what changed recently"        (life-stage transitions: marriage, childbirth, relocation, retirement, school enrollment, empty nest, job change, bereavement, plus adjacent transitions like pet acquisition, divorce, caregiving onset, hospitalization, deployment, immigration)
+
+For EACH group, produce two layers of output:
+- (Layer 1) selection_answers: closed-choice answers for a fixed set of categories. Every category MUST be answered for every input. Use "unknown" when the input is not diagnostic for that category.
+- (Layer 2) free_description_attributes: a free-form list of 0-3 ADDITIONAL atomic attributes that the Layer 1 categories CANNOT express. Return an empty list when Layer 1 already captures everything. This list feeds a downstream clustering step.
+
+- Input format you will receive (a single JSON object):
+  - items: an array of one or more purchased items (from frequent-pattern mining over the buyer's history; may be a single item or multiple co-occurring items). Each item has:
+    - product_name: original platform title (retains brand, model, size, packaging)
+    - canonical_name: brand-free product description
+
+- Conditions:
+  - The user purchased the item(s) on Amazon. You are profiling from these purchase(s) only; aggregate inference happens downstream.
+  - **SCOPE SEPARATION**: each group MUST contain ONLY attributes that belong to it. Demographic = fixed personal/household traits; psycho_behavioral = ongoing lifestyle/hobby/diet/fandom/affiliation/pet/media; life_event = a life-stage transition. The defining feature of a life-event attribute is **recency of change** — a stable, ongoing trait is NOT a life_event.
+  - "Recent" (life_event only) means the transition happened (or is imminent) within roughly the last 12 months.
+
+- Rules for applying to all three groups
+  - Layer 1:
+      - Each selection_answer entry is {"category": "<category label>", "reason": "<one-sentence justification>", "attribute": <value>}, emitted for every category in the group's enum, in the listed order.
+      - Use "unknown" (or the string "unknown" for array-valued categories) whenever a generic purchase carries no specific evidence. Most generic products yield mostly "unknown".
+      - The reason field must cite a concrete property of the product (intended user, price tier, cultural specificity, channel, intended use, brand-tier, repeat-purchase implication), not vague speculation.
+      - DO NOT invent categories not listed in each group's enum.
+      - **STRICT ENUM**: for each category, `attribute` MUST come from THAT category's closed list — never borrow a value from another category's enum even if semantically related. When in doubt, return "unknown" rather than borrowing.
+  - Layer 2:
+      - 0 to 3 items. **Return `[]` (and `{}` for confidence) when Layer 1 already captures everything you can confidently infer** (e.g. a generic USB-C cable — see Example 1).
+      - **Scope**: use Layer 2 ONLY for finer-grained dimensions of the SAME group that the Layer 1 enums cannot express. Each group section below lists which dimensions qualify.
+      - **DO NOT restate Layer 1**: an attribute that essentially repeats a Layer 1 category of the SAME group belongs in Layer 1 and MUST be excluded from Layer 2 (e.g. demographic "adult aged 55 or older"; psycho_behavioral "user has an athletic and active lifestyle").
+      - **DO NOT include out-of-scope attributes** — route them to the correct group per SCOPE SEPARATION above: hobby/fandom/collecting → psycho_behavioral; fixed personal/household trait → demographic; recent transition → life_event. In particular, an ongoing trait disguised as a transition ("took up / initiated / expanded a hobby") is a stable interest and belongs in psycho_behavioral, NOT life_event.
+      - Each item is ONE atomic attribute with a SINGLE unambiguous meaning. The downstream pipeline embeds and clusters each string, so compound attributes break clustering. DO NOT bundle: split "first-generation immigrant nurse in a multi-generational household" into "first-generation immigrant in the United States", "works in the nursing profession", "lives in a multi-generational household".
+      - Each string is a noun phrase or short clause in English, 5 to 20 words, with NO brand names and NO specific city/state/postal code.
+      - If the only inferences for a group are out-of-scope, return an empty Layer 2 list rather than smuggling them in.
+      - **Format — prefix convention by group**:
+          - demographic: a bare noun phrase (do NOT prefix with `user` or `household`).
+          - psycho_behavioral: begins with `user ` and is a single subject-verb clause.
+          - life_event: begins with `user or household ` and MUST describe a recent transition or change, not a stable trait.
+  - confidence:
+      - For each attribute, confidence is the expected fraction (0.0-1.0) of buyers whose history includes these item(s) who would match it: out of 100 such buyers, how many match?
+      - Rare → small (5/100 = 0.05). Common → large (80/100 = 0.80). Each attribute is scored INDEPENDENTLY; values need NOT sum to 1.0.
+
+==============================
+GROUP 1 — user_attribute_demographic
+==============================
+
+- Layer 1 — selection_answers (ALWAYS emit all 7 entries, in this order):
+
+  Categories and allowed values:
+    - signal:age-bin
+        attribute = array of 1-2 ADJACENT bins from ["18-24","25-34","35-44","45-54","55-64","65+"], or the string "unknown"
+    - signal:gender
+        attribute = "male" | "female" | "other" | "unknown"
+    - signal:income-bin
+        attribute = array of 1-3 ADJACENT bins from ["<25k","25-49k","50-74k","75-99k","100-149k","150k+"], or the string "unknown"
+    - signal:education
+        attribute = "<high-school" | "high-school" | "bachelor" | "graduate" | "unknown"
+    - signal:occupation-class
+        attribute = "blue-collar" | "white-collar" | "professional" | "service" | "student" | "retired" | "unemployed" | "unknown"
+    - signal:ethnicity
+        attribute = "asian" | "black" | "hispanic" | "white" | "other" | "unknown"
+    - signal:location-type
+        attribute = "urban" | "suburban" | "rural" | "unknown"
+
+- Layer 2 qualifying dimensions (demographic) — see common Layer 2 rules above for scope, format, and exclusions:
+    - specific occupation, household-composition slice (single parent, multi-generational, single adult living alone), language community, religion, marital status, military/veteran affiliation, immigrant status, family-size group, disability status.
+
+==============================
+GROUP 2 — user_attribute_psycho_behavioral
+==============================
+
+- Layer 1 — selection_answers (ALWAYS emit all 4 entries, in this order):
+
+  Categories and allowed values:
+    - signal:lifestyle
+        attribute = array of 1-3 values from
+          ["bohemian-creative","athletic-active","outdoor-adventurer","urban-trendy",
+           "traditional-conservative","tech-enthusiast","family-oriented","home-improver",
+           "budget-conscious","luxury-oriented","eco-sustainable","gourmet-foodie"],
+        or the string "unknown"
+    - signal:personality
+        attribute = array of 1-2 values from
+          ["practical-pragmatic","fashion-individualist","social-extrovert",
+           "reserved-introvert","adventurous-risk-taker","status-conscious",
+           "nurturing-caregiver","analytical-detail-oriented"],
+        or the string "unknown"
+    - signal:purchase-occasion
+        attribute = "routine-everyday" | "seasonal" | "special-occasion" | "gift-giving" | "emergency" | "unknown"
+    - signal:benefit-sought
+        attribute = array of 1-3 values from
+          ["price-economy","quality-premium","convenience","durability",
+           "health-wellness","status-prestige","customization","sustainability",
+           "safety","performance","aesthetic-design"],
+        or the string "unknown"
+
+- Layer 1 answering rules (psycho_behavioral-specific):
+  - The `signal:lifestyle` enum contains EXACTLY these 12 values and nothing else: `bohemian-creative, athletic-active, outdoor-adventurer, urban-trendy, traditional-conservative, tech-enthusiast, family-oriented, home-improver, budget-conscious, luxury-oriented, eco-sustainable, gourmet-foodie`. If a value you are about to emit is not literally in this list, replace it with `"unknown"` or pick the closest member of this list.
+
+- Layer 2 qualifying dimensions (psycho_behavioral) — see common Layer 2 rules above for scope, format, and exclusions:
+    - specific hobby (rock climbing), specific diet (vegan, keto, gluten-free), specific household habit, specific fandom, political/value affiliation, pet ownership, media-consumption pattern, religious practice, recovery-from-addiction status.
+
+==============================
+GROUP 3 — user_attribute_life_event
+==============================
+
+- Layer 1 — selection_answers (ALWAYS emit all 8 entries, in this order):
+
+  Categories and allowed values (each attribute = "positive" | "negative" | "unknown"):
+    - signal:recent-marriage              (positive = recently got married or engaged)
+    - signal:recent-childbirth            (positive = recently expecting or had a child)
+    - signal:recent-relocation            (positive = recently moved residence)
+    - signal:recent-retirement            (positive = recently retired or transitioning to retirement)
+    - signal:recent-school-enrollment     (positive = a household member recently started a new school stage, e.g., college, K-12 enrollment)
+    - signal:recent-empty-nest            (positive = a child recently left the household)
+    - signal:recent-job-change            (positive = recently changed job or started a new role)
+    - signal:recent-bereavement           (positive = recently lost a spouse or close family member; covers solitary-survivor stage)
+
+- Layer 1 answering rules (life_event-specific):
+    - "positive" = the product is a STRONG, SPECIFIC signal that the transition recently occurred or is imminent — a product bought almost exclusively because of the transition (newborn diapers → recent-childbirth; moving boxes → recent-relocation; engraved wedding ring box → recent-marriage).
+    - "negative" = the product specifically indicates the transition has NOT occurred (rare; prefer "unknown").
+    - "unknown" = no specific evidence; the correct answer for most generic products.
+    - **DEFAULT TO "unknown" UNDER UNCERTAINTY.** Do NOT emit "positive" on weak associative reasoning ("could be a wedding gift"). The signal must be SPECIFIC to the transition, not merely COMPATIBLE with it — most apparel, jewelry, decor, and gift-style items are routinely bought outside any transition. (e.g. a vintage-clasp belt or a generic candle set → recent-marriage "positive" is WRONG; an engraved wedding ring presentation box → "positive" is RIGHT.)
+
+- Layer 2 qualifying dimensions (life_event) — see common Layer 2 rules above for scope, format, and exclusions:
+    - pet acquisition/loss, divorce/separation, caregiving onset for an elderly parent, recovery from illness/injury, hospitalization, military deployment/homecoming, gap year/sabbatical, immigration/visa transition, financial-status transition, home renovation.
+
+==============================
+OUTPUT FORMAT
+==============================
+
+JSON only (no extra text, no markdown). Top-level object with EXACTLY these three keys:
+  - "user_attribute_demographic":     {"consumer_attributes": [ <7 selection_answers in the demographic order> , <free_description_attributes entry> ]}
+  - "user_attribute_psycho_behavioral": {"consumer_attributes": [ <4 selection_answers in the psycho_behavioral order>, <free_description_attributes entry> ]}
+  - "user_attribute_life_event":      {"consumer_attributes": [ <8 selection_answers in the life_event order> , <free_description_attributes entry> ]}
+
+For every group:
+  - The selection_answer entries appear FIRST, in the exact order listed in that group's Layer 1 enum.
+  - The free_description_attributes entry appears LAST.
+  - All entries have "category", "reason", "attribute" keys. The free_description_attributes entry additionally has "confidence".
+  - Use double quotes; no trailing commas; null is JSON null (not the string "null").
+
+- Example 1 — single-item input, generic non-diagnostic product (USB-C cable):
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "ChargePro USB-C to USB-C Cable, 6 ft, Braided Nylon, 60W Power Delivery, Black",
+      "canonical_name": "USB-C to USB-C fast-charging cable for laptops and other consumer electronics"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "USB-C cables are purchased across all adult age bins.", "attribute": "unknown"},
+      {"category": "signal:gender", "reason": "A generic charging cable is not gender-specific.", "attribute": "unknown"},
+      {"category": "signal:income-bin", "reason": "Low-cost electronics accessories span the full income range.", "attribute": "unknown"},
+      {"category": "signal:education", "reason": "USB-C cables are purchased regardless of education level.", "attribute": "unknown"},
+      {"category": "signal:occupation-class", "reason": "Charging cables are work-agnostic consumer electronics accessories.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Charging cables are not ethnicity-specific.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Consumer electronics accessories are purchased in urban, suburban, and rural areas alike.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "A generic charging cable carries no demographic signal beyond Layer 1's unknowns, so the free-description list is empty.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "USB-C cables are bought across all lifestyles.", "attribute": "unknown"},
+      {"category": "signal:personality", "reason": "A generic charging cable does not reveal personality traits.", "attribute": "unknown"},
+      {"category": "signal:purchase-occasion", "reason": "Cables are bought as replacements or routine top-ups rather than for a specific occasion.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "Cable buyers typically seek basic functionality at a reasonable price, with no premium signal.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "A generic charging cable carries no psychographic or behavioral signal beyond what Layer 1 already captures, so the free-description list is empty.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "USB-C cables are bought regardless of marital transition.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Cables are unrelated to childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Cables are bought regardless of relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Cables are bought regardless of retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Cables are bought regardless of schooling transitions.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Cables are bought regardless of household composition change.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Cables are bought regardless of employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Cables are unrelated to bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "A generic charging cable carries no life-stage signal beyond Layer 1's unknowns, so the free-description list is empty.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+- Example 2 — single-item input, comprehensive plant-based vegan cookbook:
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "The Comprehensive Plant-Based Vegan Cookbook: 200 Easy Recipes for Every Meal (Paperback)",
+      "canonical_name": "comprehensive plant-based cookbook with 200 recipes for meatless home cooking"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Vegan cookbook buyers concentrate in the 25-44 adult cooking-from-home age range.", "attribute": ["25-34", "35-44"]},
+      {"category": "signal:gender", "reason": "Plant-based cookbook readership skews female but is not exclusive.", "attribute": "unknown"},
+      {"category": "signal:income-bin", "reason": "Cookbook price tier and plant-based food cost align with middle-to-upper-middle incomes.", "attribute": ["50-74k", "75-99k"]},
+      {"category": "signal:education", "reason": "Plant-based diet adoption correlates moderately with bachelor-level education.", "attribute": "bachelor"},
+      {"category": "signal:occupation-class", "reason": "Cookbooks are not occupation-specific.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Plant-based diets are adopted across ethnicities.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Plant-based food culture skews urban and suburban.", "attribute": "urban"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express specific household composition or affiliation traits beyond its enums, but a cookbook alone does not strongly imply any such trait.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Vegan cookbooks appeal to eco-sustainable and gourmet-foodie consumers.", "attribute": ["eco-sustainable", "gourmet-foodie"]},
+      {"category": "signal:personality", "reason": "Cookbook buyers tend to be detail-oriented home cooks.", "attribute": ["analytical-detail-oriented"]},
+      {"category": "signal:purchase-occasion", "reason": "Cookbooks are bought as part of routine library expansion or a deliberate dietary transition.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "Plant-based cookbooks are chosen for health-wellness and sustainability benefits.", "attribute": ["health-wellness", "sustainability"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express home-cooking habit or specific dietary practice (its enums only carry generic lifestyle labels), so we add these as atomic attributes orthogonal to Layer 1.",
+        "attribute": [
+          "user cooks home meals from scratch on a regular basis",
+          "user follows a plant-based or vegan diet"
+        ],
+        "confidence": {
+          "user cooks home meals from scratch on a regular basis": 0.75,
+          "user follows a plant-based or vegan diet": 0.65
+        }
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "A cookbook is not specifically associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "A cookbook is not specifically associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "A cookbook is not specifically associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "A cookbook is not specifically associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "A cookbook is not specifically associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "A cookbook is not specifically associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "A cookbook is not specifically associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "A cookbook is not specifically associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "A vegan cookbook alone is not a strong signal of any recent life-stage transition; the ongoing dietary practice belongs in psycho_behavioral.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+- Example 3 — single-item input, US Army veteran morale patch set:
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "US Army Veteran Morale Patch Set with Embroidered Service Emblems (10-Pack, Hook-and-Loop Backing)",
+      "canonical_name": "embroidered tactical morale patch set for military-themed gear and accessories"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Veteran-themed memorabilia is purchased predominantly by adults aged 35 and above.", "attribute": ["35-44", "45-54"]},
+      {"category": "signal:gender", "reason": "Morale patch and tactical memorabilia buyers are predominantly male.", "attribute": "male"},
+      {"category": "signal:income-bin", "reason": "Veteran-themed memorabilia spans broad income ranges and is not diagnostic.", "attribute": "unknown"},
+      {"category": "signal:education", "reason": "Morale patch buyers span all education levels and the product gives no specific signal.", "attribute": "unknown"},
+      {"category": "signal:occupation-class", "reason": "Veterans transition into varied occupations; morale patches alone are not diagnostic for a specific occupation class.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Morale patch buyers span all ethnicities and the product is not diagnostic.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Morale patch and tactical memorabilia buyers are over-represented in suburban and rural areas.", "attribute": "suburban"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express military-veteran affiliation or adjacent tactical professions (neither is in the occupation-class enum), so we add them here as distinct atomic attributes orthogonal to all Layer 1 categories.",
+        "attribute": [
+          "US military veteran or active service member",
+          "law enforcement, security, or first responder professional"
+        ],
+        "confidence": {
+          "US military veteran or active service member": 0.60,
+          "law enforcement, security, or first responder professional": 0.15
+        }
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Morale patches and tactical memorabilia do not map clearly to any single lifestyle enum value.", "attribute": "unknown"},
+      {"category": "signal:personality", "reason": "Morale patch buyers span varied personality types and the product is not diagnostic.", "attribute": "unknown"},
+      {"category": "signal:purchase-occasion", "reason": "Morale patches are bought for personal collection, gifting, or unit-related occasions; not a single occasion.", "attribute": "unknown"},
+      {"category": "signal:benefit-sought", "reason": "Morale patches are decorative items chosen primarily for their aesthetic and emblematic design.", "attribute": ["aesthetic-design"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express cultural affiliation with US military and tactical aesthetic communities (the lifestyle and personality enums are too generic), so we add this as an atomic attribute orthogonal to Layer 1.",
+        "attribute": [
+          "user enjoys US military and tactical aesthetic culture"
+        ],
+        "confidence": {
+          "user enjoys US military and tactical aesthetic culture": 0.85
+        }
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Morale patches are not associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Morale patches are not associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Morale patches are not associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Morale patches can be bought by recently retired service members but also by long-term collectors at any time; not a specific signal.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Morale patches are not associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Morale patches are not associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Morale patches are not associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Morale patches are not associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Morale patches carry no specific life-event signal; the product is bought by veterans, enthusiasts, and collectors at any time after the relevant life stage, not tied to a recent transition.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+- Example 4 — single-item input, extra-large puppy training pads bulk pack:
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "Extra-Large Puppy Training Pads, 100 Count Bulk Pack, Leak-Proof, 28x34 Inches",
+      "canonical_name": "absorbent puppy potty training pads for indoor house-training of young dogs"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Bulk puppy training pads are bought across family-formation and empty-nest companion-adoption stages, concentrating in middle adulthood.", "attribute": ["35-44", "45-54"]},
+      {"category": "signal:gender", "reason": "Pet care purchasing skews slightly female on average but the bias is mild for shared-household consumables.", "attribute": "unknown"},
+      {"category": "signal:income-bin", "reason": "Pet ownership requires disposable income but bulk training pads span all income brackets.", "attribute": "unknown"},
+      {"category": "signal:education", "reason": "Puppy training supplies are not diagnostic for education.", "attribute": "unknown"},
+      {"category": "signal:occupation-class", "reason": "Pet ownership is occupation-agnostic.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Pet ownership patterns are not strongly diagnostic for ethnicity from this product.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Dog ownership is over-represented in suburban single-family-home households where indoor potty pads bridge outdoor access.", "attribute": "suburban"},
+      {
+        "category": "free_description_attributes",
+        "reason": "A bulk pack of puppy training pads does not specifically reveal religion, occupation, or household composition beyond Layer 1; the pet-acquisition aspect is captured in the life-event dimension.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Households with new pets often reflect a family-oriented lifestyle that prioritizes care of dependents.", "attribute": ["family-oriented"]},
+      {"category": "signal:personality", "reason": "Pet care, especially of a young dog requiring house-training, indicates a nurturing-caregiver personality.", "attribute": ["nurturing-caregiver"]},
+      {"category": "signal:purchase-occasion", "reason": "Training pads are bought as routine consumables during the house-training period.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "Bulk training pads are chosen primarily for convenience through the training period.", "attribute": ["convenience"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 captures the family-oriented and nurturing-caregiver framing; the specific pet-acquisition aspect is a recent transition captured in the life-event dimension, not an ongoing psychographic trait, so no additional psychographic attributes are added here.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Puppy training pads are not associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Puppy training supplies are not associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Puppy training supplies are not specifically associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Puppy training supplies are not associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Puppy training supplies are not associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Puppy training supplies are not associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Puppy training supplies are not associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Puppy training supplies are not associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express pet-acquisition life events (the closed enum only covers human life transitions), so we add this as an atomic attribute orthogonal to Layer 1.",
+        "attribute": [
+          "user or household recently acquired a puppy or young dog"
+        ],
+        "confidence": {
+          "user or household recently acquired a puppy or young dog": 0.70
+        }
+      }
+    ]
+  }
+}
+
+- Example 5 — single-item input, wardrobe moving boxes with hanging bar:
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "Wardrobe Moving Boxes with Hanging Bar, 6-Pack (24 x 21 x 46 inches), Heavy-Duty Corrugated Cardboard for Clothes",
+      "canonical_name": "tall wardrobe moving boxes with hanging bar for clothing relocation"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Wardrobe-volume residential moves concentrate among middle-aged adults with substantial accumulated wardrobes (family upsize, career relocation, downsizing).", "attribute": ["35-44", "45-54"]},
+      {"category": "signal:gender", "reason": "Wardrobe boxes are a shared-household purchase with no strong gender skew.", "attribute": "unknown"},
+      {"category": "signal:income-bin", "reason": "Specialty wardrobe moving boxes are bought across income brackets and are not diagnostic.", "attribute": "unknown"},
+      {"category": "signal:education", "reason": "Wardrobe boxes are not diagnostic for education.", "attribute": "unknown"},
+      {"category": "signal:occupation-class", "reason": "Relocation happens across all occupations.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Wardrobe boxes are not ethnicity-specific.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Moves occur between all location types and are not diagnostic.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Wardrobe moving boxes do not reveal specific demographic dimensions beyond Layer 1; the relocation aspect is captured in the life-event dimension.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Wardrobe moving boxes are utility purchases that do not map to any single lifestyle enum value.", "attribute": "unknown"},
+      {"category": "signal:personality", "reason": "Choosing specialty wardrobe boxes for an organized clothes-packing approach indicates a practical-pragmatic disposition.", "attribute": ["practical-pragmatic"]},
+      {"category": "signal:purchase-occasion", "reason": "Wardrobe moving boxes are bought specifically for the discrete event of a residential move.", "attribute": "special-occasion"},
+      {"category": "signal:benefit-sought", "reason": "Wardrobe boxes with hanging bars are chosen for the convenience of transporting hanging clothes without folding.", "attribute": ["convenience"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 captures the special-occasion and convenience-seeking framing; the move itself is a life event captured in the life-event dimension, not an ongoing psychographic trait.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Wardrobe boxes can be bought during marriage-related moves but are not specifically associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Wardrobe boxes are not specifically associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Wardrobe moving boxes with hanging bars exist almost exclusively to transport hanging clothes during residential moves; the product has no significant non-moving use case.", "attribute": "positive"},
+      {"category": "signal:recent-retirement", "reason": "Wardrobe boxes can be bought during retirement-related downsizing but are not specifically associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Wardrobe boxes are not specifically associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Wardrobe boxes can be bought during empty-nest-related moves but are not specifically associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Wardrobe boxes can be bought during job-change-related moves but are not specifically associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Wardrobe boxes are not specifically associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 positive for recent-relocation captures the strong life event; no finer-grained life-stage transition can be inferred from a wardrobe moving box purchase alone.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+- Example 6 — single-item input, bulk unbleached cigarette rolling papers:
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "Unbleached Classic 1 1/4 Size Cigarette Rolling Papers, 50 Sheets per Booklet, 5-Booklet Pack",
+      "canonical_name": "natural unbleached cigarette rolling papers for roll-your-own tobacco"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Roll-your-own tobacco users in the US skew toward middle-aged adults rather than younger smokers who prefer factory packs.", "attribute": ["35-44", "45-54"]},
+      {"category": "signal:gender", "reason": "Roll-your-own tobacco consumption skews male in US tobacco survey data.", "attribute": "male"},
+      {"category": "signal:income-bin", "reason": "Roll-your-own is a cost-saving alternative to factory packs and concentrates in lower-to-middle income brackets.", "attribute": ["<25k", "25-49k", "50-74k"]},
+      {"category": "signal:education", "reason": "Roll-your-own tobacco usage correlates with high-school-level education per US survey data.", "attribute": "high-school"},
+      {"category": "signal:occupation-class", "reason": "Roll-your-own smokers concentrate in blue-collar and service occupations per US tobacco survey data.", "attribute": "blue-collar"},
+      {"category": "signal:ethnicity", "reason": "Roll-your-own tobacco is not specifically associated with any ethnicity.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Roll-your-own smokers are over-represented in rural and small-town households.", "attribute": "rural"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 captures the demographic skew of roll-your-own tobacco users; no additional finer-grained demographic dimensions are reliably inferable from this product alone.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Roll-your-own tobacco is a budget-conscious consumption pattern relative to factory cigarette packs.", "attribute": ["budget-conscious"]},
+      {"category": "signal:personality", "reason": "Roll-your-own tobacco consumption does not strongly indicate any specific personality type.", "attribute": "unknown"},
+      {"category": "signal:purchase-occasion", "reason": "Rolling papers are consumables bought as routine top-ups for ongoing smoking.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "Roll-your-own tobacco is chosen primarily for the cost economy of replacing factory packs.", "attribute": ["price-economy"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 captures budget-consciousness and routine purchase but cannot express smoker identity, ritual appreciation, or potential cannabis use; these are added as distinct atomic psychographic attributes orthogonal to Layer 1.",
+        "attribute": [
+          "user is a regular tobacco smoker",
+          "user values the ritual of hand-rolling cigarettes",
+          "user uses rolling papers for cannabis consumption"
+        ],
+        "confidence": {
+          "user is a regular tobacco smoker": 0.80,
+          "user values the ritual of hand-rolling cigarettes": 0.30,
+          "user uses rolling papers for cannabis consumption": 0.25
+        }
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Rolling papers are not associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Rolling papers are not associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Rolling papers are not associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Rolling papers are not associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Rolling papers are not associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Rolling papers are not associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Rolling papers do not specifically signal a voluntary job change or new role start.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Rolling papers are not associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Bulk roll-your-own tobacco is a documented cost-cutting shift from factory packs, modestly over-represented in households under financial pressure; Layer 1's recent-job-change covers voluntary changes only, so we add three distinct atomic life-event attributes here: recent increased financial strain (broadest), recent income drop (narrower), and the specific recent job loss (narrowest subset). Most rolling paper buyers are long-time rollers without recent stress events, so values are kept low.",
+        "attribute": [
+          "user or household recently experienced increased financial strain",
+          "user or household recently experienced a drop in income",
+          "user or household recently experienced a job loss"
+        ],
+        "confidence": {
+          "user or household recently experienced increased financial strain": 0.15,
+          "user or household recently experienced a drop in income": 0.10,
+          "user or household recently experienced a job loss": 0.10
+        }
+      }
+    ]
+  }
+}
+
+- Example 7 — multi-item input, cluster sharpens an ongoing-routine signal (kid-lunchbox staples together point to a parent packing children's lunches, a psycho_behavioral pattern that is NOT a recent life-event transition):
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "Sunburst Fruit Punch Kid Juice Pouches, 10 Pouches x 6 fl oz, Lunchbox Drink Pack",
+      "canonical_name": "shelf-stable kid-portion juice drink pouches for school lunchbox use"
+    },
+    {
+      "product_name": "Classic Sliced White Sandwich Bread Loaf, 20 oz, Family-Sized for Daily Use",
+      "canonical_name": "sliced white sandwich bread loaf for everyday family sandwiches and lunches"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Parents of school-age children, the primary buyer cohort for kid-lunchbox staples, concentrate in this age range.", "attribute": ["25-34", "35-44"]},
+      {"category": "signal:gender", "reason": "School-lunch preparation specifically — as opposed to generic shared-household consumables — is a documented female-skewed task in US household time-use surveys, so the cluster of kid-lunchbox staples carries a clear gender signal.", "attribute": "female"},
+      {"category": "signal:income-bin", "reason": "Mass-market kid lunchbox staples (sweetened juice pouches and white sandwich bread) skew toward lower-to-middle US household incomes.", "attribute": ["<25k", "25-49k", "50-74k"]},
+      {"category": "signal:education", "reason": "Buyers of mass-market white-bread and sweetened juice-pouch staples skew toward high-school-level education in US shopper-panel data.", "attribute": "high-school"},
+      {"category": "signal:occupation-class", "reason": "Lunch-packing parents span varied occupations and the products are not occupation-specific.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Mass-market kid lunchbox staples are purchased across all ethnicities.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "Daily kid-lunchbox routines over-represent suburban households with school-commuting children; rural lunchbox staple consumption is comparatively lower in survey data.", "attribute": "suburban"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express household composition. The cluster does shift inference toward a household with school-age children present, but the confidence is held modest because (a) household composition is more reliably read at aggregate population scale than from a single cart, and (b) individual items can also be bought for classroom parties, gifts, or adult nostalgia.",
+        "attribute": [
+          "family household with one or more school-age children"
+        ],
+        "confidence": {
+          "family household with one or more school-age children": 0.60
+        }
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "The cluster reflects routine lunch packing for children using mass-market staple selections, consistent with family-oriented and budget-conscious lifestyles.", "attribute": ["family-oriented", "budget-conscious"]},
+      {"category": "signal:personality", "reason": "Daily preparation of children's lunchboxes is the canonical nurturing-caregiver behavior, executed with practical-pragmatic dispatch.", "attribute": ["nurturing-caregiver", "practical-pragmatic"]},
+      {"category": "signal:purchase-occasion", "reason": "Lunch staples are bought as recurring weekly grocery items rather than for any single occasion.", "attribute": "routine-everyday"},
+      {"category": "signal:benefit-sought", "reason": "Lunchbox-portion drink pouches and a mass-market sliced loaf are chosen for the convenience of pre-portioned items at low unit cost.", "attribute": ["convenience", "price-economy"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 captures the family-oriented and budget-conscious framing but not the specific behavior of recurring child lunch packing. A standalone juice-pouch box or bread loaf each yields only weak child-routine evidence because adults also buy both routinely for personal use; the cluster is what sharpens this into an atomic psychographic attribute.",
+        "attribute": [
+          "user packs lunches for school-age children on a regular basis"
+        ],
+        "confidence": {
+          "user packs lunches for school-age children on a regular basis": 0.75
+        }
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Kid lunchbox staples are not specifically associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Sweetened juice pouches and sliced bread are consumed by school-age children, not newborns, so they do not specifically signal recent childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Kid lunchbox staples are not specifically associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Kid lunchbox staples are not specifically associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Recurring purchase of lunchbox staples reflects an ongoing school-attendance routine, not a recent enrollment transition; this kind of stable child-rearing pattern belongs in psycho_behavioral, not life_event.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Active lunch packing for school-age children is the opposite of empty nest, but the cluster is not specific evidence of a recent empty-nest transition either.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Kid lunchbox staples are not specifically associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Kid lunchbox staples are not specifically associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "All child-presence signal in this cluster reflects an ongoing routine rather than a recent transition, so it correctly routes to psycho_behavioral; life_event's free-description list is empty.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+- Example 8 — multi-item input, co-occurrence sharpens fandom signal (three TTRPG core rulebooks together imply an active player who also game-masters, much more strongly than any single rulebook alone):
+
+Input:
+{
+  "items": [
+    {
+      "product_name": "Heroic Realms Player's Handbook (Fantasy Tabletop RPG Core Rulebook, Hardcover)",
+      "canonical_name": "fantasy tabletop role-playing game core rulebook for player character creation"
+    },
+    {
+      "product_name": "Heroic Realms Game Master's Guide (Fantasy Tabletop RPG Core Rulebook, Hardcover)",
+      "canonical_name": "fantasy tabletop role-playing game core rulebook for game master campaign running"
+    },
+    {
+      "product_name": "Heroic Realms Bestiary (Fantasy Tabletop RPG Core Rulebook, Hardcover)",
+      "canonical_name": "fantasy tabletop role-playing game core rulebook for monster and creature reference"
+    }
+  ]
+}
+
+Output:
+{
+  "user_attribute_demographic": {
+    "consumer_attributes": [
+      {"category": "signal:age-bin", "reason": "Tabletop role-playing game core rulebook buyers concentrate in the young-to-middle adult hobbyist cohort per US hobbyist surveys.", "attribute": ["25-34", "35-44"]},
+      {"category": "signal:gender", "reason": "While historically male-skewed, recent US tabletop RPG player surveys show roughly 40 percent female participation, so a specific gender cannot be inferred from this cluster.", "attribute": "unknown"},
+      {"category": "signal:income-bin", "reason": "A complete three-volume core rulebook set runs approximately 150 US dollars at retail and presumes disposable income for a deliberate hobby investment.", "attribute": ["50-74k", "75-99k"]},
+      {"category": "signal:education", "reason": "Tabletop RPG participation correlates with bachelor-level education in published US hobbyist demographic surveys.", "attribute": "bachelor"},
+      {"category": "signal:occupation-class", "reason": "Tabletop RPG hobbyists span all occupation classes and the rulebooks themselves are not occupation-specific.", "attribute": "unknown"},
+      {"category": "signal:ethnicity", "reason": "Tabletop RPG buyers span all ethnicities and the product is not ethnicity-specific.", "attribute": "unknown"},
+      {"category": "signal:location-type", "reason": "In-person tabletop gaming groups concentrate in urban areas and college towns where players can assemble at game stores and campus clubs.", "attribute": "urban"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 already captures the demographic skew of TTRPG core rulebook buyers; no finer-grained demographic dimensions are reliably inferable from the rulebooks alone.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  },
+  "user_attribute_psycho_behavioral": {
+    "consumer_attributes": [
+      {"category": "signal:lifestyle", "reason": "Tabletop RPG play emphasizes collaborative imaginative storytelling, which aligns with a bohemian-creative lifestyle orientation.", "attribute": ["bohemian-creative"]},
+      {"category": "signal:personality", "reason": "Active rulebook use requires detail-oriented rule interpretation; TTRPG hobbyist surveys consistently over-represent introverts who enjoy structured imaginative play, despite the group nature of the activity.", "attribute": ["analytical-detail-oriented", "reserved-introvert"]},
+      {"category": "signal:purchase-occasion", "reason": "Buying all three core rulebooks together is consistent with launching a new campaign or upgrading to a new rules edition rather than a routine top-up.", "attribute": "special-occasion"},
+      {"category": "signal:benefit-sought", "reason": "Core rulebooks are bought for the character-building and campaign-customization options they unlock for players and game masters.", "attribute": ["customization"]},
+      {
+        "category": "free_description_attributes",
+        "reason": "Layer 1 cannot express specific fandom identity or role within the TTRPG hobby (player vs. game master, community participation). A standalone Player's Handbook only weakly implies active play because curious newcomers and gift recipients account for many single-book purchases; the joint presence of all three core rulebooks together, especially the Game Master's Guide, sharply concentrates probability on an active player who also runs campaigns. These are added as distinct atomic psychographic attributes orthogonal to Layer 1.",
+        "attribute": [
+          "user is an active tabletop role-playing game player",
+          "user actively game-masters tabletop role-playing campaigns",
+          "user participates in an in-person or online tabletop gaming community"
+        ],
+        "confidence": {
+          "user is an active tabletop role-playing game player": 0.92,
+          "user actively game-masters tabletop role-playing campaigns": 0.70,
+          "user participates in an in-person or online tabletop gaming community": 0.55
+        }
+      }
+    ]
+  },
+  "user_attribute_life_event": {
+    "consumer_attributes": [
+      {"category": "signal:recent-marriage", "reason": "Core RPG rulebooks are not specifically associated with marriage.", "attribute": "unknown"},
+      {"category": "signal:recent-childbirth", "reason": "Core RPG rulebooks are not specifically associated with childbirth.", "attribute": "unknown"},
+      {"category": "signal:recent-relocation", "reason": "Core RPG rulebooks are not specifically associated with relocation.", "attribute": "unknown"},
+      {"category": "signal:recent-retirement", "reason": "Core RPG rulebooks are not specifically associated with retirement.", "attribute": "unknown"},
+      {"category": "signal:recent-school-enrollment", "reason": "Core RPG rulebooks are not specifically associated with school enrollment.", "attribute": "unknown"},
+      {"category": "signal:recent-empty-nest", "reason": "Core RPG rulebooks are not specifically associated with empty nest.", "attribute": "unknown"},
+      {"category": "signal:recent-job-change", "reason": "Core RPG rulebooks are not specifically associated with employment change.", "attribute": "unknown"},
+      {"category": "signal:recent-bereavement", "reason": "Core RPG rulebooks are not specifically associated with bereavement.", "attribute": "unknown"},
+      {
+        "category": "free_description_attributes",
+        "reason": "Tabletop RPG rulebook purchases reflect an ongoing hobby commitment, not a recent life-stage transition; the ongoing-hobby framing belongs in psycho_behavioral rather than life_event.",
+        "attribute": [],
+        "confidence": {}
+      }
+    ]
+  }
+}
+
+Input:
+
+{query}
+
+Output:

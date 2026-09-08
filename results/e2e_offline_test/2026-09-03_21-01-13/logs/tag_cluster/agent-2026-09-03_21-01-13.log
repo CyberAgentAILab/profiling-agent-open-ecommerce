@@ -1,0 +1,25 @@
+2026-09-03 12:01:13.518 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 12:01:13.518 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 12:01:13.518 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 12:01:13.519 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 12:01:13.519 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 12:01:13.519 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 12:01:13.519 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 12:01:13.520 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'batch_size': 100, 'begin': None, 'cache_embed_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache', 'cache_embed_model': './models/Qwen3-Embedding-0.6B', 'cluster_id_namespace': 'per_pattern', 'debug_num_sample': 100000, 'enable_cache': True, 'enable_thinking': False, 'end': None, 'enforce_eager': True, 'gpu_memory_utilization': 0.9, 'json_schema_tag': ['reasoning', 'tag'], 'log_dir': './results/e2e_offline_test/2026-09-03_21-01-13/logs/tag_cluster', 'max_model_len': 8192, 'max_new_tokens': 2048, 'model_name': './models/Qwen3.5-4B', 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/tag', 'path_prompt_template': './configs/prompt/open-ecommerce/tag_cluster.txt', 'query_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering', 'sampling_method': 'kmedoids', 'seed': 3407, 'tensor_parallel_size': 1, 'torch_dtype': 'bfloat16', 'trust_remote_code': True, 'use_vllm': True, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_21-01-13'}
+2026-09-03 12:01:13.529 | INFO     | tag_cluster.model:_load_embeddings:191 - 📂 Loaded 11 attribute embeddings from 3 CSV(s) under ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache
+2026-09-03 12:01:13.529 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.529 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.529 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.529 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.530 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.530 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.530 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.531 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.531 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.531 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.531 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.531 | DEBUG    | tag_cluster.model:_build_context:231 - build_context with k-medoids sampling
+2026-09-03 12:01:13.532 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.532 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.535 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/tag/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.535 | INFO     | tag_cluster.model:run_tagging:461 - 💾 tagging results: 10 profiles -> ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/tag/output-2026-09-03_21-01-13.json

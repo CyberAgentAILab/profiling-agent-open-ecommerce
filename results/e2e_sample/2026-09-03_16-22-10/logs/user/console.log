@@ -1,0 +1,151 @@
+2026-09-03 07:25:27.902 | INFO     | base_agent.config:activate_logging:128 - timestamp: 2026-09-03_16-25-27
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:138 - ⛏️ Transformers version: 5.12.1
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:139 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:140 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:141 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:142 - ⛏️ CUDA available: True
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:143 - ⛏️ MPS available: False
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:144 - ⛏️ Device: cuda
+2026-09-03 07:25:27.907 | INFO     | base_agent.config:load_config:145 - ⚙️ config: {'out_dir': './results/e2e_sample/2026-09-03_16-22-10/outputs/user', 'log_dir': './results/e2e_sample/2026-09-03_16-22-10/logs/user', 'model_name': './models/Qwen3.5-27B', 'torch_dtype': 'bfloat16', 'max_new_tokens': 8192, 'max_model_len': 16384, 'enable_cache': True, 'enable_thinking': False, 'use_validation_data': True, 'validation_path': './results/e2e_sample/2026-09-03_16-22-10/outputs/transaction', 'scan_output_path': './results/e2e_sample/2026-09-03_16-22-10/outputs/scan', 'frequent_patterns_path': None, 'allowed_titles_csv': None, 'query_path': './results/e2e_sample/2026-09-03_16-22-10/outputs/transaction', 'is_reverse': False, 'prompt_user_attribute_path': './configs/prompt/open-ecommerce/combined_kotler.txt', 'debug_num_sample': 10, 'json_schema_parent': 'consumer_attributes', 'json_schema_child': ['category', 'reason', 'attribute'], 'use_vllm': True, 'batch_size': 10, 'tensor_parallel_size': 1, 'trust_remote_code': True, 'seed': 3407, 'gpu_memory_utilization': 0.9, 'enforce_eager': True, 'enable_prefix_caching': False, 'begin': None, 'end': None, 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_16-25-27'}
+2026-09-03 07:25:27.907 | INFO     | __main__:main:17 - 📝 prompt_path: ./configs/prompt/open-ecommerce/combined_kotler.txt
+2026-09-03 07:25:27.908 | INFO     | predict_user.dataset:load_recovered_transaction:205 - 📚 loaded 0 samples from results/e2e_sample/2026-09-03_16-22-10/outputs/transaction/output-2026-09-03_16-24-17.json
+2026-09-03 07:25:27.909 | INFO     | predict_user.dataset:load_recovered_transaction:206 - Omitted 0 samples due to recovery failure
+2026-09-03 07:25:27.909 | INFO     | predict_user.dataset:_load_scan_only_records:143 - 🛒 scanned 10 records from results/e2e_sample/2026-09-03_16-22-10/outputs/scan/output-2026-09-03_16-22-39.json
+2026-09-03 07:25:27.909 | INFO     | predict_user.dataset:load_recovered_transaction:217 - 🛒 appended 10 scan-only records (no search/transaction context) from ./results/e2e_sample/2026-09-03_16-22-10/outputs/scan
+2026-09-03 07:25:27.909 | INFO     | predict_user.dataset:load_recovered_transaction:236 - 📊 Total: 0 samples, 0 failures
+2026-09-03 07:25:27.910 | INFO     | predict_user.dataset:load_recovered_transaction:239 - 📦 returning 10 transactions (predict_transaction=0, scan_only=10, pattern=0)
+2026-09-03 07:25:27.911 | INFO     | base_agent.model:load_model_and_tokenizer:174 - 📦 found pre-downloaded folder which contains config.json at models/Qwen3.5-27B
+INFO 09-03 07:25:27 [api_utils.py:273] non-default args: {'trust_remote_code': True, 'seed': 3407, 'max_model_len': 16384, 'enable_prefix_caching': False, 'gpu_memory_utilization': 0.9, 'disable_log_stats': True, 'enforce_eager': True, 'model': 'models/Qwen3.5-27B'}
+INFO 09-03 07:25:27 [model.py:611] Resolved architecture: Qwen3_5ForConditionalGeneration
+INFO 09-03 07:25:27 [model.py:1745] Using max model len 16384
+INFO 09-03 07:25:27 [scheduler.py:239] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 09-03 07:25:27 [vllm.py:999] Asynchronous scheduling is enabled.
+WARNING 09-03 07:25:27 [vllm.py:1055] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+WARNING 09-03 07:25:27 [vllm.py:1097] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+INFO 09-03 07:25:27 [kernel.py:270] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+INFO 09-03 07:25:28 [vllm.py:1273] Cudagraph is disabled under eager mode
+INFO 09-03 07:25:28 [compilation.py:321] Enabled custom fusions: norm_quant, act_quant
+[transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+[transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+WARNING 09-03 07:25:38 [system_utils.py:157] We must use the `spawn` multiprocessing start method. Overriding VLLM_WORKER_MULTIPROC_METHOD to 'spawn'. See https://docs.vllm.ai/en/latest/usage/troubleshooting.html#python-multiprocessing for more information. Reasons: CUDA is initialized
+(EngineCore pid=82976) INFO 09-03 07:25:48 [core.py:113] Initializing a V1 LLM engine (v0.23.0) with config: model='models/Qwen3.5-27B', speculative_config=None, tokenizer='models/Qwen3.5-27B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, decode_context_parallel_size=1, dcp_comm_backend=ag_rs, disable_custom_all_reduce=False, quantization=None, quantization_config=None, enforce_eager=True, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=3407, served_model_name=models/Qwen3.5-27B, enable_prefix_caching=False, enable_chunked_prefill=True, pooler_config=None, compilation_config={'mode': <CompilationMode.NONE: 0>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['all'], 'ir_enable_torch_wrap': False, 'splitting_ops': [], 'compile_mm_encoder': False, 'cudagraph_mm_encoder': False, 'encoder_cudagraph_token_budgets': [], 'encoder_cudagraph_max_vision_items_per_batch': 0, 'encoder_cudagraph_max_frames_per_batch': None, 'compile_sizes': [], 'compile_ranges_endpoints': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'size_asserts': False, 'alignment_asserts': False, 'scalar_asserts': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.NONE: 0>, 'cudagraph_num_of_warmups': 0, 'cudagraph_capture_sizes': [], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': True, 'fuse_act_quant': True, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False, 'fuse_rope_kvcache_cat_mla': False, 'fuse_act_padding': False}, 'max_cudagraph_capture_size': 0, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': False, 'static_all_moe_layers': []}, kernel_config=KernelConfig(ir_op_priority=IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native']), enable_flashinfer_autotune=True, moe_backend='auto', linear_backend='auto')
+(EngineCore pid=82976) [transformers] `Qwen2VLImageProcessorFast` is deprecated. The `Fast` suffix for image processors has been removed; use `Qwen2VLImageProcessor` instead.
+(EngineCore pid=82976) INFO 09-03 07:25:50 [parallel_state.py:1568] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://[redacted-ip]:42461 backend=nccl
+(EngineCore pid=82976) INFO 09-03 07:25:50 [parallel_state.py:1903] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(EngineCore pid=82976) INFO 09-03 07:25:51 [topk_topp_sampler.py:55] Using FlashInfer for top-p & top-k sampling.
+(EngineCore pid=82976) [transformers] The `use_fast` parameter is deprecated and will be removed in a future version. Use `backend="torchvision"` instead of `use_fast=True`, or `backend="pil"` instead of `use_fast=False`.
+(EngineCore pid=82976) INFO 09-03 07:25:57 [gpu_model_runner.py:5092] Starting to load model models/Qwen3.5-27B...
+(EngineCore pid=82976) INFO 09-03 07:25:57 [cuda.py:433] Using backend AttentionBackendEnum.FLASH_ATTN for vit attention
+(EngineCore pid=82976) INFO 09-03 07:25:57 [mm_encoder_attention.py:372] Using AttentionBackendEnum.FLASH_ATTN for MMEncoderAttention.
+(EngineCore pid=82976) INFO 09-03 07:25:57 [qwen_gdn_linear_attn.py:228] Using Triton/FLA GDN prefill kernel (requested=auto, head_k_dim=128).
+(EngineCore pid=82976) INFO 09-03 07:25:57 [cuda.py:378] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(EngineCore pid=82976) INFO 09-03 07:25:57 [flash_attn.py:636] Using FlashAttention version 2
+(EngineCore pid=82976) INFO 09-03 07:25:57 [weight_utils.py:922] Filesystem type for checkpoints: NFS. Checkpoint size: 51.75 GiB. Available RAM: 965.62 GiB.
+(EngineCore pid=82976) INFO 09-03 07:25:57 [weight_utils.py:884] Prefetching checkpoint files into page cache started (in background, num_threads=8, block_size=16777216 bytes)
+(EngineCore pid=82976) Loading safetensors checkpoint shards:   0% Completed | 0/11 [00:00<?, ?it/s]
+(EngineCore pid=82976) INFO 09-03 07:25:59 [weight_utils.py:856] Prefetching checkpoint files: 10% (2/11)
+(EngineCore pid=82976) INFO 09-03 07:25:59 [weight_utils.py:856] Prefetching checkpoint files: 20% (3/11)
+(EngineCore pid=82976) INFO 09-03 07:25:59 [weight_utils.py:856] Prefetching checkpoint files: 30% (4/11)
+(EngineCore pid=82976) Loading safetensors checkpoint shards:   9% Completed | 1/11 [00:01<00:16,  1.67s/it]
+(EngineCore pid=82976) INFO 09-03 07:25:59 [weight_utils.py:856] Prefetching checkpoint files: 40% (5/11)
+(EngineCore pid=82976) INFO 09-03 07:25:59 [weight_utils.py:856] Prefetching checkpoint files: 50% (6/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:856] Prefetching checkpoint files: 60% (7/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:856] Prefetching checkpoint files: 70% (8/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:856] Prefetching checkpoint files: 80% (9/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:856] Prefetching checkpoint files: 90% (10/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:856] Prefetching checkpoint files: 100% (11/11)
+(EngineCore pid=82976) INFO 09-03 07:26:00 [weight_utils.py:879] Prefetching checkpoint files into page cache finished in 2.37s
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  18% Completed | 2/11 [00:02<00:12,  1.36s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  27% Completed | 3/11 [00:04<00:10,  1.32s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  36% Completed | 4/11 [00:05<00:09,  1.31s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  45% Completed | 5/11 [00:06<00:07,  1.31s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  55% Completed | 6/11 [00:08<00:06,  1.31s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  64% Completed | 7/11 [00:09<00:05,  1.31s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  73% Completed | 8/11 [00:10<00:03,  1.29s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  82% Completed | 9/11 [00:11<00:02,  1.28s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards:  91% Completed | 10/11 [00:13<00:01,  1.28s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards: 100% Completed | 11/11 [00:13<00:00,  1.10s/it]
+(EngineCore pid=82976) Loading safetensors checkpoint shards: 100% Completed | 11/11 [00:13<00:00,  1.25s/it]
+(EngineCore pid=82976) 
+(EngineCore pid=82976) INFO 09-03 07:26:11 [default_loader.py:397] Loading weights took 13.88 seconds
+(EngineCore pid=82976) INFO 09-03 07:26:12 [gpu_model_runner.py:5187] Model loading took 51.1 GiB memory and 14.244958 seconds
+(EngineCore pid=82976) INFO 09-03 07:26:12 [interface.py:670] Setting attention block size to 784 tokens to ensure that attention page size is >= mamba page size.
+(EngineCore pid=82976) INFO 09-03 07:26:12 [interface.py:694] Padding mamba page size by 0.13% to ensure that mamba page size and attention page size are exactly equal.
+(EngineCore pid=82976) INFO 09-03 07:26:12 [gpu_model_runner.py:6200] Encoder cache will be initialized with a budget of 16384 tokens, and profiled with 1 image items of the maximum feature size.
+(EngineCore pid=82976) INFO 09-03 07:26:20 [gpu_worker.py:480] Available KV cache memory: 18.22 GiB
+(EngineCore pid=82976) INFO 09-03 07:26:20 [kv_cache_utils.py:1744] GPU KV cache size: 259,413 tokens
+(EngineCore pid=82976) INFO 09-03 07:26:20 [kv_cache_utils.py:1745] Maximum concurrency for 16,384 tokens per request: 15.83x
+(EngineCore pid=82976) INFO 09-03 07:26:21 [jit_monitor.py:54] Kernel JIT monitor activated — Triton JIT compilations during inference will be logged as warnings.
+(EngineCore pid=82976) INFO 09-03 07:26:21 [core.py:313] init engine (profile, create kv cache, warmup model) took 8.73 s
+(EngineCore pid=82976) INFO 09-03 07:26:21 [vllm.py:999] Asynchronous scheduling is enabled.
+(EngineCore pid=82976) WARNING 09-03 07:26:21 [vllm.py:1055] Enforce eager set, disabling torch.compile and CUDAGraphs. This is equivalent to setting -cc.mode=none -cc.cudagraph_mode=none
+(EngineCore pid=82976) WARNING 09-03 07:26:21 [vllm.py:1097] Inductor compilation was disabled by user settings, optimizations settings that are only active during inductor compilation will be ignored.
+(EngineCore pid=82976) INFO 09-03 07:26:21 [kernel.py:270] Final IR op priority after setting platform defaults: IrOpPriorityConfig(rms_norm=['vllm_c', 'native'], fused_add_rms_norm=['vllm_c', 'native'])
+(EngineCore pid=82976) INFO 09-03 07:26:21 [vllm.py:1273] Cudagraph is disabled under eager mode
+(EngineCore pid=82976) INFO 09-03 07:26:21 [compilation.py:321] Enabled custom fusions: norm_quant, act_quant
+2026-09-03 07:26:21.997 | INFO     | base_agent.model:load_model_and_tokenizer:200 - ✅ load ./models/Qwen3.5-27B
+2026-09-03 07:26:21.997 | INFO     | base_agent.model:load_model_and_tokenizer:201 - ✅ activate vllm ? True
+2026-09-03 07:26:21.999 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_16-22-10/outputs/user/output-2026-09-03_16-25-27.json
+  0%|          | 0/1 [00:00<?, ?it/s]
+Rendering prompts:   0%|          | 0/10 [00:00<?, ?it/s][A(EngineCore pid=82976) WARNING 09-03 07:26:22 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _zero_kv_blocks_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=82976) WARNING 09-03 07:26:22 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+
+Rendering prompts:  20%|██        | 2/10 [00:00<00:00, 17.86it/s][A(EngineCore pid=82976) WARNING 09-03 07:26:22 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _causal_conv1d_fwd_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+
+Rendering prompts:  70%|███████   | 7/10 [00:00<00:00, 33.04it/s][ARendering prompts: 100%|██████████| 10/10 [00:00<00:00, 34.10it/s]
+
+Processed prompts:   0%|          | 0/10 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s][A(EngineCore pid=82976) WARNING 09-03 07:26:25 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _fused_post_conv_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=82976) WARNING 09-03 07:26:26 [jit_monitor.py:103] Triton kernel JIT compilation during inference: fused_sigmoid_gating_delta_rule_update_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=82976) WARNING 09-03 07:26:52 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _triton_mrope_forward. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=82976) WARNING 09-03 07:26:54 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _causal_conv1d_update_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(EngineCore pid=82976) WARNING 09-03 07:26:54 [jit_monitor.py:103] Triton kernel JIT compilation during inference: fused_recurrent_gated_delta_rule_packed_decode_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+
+Processed prompts:  10%|█         | 1/10 [01:54<17:06, 114.11s/it, est. speed input: 113.60 toks/s, output: 8.90 toks/s][A(EngineCore pid=82976) WARNING 09-03 07:28:16 [jit_monitor.py:103] Triton kernel JIT compilation during inference: layer_norm_fwd_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+
+Processed prompts:  20%|██        | 2/10 [01:56<06:28, 48.52s/it, est. speed input: 222.67 toks/s, output: 17.59 toks/s][A
+Processed prompts:  30%|███       | 3/10 [01:58<03:11, 27.30s/it, est. speed input: 327.84 toks/s, output: 26.31 toks/s][A
+Processed prompts:  40%|████      | 4/10 [02:02<01:48, 18.07s/it, est. speed input: 422.67 toks/s, output: 34.61 toks/s][A
+Processed prompts:  50%|█████     | 5/10 [02:03<00:59, 11.99s/it, est. speed input: 523.25 toks/s, output: 43.41 toks/s][A
+Processed prompts:  60%|██████    | 6/10 [02:05<00:33,  8.38s/it, est. speed input: 621.12 toks/s, output: 52.09 toks/s][A
+Processed prompts:  70%|███████   | 7/10 [02:07<00:19,  6.49s/it, est. speed input: 709.67 toks/s, output: 60.23 toks/s][A
+Processed prompts:  80%|████████  | 8/10 [02:09<00:09,  4.91s/it, est. speed input: 801.71 toks/s, output: 68.76 toks/s][A
+Processed prompts:  90%|█████████ | 9/10 [02:11<00:04,  4.19s/it, est. speed input: 884.27 toks/s, output: 76.79 toks/s][A
+Processed prompts: 100%|██████████| 10/10 [02:16<00:00,  4.41s/it, est. speed input: 947.13 toks/s, output: 83.47 toks/s][A
+Processed prompts: 100%|██████████| 10/10 [02:16<00:00,  4.41s/it, est. speed input: 947.13 toks/s, output: 83.47 toks/s][AProcessed prompts: 100%|██████████| 10/10 [02:16<00:00, 13.69s/it, est. speed input: 947.13 toks/s, output: 83.47 toks/s]
+2026-09-03 07:28:39.551 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.551 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.551 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.551 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.552 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.553 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.554 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.555 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.555 | INFO     | base_agent.config:_validate_with_attribute:59 - ✔️ Extracted JSON properly
+2026-09-03 07:28:39.558 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_16-22-10/outputs/user/output-2026-09-03_16-25-27.json
+100%|██████████| 1/1 [02:17<00:00, 137.56s/it]100%|██████████| 1/1 [02:17<00:00, 137.56s/it]
+2026-09-03 07:28:39.558 | INFO     | predict_user.model:predict_user_attributes:185 - 💾 user-attribute predictions: 10 records -> ./results/e2e_sample/2026-09-03_16-22-10/outputs/user/output-2026-09-03_16-25-27.json
+(EngineCore pid=82976) INFO 09-03 07:28:39 [core.py:1178] [shutdown] EngineCore: trigger received signal=SIGTERM
+(EngineCore pid=82976) INFO 09-03 07:28:39 [core.py:1297] [shutdown] EngineCore: start mode=abort timeout=0s
+(EngineCore pid=82976) INFO 09-03 07:28:39 [core.py:1328] [shutdown] EngineCore: request processing complete; starting resource teardown
+(EngineCore pid=82976) INFO 09-03 07:28:39 [core.py:1191] [shutdown] EngineCore: exiting busy loop

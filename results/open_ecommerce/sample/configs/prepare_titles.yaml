@@ -1,0 +1,5 @@
+out_dir: ./results/open_ecommerce/sample/outputs/prepare_titles/v2
+log_dir: ./results/open_ecommerce/sample/logs/prepare_titles/v2
+purchases_csv: ./data/public/open-ecommerce/amazon-purchases.csv
+min_unique_buyers: 3
+out_csv: ./data/public/open-ecommerce/titles_ge{min_unique_buyers}_buyers.csv

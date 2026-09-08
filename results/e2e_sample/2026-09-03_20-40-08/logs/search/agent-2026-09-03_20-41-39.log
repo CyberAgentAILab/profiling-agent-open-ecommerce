@@ -1,0 +1,25 @@
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 11:41:39.420 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 11:41:39.421 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 11:41:39.421 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'out_dir': './results/e2e_sample/2026-09-03_20-40-08/outputs/search', 'log_dir': './results/e2e_sample/2026-09-03_20-40-08/logs/search', 'csv_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/prepare_titles/titles_sample10.csv', 'use_validation_data': True, 'validation_path': './results/e2e_sample/2026-09-03_20-40-08/outputs/scan', 'filter_need_search': True, 'filter_is_diagnostic': True, 'num_search': 10, 'timeout': 60, 'num_debug': None, 'query_suffix': ' Amazon product', 'search_engine': 'serper', 'ddgs_region': 'us-en', 'backend': ['google', 'bing'], 'serp_url': 'https://www.searchapi.io/api/v1/search', 'serper_url': 'https://google.serper.dev/search', 'begin': None, 'end': None, 'search_cache_dir': './search_cache/e2e_sample', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_20-41-39'}
+2026-09-03 11:41:39.421 | INFO     | __main__:main:16 - 🛒 reading scan output from ./results/e2e_sample/2026-09-03_20-40-08/outputs/scan
+2026-09-03 11:41:39.422 | INFO     | search.dataset:load_ecommerce_search_list:49 - 📚 ecommerce: loaded 10 scan records from results/e2e_sample/2026-09-03_20-40-08/outputs/scan/output-2026-09-03_20-40-36.json
+2026-09-03 11:41:39.422 | INFO     | search.dataset:load_ecommerce_search_list:67 - 🛒 ecommerce search input: 10 → 2 (filter_need_search=True, filter_is_diagnostic=True)
+2026-09-03 11:41:39.422 | INFO     | search.model:__init__:46 - 🟣 SERPER_API_TOKEN is not set. Falling back to the DDGS (DuckDuckGo) scraper
+2026-09-03 11:41:39.422 | INFO     | search.model:__init__:57 - 🔖 query_suffix enabled: ' Amazon product'
+2026-09-03 11:41:39.505 | INFO     | search.model:__init__:66 - ✅ Search cache initialized: ./search_cache/e2e_sample
+2026-09-03 11:41:39.506 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/search/output-2026-09-03_20-41-39.json
+2026-09-03 11:41:39.508 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: Baby Registry Welcome Box Amazon product
+2026-09-03 11:41:39.510 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/search/output-2026-09-03_20-41-39.json
+2026-09-03 11:41:39.510 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_20-41-39, job_id: None
+2026-09-03 11:41:39.510 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 11:41:39.511 | INFO     | search.model:check_and_get_cache:200 - ✅ cache hit: JOSCHOO Reading Glasses Women Men Colorful Trendy Readers Glasses with Strong Spring Hinge gafas Amazon product
+2026-09-03 11:41:39.513 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_sample/2026-09-03_20-40-08/outputs/search/output-2026-09-03_20-41-39.json
+2026-09-03 11:41:39.513 | DEBUG    | search.model:run_search:293 - saved timestamp: 2026-09-03_20-41-39, job_id: None
+2026-09-03 11:41:39.513 | DEBUG    | search.model:run_search:294 - 0 search API called
+2026-09-03 11:41:39.513 | INFO     | search.model:run_search:296 - 💾 search results: 2 records -> ./results/e2e_sample/2026-09-03_20-40-08/outputs/search/output-2026-09-03_20-41-39.json
+2026-09-03 11:41:39.513 | INFO     | search.model:run_search:297 - 🔍 0 search API calls in total

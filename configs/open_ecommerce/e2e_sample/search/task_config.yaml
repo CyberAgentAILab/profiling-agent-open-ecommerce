@@ -1,0 +1,38 @@
+# E2E sample run: web search for the sample titles that passed the scan gate.
+out_dir: ./results/e2e_sample/search
+log_dir: ./logs/e2e_sample/search
+
+csv_path: ./results/e2e_sample/prepare_titles/titles_sample10.csv
+
+use_validation_data: True
+# Read scan output to filter by need_search & is_diagnostic.
+# If you want to bypass scan, set to a CSV path instead.
+validation_path: ./results/e2e_sample/scan
+
+# Filter rules for ecommerce branch (consumed by src/search/dataset.py)
+filter_need_search: True
+filter_is_diagnostic: True
+
+num_search: 10
+timeout: 60
+num_debug: null
+
+# Appended to every query before sending to the search engine (and used as the cache key).
+query_suffix: " Amazon product"
+
+search_engine: serper
+ddgs_region: us-en
+# ddgs backend(s) used when no API token is set (ordered; results are merged).
+# The google scraper alone often yields "No results found" for long product
+# titles, so bing is listed as a fallback.
+backend:
+  - google
+  - bing
+
+serp_url: https://www.searchapi.io/api/v1/search
+serper_url: https://google.serper.dev/search
+
+begin:
+end:
+
+search_cache_dir: ./search_cache/e2e_sample

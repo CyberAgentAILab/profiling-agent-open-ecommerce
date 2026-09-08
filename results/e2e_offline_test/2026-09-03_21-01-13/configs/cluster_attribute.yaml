@@ -1,0 +1,48 @@
+algorithm: kmeans
+attribute_branches:
+- cache_embedding_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/demographic
+  n_clusters: 2
+  name: demographic
+  out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/demographic
+  target_patterns:
+  - user_attribute_demographic
+- cache_embedding_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/psycho_behavioral
+  n_clusters: 3
+  name: psycho_behavioral
+  out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/psycho_behavioral
+  target_patterns:
+  - user_attribute_psycho_behavioral
+- cache_embedding_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/embedding_cache/life_event
+  n_clusters: 2
+  name: life_event
+  out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering/life_event
+  target_patterns:
+  - user_attribute_life_event
+batch_size: 100
+cluster_selection_method: eom
+dimension_reduction: none
+embedding_backend: qwen3_embedding
+enable_cache: true
+hdbscan_n_jobs: -1
+log_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/logs/cluster_attribute
+metric: euclidean
+min_cluster_ratio: 0.01
+min_samples: 2
+minibatch_kmeans_batch_size: 1024
+minibatch_kmeans_max_iter: 300
+minibatch_kmeans_max_no_improvement: 10
+minibatch_kmeans_n_init: 10
+minibatch_kmeans_reassignment_ratio: 0.01
+model_name: ./models/Qwen3-Embedding-0.6B
+n_clusters: 3
+out_dir: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/clustering
+pca_n_components: 8
+pca_random_state: 0
+query_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/user
+qwen3_max_length: 8192
+seed: 3407
+torch_dtype: bfloat16
+umap_metric: cosine
+umap_min_dist: 0.1
+umap_n_components: 8
+umap_n_neighbors: 5

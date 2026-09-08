@@ -1,0 +1,25 @@
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:154 - ⛏️ Transformers version: 5.12.1
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:155 - ⛏️ duckduckgo version: 9.4.3
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:156 - ⛏️ Python version: 3.12.14 (main, Sep  1 2026, 14:16:52) [Clang 22.1.3 ]
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:157 - ⛏️ PyTorch version: 2.11.0+cu130
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:158 - ⛏️ CUDA available: True
+2026-09-03 12:01:13.312 | INFO     | base_agent.config:load_config:159 - ⛏️ MPS available: False
+2026-09-03 12:01:13.313 | INFO     | base_agent.config:load_config:160 - ⛏️ Device: cuda
+2026-09-03 12:01:13.313 | INFO     | base_agent.config:load_config:161 - ⚙️ config: {'batch_size': 10, 'begin': None, 'debug_num_sample': 10, 'enable_cache': True, 'enable_prefix_caching': False, 'enable_thinking': False, 'end': None, 'enforce_eager': True, 'gpu_memory_utilization': 0.9, 'is_reverse': False, 'json_schema_transaction': ['reasoning', 'canonical_name', 'category_inferred', 'use_case', 'household_signals'], 'log_dir': './results/e2e_offline_test/2026-09-03_21-01-13/logs/predict_transaction', 'max_model_len': 16384, 'max_new_tokens': 8192, 'min_p': 0.0, 'model_name': './models/Qwen3.5-4B', 'out_dir': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/transaction', 'prompt_recovery_transaction_path': './configs/prompt/open-ecommerce/canonical_product.txt', 'query_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/search', 'seed': 3407, 'temperature': 0.0, 'tensor_parallel_size': 1, 'top_k': 20, 'top_p': 0.8, 'torch_dtype': 'bfloat16', 'trust_remote_code': True, 'use_validation_data': True, 'use_vllm': True, 'validation_path': './results/e2e_offline_test/2026-09-03_21-01-13/outputs/search', 'device': device(type='cuda'), 'serp_api_token': None, 'serper_api_token': None, 'timestamp': '2026-09-03_21-01-13'}
+2026-09-03 12:01:13.313 | INFO     | predict_transaction.dataset:load_search_result:14 - detect a directory that contains json files
+2026-09-03 12:01:13.314 | INFO     | predict_transaction.dataset:load_search_result:50 - 📚 loaded 9 samples from ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/search/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.314 | INFO     | predict_transaction.dataset:load_search_result:51 - Omitted 0 samples due to search failure
+2026-09-03 12:01:13.314 | INFO     | predict_transaction.dataset:load_search_result:56 - 📊 Total: 9 samples, 0 failures
+2026-09-03 12:01:13.315 | INFO     | predict_transaction.model:__init__:60 - 📝 prompt_path: ./configs/prompt/open-ecommerce/canonical_product.txt
+2026-09-03 12:01:13.316 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/transaction/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.316 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.316 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.316 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.317 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.317 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.317 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.317 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.317 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.318 | INFO     | base_agent.config:validate_json:83 - ✔️ Extracted JSON properly
+2026-09-03 12:01:13.319 | DEBUG    | common.io:save_as_json:39 - save_path: ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/transaction/output-2026-09-03_21-01-13.json
+2026-09-03 12:01:13.319 | INFO     | predict_transaction.model:predict_transaction_attribute:151 - 💾 transaction predictions: 9 records -> ./results/e2e_offline_test/2026-09-03_21-01-13/outputs/transaction/output-2026-09-03_21-01-13.json
