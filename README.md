@@ -4,6 +4,7 @@
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](pyproject.toml)
 [![Dataset: Open E-Commerce 1.0](https://img.shields.io/badge/Dataset-Open%20E--Commerce%201.0-orange)](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/YGLYDY)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.19928-b31b1b.svg)](https://arxiv.org/abs/2609.19928)
 
 Official code for the paper **"From "Who Is This User?" to "What Does This Purchase Mean?": A Deployed Pipeline for Semantic User Profiling at Bank Scale"**, accepted at the **ICDM 2026** Applied Research track.
 
